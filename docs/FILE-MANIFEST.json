@@ -1,0 +1,3422 @@
+{
+  "version": 1,
+  "algorithm": "SHA-256",
+  "sourceBoundary": "product/web",
+  "note": "Original hashes were observed at final validation, not before extraction. This manifest excludes itself. No resource trees were traversed.",
+  "files": [
+    {
+      "path": "appearance.html",
+      "bytes": 26473,
+      "sha256": "75d1d9aa9c2c51a73cabca715feb30ceea9e6efbdacb762f30a04d25a3c53a2c",
+      "source": {
+        "relativePath": "appearance.html",
+        "sha256": "50a91923eb1a359e5a7ab32a637d23fcd6291295c697feb40301b64c8b968b67",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "docs/API.md",
+      "bytes": 13930,
+      "sha256": "b235d57c890797fc2eb1378f03c34b0234b64e9a016a89bc4905ee4103050495",
+      "source": null
+    },
+    {
+      "path": "docs/CATALOG-UPDATES.md",
+      "bytes": 10336,
+      "sha256": "ee07d16c9f7aecc8a45307193b26bc576d6fe99e3df37160e47d984a29014189",
+      "source": null
+    },
+    {
+      "path": "docs/EVENTS-STATE.md",
+      "bytes": 10208,
+      "sha256": "4d8b944b8269e744714f22258be629cb0c3f805f9e42c29a61b9a12f73d2d848",
+      "source": null
+    },
+    {
+      "path": "docs/ISOLATION-CHANGES.md",
+      "bytes": 12004,
+      "sha256": "987930a68c9ccd5d8f5ab59bac79da26b0a4ce6205523b9f9161e1974aa61d74",
+      "source": null
+    },
+    {
+      "path": "docs/MODULE-DEPENDENCIES.md",
+      "bytes": 8987,
+      "sha256": "173fc684b451bc816ad4e48093c99592cfa69edf82e3abba0bccd38a11fb9cc2",
+      "source": null
+    },
+    {
+      "path": "docs/RUNTIME-ADAPTER.md",
+      "bytes": 10101,
+      "sha256": "452b2d565c71b456db88df590e305135d0d114873271fdfa5ff3bc95cdcdd529",
+      "source": null
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 3820,
+      "sha256": "3ceb6493d1bc305494e8cce72483ead806b8e9b3923d5261beeff086fee72ee2",
+      "source": null
+    },
+    {
+      "path": "docs/WARDROBE-CONTRACT.md",
+      "bytes": 10011,
+      "sha256": "fc779094cf9e62f4251565a6e81e0b14c83d66553b658c347ad7a4b401bb7bcd",
+      "source": null
+    },
+    {
+      "path": "MIGRATION.md",
+      "bytes": 7099,
+      "sha256": "4079f722462248ca23cfc9f7573f28cb6331499122c5819c096d7e4a79761b38",
+      "source": null
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 26157,
+      "sha256": "f74a20a1f1327413c493565e5c6b6ec7492c9608c9ca7805f0cb0a8f1d03b99a",
+      "source": null
+    },
+    {
+      "path": "package.json",
+      "bytes": 379,
+      "sha256": "87c75ca77733286b22912fa5bfbc25d92da01d9f08c66f93a9ffcf42342d8d08",
+      "source": null
+    },
+    {
+      "path": "scripts/check-handoff.mjs",
+      "bytes": 2641,
+      "sha256": "400121add304aae28822700fbce19f078584667896d908cb26858162b5f565af",
+      "source": null
+    },
+    {
+      "path": "scripts/manifest.mjs",
+      "bytes": 2174,
+      "sha256": "45725a778e6e23fd330e52456ecb7f51e64216bb021d169ef5cfe177d22843a6",
+      "source": null
+    },
+    {
+      "path": "scripts/package-handoff.ps1",
+      "bytes": 2697,
+      "sha256": "82a23d419e5d5e9ccd9c6781a5d7a737cfddb01182bea27a91a440fd8d36ab0a",
+      "source": null
+    },
+    {
+      "path": "src/action-extra-materials.js",
+      "bytes": 7562,
+      "sha256": "01642d68f5b07e78727ee2798758635b619791e22731535f8756f2b7995c86a8",
+      "source": {
+        "relativePath": "src/action-extra-materials.js",
+        "sha256": "01642d68f5b07e78727ee2798758635b619791e22731535f8756f2b7995c86a8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/add-emissive-material.js",
+      "bytes": 4288,
+      "sha256": "2820f3da2d774befa2f58f8beeef7c3b799f5667f656050162b20db4c59c474d",
+      "source": {
+        "relativePath": "src/add-emissive-material.js",
+        "sha256": "2820f3da2d774befa2f58f8beeef7c3b799f5667f656050162b20db4c59c474d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/admin-status.css",
+      "bytes": 2950,
+      "sha256": "787467b0d177a464854de6890fd2f7777a12ffa43f4ea1d90ab3f7ae9929fb15",
+      "source": {
+        "relativePath": "src/admin-status.css",
+        "sha256": "787467b0d177a464854de6890fd2f7777a12ffa43f4ea1d90ab3f7ae9929fb15",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/admin-status.js",
+      "bytes": 11956,
+      "sha256": "547c8cc30da3c58b9b03188c78e34872eb81273c2d2623838aba03235813e6c7",
+      "source": {
+        "relativePath": "src/admin-status.js",
+        "sha256": "30bfaef7b52e1b149219a7d4f2c6682d78c1cfe5159beeae771763232b5d33d8",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/al-material.js",
+      "bytes": 2198,
+      "sha256": "4bf1eea1884ceb8e5055218fb68f4eb16ef6555f6cf00a7d0479814d692150d6",
+      "source": {
+        "relativePath": "src/al-material.js",
+        "sha256": "4bf1eea1884ceb8e5055218fb68f4eb16ef6555f6cf00a7d0479814d692150d6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/alien-material.js",
+      "bytes": 6077,
+      "sha256": "d29c72a20503cf6cf9beb46cfe0749cd013e775060cd6aace2d8277ccf2d2906",
+      "source": {
+        "relativePath": "src/alien-material.js",
+        "sha256": "d29c72a20503cf6cf9beb46cfe0749cd013e775060cd6aace2d8277ccf2d2906",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/angel-body-material.js",
+      "bytes": 4805,
+      "sha256": "e9d19597576a434fcc2e6365daf265ebd76bc958f8377b7dbe5b357a0abaacd1",
+      "source": {
+        "relativePath": "src/angel-body-material.js",
+        "sha256": "e9d19597576a434fcc2e6365daf265ebd76bc958f8377b7dbe5b357a0abaacd1",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/animal-material.js",
+      "bytes": 5531,
+      "sha256": "71bb6c01c24f7e189ada0c6665a958dbca83a2448422e8ce56484701a7324535",
+      "source": {
+        "relativePath": "src/animal-material.js",
+        "sha256": "71bb6c01c24f7e189ada0c6665a958dbca83a2448422e8ce56484701a7324535",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/animation-resource-map.js",
+      "bytes": 2214,
+      "sha256": "fc496d6673517d422f61b243835b4c0ca74a335ebd8aa7f62a98e679b6ceb92d",
+      "source": {
+        "relativePath": "src/animation-resource-map.js",
+        "sha256": "5f05215d8580c332ff631c60a06927acb1b0bfff8b9ca0fc743f05a68b433df3",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/anisotropic-material.js",
+      "bytes": 2248,
+      "sha256": "aa59a2e7d009a466ee6ce037e97dca9c20496ade8e3dd655db6858a590b615f4",
+      "source": {
+        "relativePath": "src/anisotropic-material.js",
+        "sha256": "aa59a2e7d009a466ee6ce037e97dca9c20496ade8e3dd655db6858a590b615f4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/admin-panel.js",
+      "bytes": 2742,
+      "sha256": "3d03db9248c7d668ec56ec4aad91ad96f7a90f82cb35d3d550a1d5845e1df7a1",
+      "source": {
+        "relativePath": "src/appearance/admin-panel.js",
+        "sha256": "3d03db9248c7d668ec56ec4aad91ad96f7a90f82cb35d3d550a1d5845e1df7a1",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/appearance-template.html",
+      "bytes": 26555,
+      "sha256": "014e96eebeabc533068616a5075606862e9c9e7167399b08990da478e95a762e",
+      "source": {
+        "relativePath": "src/appearance/appearance-template.html",
+        "sha256": "014e96eebeabc533068616a5075606862e9c9e7167399b08990da478e95a762e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/标题.svg",
+      "bytes": 687386,
+      "sha256": "b2060095be0f886b699b3c8e9a5716a9b8eee9752bdaa81cd10466e2fa81a7e5",
+      "source": {
+        "relativePath": "src/appearance/assets/标题.svg",
+        "sha256": "b2060095be0f886b699b3c8e9a5716a9b8eee9752bdaa81cd10466e2fa81a7e5",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/返回.svg",
+      "bytes": 12673,
+      "sha256": "de68b8b39daf77b2f8eb5aef3672cebda063bed2ee1633c9b83727a387beae08",
+      "source": {
+        "relativePath": "src/appearance/assets/返回.svg",
+        "sha256": "de68b8b39daf77b2f8eb5aef3672cebda063bed2ee1633c9b83727a387beae08",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/配置.svg",
+      "bytes": 1197,
+      "sha256": "2e3f7ddf4023bc72632a28f2ad830275193f76f9c8842aff0cf976bdbbb8f69e",
+      "source": {
+        "relativePath": "src/appearance/assets/配置.svg",
+        "sha256": "2e3f7ddf4023bc72632a28f2ad830275193f76f9c8842aff0cf976bdbbb8f69e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/向上展开.svg",
+      "bytes": 903,
+      "sha256": "f6cb69c6e9b9ecc36d4c3ffced1377d969ede7ab8a2780e36c45682206345c03",
+      "source": {
+        "relativePath": "src/appearance/assets/向上展开.svg",
+        "sha256": "f6cb69c6e9b9ecc36d4c3ffced1377d969ede7ab8a2780e36c45682206345c03",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/向下展开.svg",
+      "bytes": 905,
+      "sha256": "b3e555f325800e8e32d5e9f50796e1240fe4d05665fe654d91913cab0c538c8f",
+      "source": {
+        "relativePath": "src/appearance/assets/向下展开.svg",
+        "sha256": "b3e555f325800e8e32d5e9f50796e1240fe4d05665fe654d91913cab0c538c8f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/animation.svg",
+      "bytes": 1637,
+      "sha256": "6fffb2aabe5f33a8e6520bb43982309f4534659e59af4ed2b3408191a9e5ed1e",
+      "source": {
+        "relativePath": "src/appearance/assets/animation.svg",
+        "sha256": "6fffb2aabe5f33a8e6520bb43982309f4534659e59af4ed2b3408191a9e5ed1e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/backpack.svg",
+      "bytes": 3252,
+      "sha256": "10d097263c625abfc67ad8130cddd5cc7c97764c69b2073aa1936bf1b0f58117",
+      "source": {
+        "relativePath": "src/appearance/assets/backpack.svg",
+        "sha256": "10d097263c625abfc67ad8130cddd5cc7c97764c69b2073aa1936bf1b0f58117",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/belt.svg",
+      "bytes": 11818,
+      "sha256": "302be3de44528fffa9de8a400517e0c46d449fb4d418d2d72b0e38f86e596f92",
+      "source": {
+        "relativePath": "src/appearance/assets/belt.svg",
+        "sha256": "302be3de44528fffa9de8a400517e0c46d449fb4d418d2d72b0e38f86e596f92",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/cap.svg",
+      "bytes": 5628,
+      "sha256": "5a1cdb86bb7c30339e52e255c6f89dadff93421ff91e1632468992fc6f12b9b8",
+      "source": {
+        "relativePath": "src/appearance/assets/cap.svg",
+        "sha256": "5a1cdb86bb7c30339e52e255c6f89dadff93421ff91e1632468992fc6f12b9b8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/char.svg",
+      "bytes": 1365,
+      "sha256": "9c28d9277784609b94366d3de4baf35526df4eba26101cb1420988bdfa46ebdb",
+      "source": {
+        "relativePath": "src/appearance/assets/char.svg",
+        "sha256": "9c28d9277784609b94366d3de4baf35526df4eba26101cb1420988bdfa46ebdb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/facedec.svg",
+      "bytes": 5061,
+      "sha256": "c528bf454751cf5ecda0eef2ce588d88b5e2494c022f16a83188078fc606e784",
+      "source": {
+        "relativePath": "src/appearance/assets/facedec.svg",
+        "sha256": "c528bf454751cf5ecda0eef2ce588d88b5e2494c022f16a83188078fc606e784",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/headwear.svg",
+      "bytes": 1958,
+      "sha256": "7f76c875a4e2e995aa4431bf8e82ee5c49949ce0b6186b214b3fa78a1f5de88a",
+      "source": {
+        "relativePath": "src/appearance/assets/headwear.svg",
+        "sha256": "7f76c875a4e2e995aa4431bf8e82ee5c49949ce0b6186b214b3fa78a1f5de88a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/meme.svg",
+      "bytes": 1424,
+      "sha256": "dbc3b77aac405c7cee604d9e5a314b06e3c6a9f77012b0addbb4e15dd14c9ec0",
+      "source": {
+        "relativePath": "src/appearance/assets/meme.svg",
+        "sha256": "dbc3b77aac405c7cee604d9e5a314b06e3c6a9f77012b0addbb4e15dd14c9ec0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/pants.svg",
+      "bytes": 1035,
+      "sha256": "45217060fe7fbb748c317c5af869f8678eafb88a9e1f131e6540631751fa5f03",
+      "source": {
+        "relativePath": "src/appearance/assets/pants.svg",
+        "sha256": "45217060fe7fbb748c317c5af869f8678eafb88a9e1f131e6540631751fa5f03",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/setoff.svg",
+      "bytes": 1905,
+      "sha256": "35531271fbc790887d093c3912c10402b1554e9eefaf06cb1b76e27fb77e6ccf",
+      "source": {
+        "relativePath": "src/appearance/assets/setoff.svg",
+        "sha256": "35531271fbc790887d093c3912c10402b1554e9eefaf06cb1b76e27fb77e6ccf",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/shirt.svg",
+      "bytes": 902,
+      "sha256": "32efe2f55e3a89afad9ad39775c5d137f57a75c2a49c76fccf5d9be7712724a9",
+      "source": {
+        "relativePath": "src/appearance/assets/shirt.svg",
+        "sha256": "32efe2f55e3a89afad9ad39775c5d137f57a75c2a49c76fccf5d9be7712724a9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/Toy.svg",
+      "bytes": 2249,
+      "sha256": "0350f56346a4cf8ad2686ede47c0eea62843e9ece705ce9967f725c9c0370bff",
+      "source": {
+        "relativePath": "src/appearance/assets/Toy.svg",
+        "sha256": "0350f56346a4cf8ad2686ede47c0eea62843e9ece705ce9967f725c9c0370bff",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/assets/transport.svg",
+      "bytes": 1833,
+      "sha256": "fac351d8f6d08bbedfe549e1f73b2237b14739c323badd57be2b5e28596cf5be",
+      "source": {
+        "relativePath": "src/appearance/assets/transport.svg",
+        "sha256": "fac351d8f6d08bbedfe549e1f73b2237b14739c323badd57be2b5e28596cf5be",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/avatar-page.css",
+      "bytes": 5493,
+      "sha256": "c8a04e8c2fa4808332c89205e6f9319024a75a71e7998baf4253fcf7c1822344",
+      "source": {
+        "relativePath": "src/appearance/avatar-page.css",
+        "sha256": "c8a04e8c2fa4808332c89205e6f9319024a75a71e7998baf4253fcf7c1822344",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/avatar-page.js",
+      "bytes": 4436,
+      "sha256": "08593e17b0bd462adcaa4c77b386e7143dfca739e5eb3cb1357b6d49664b61d6",
+      "source": {
+        "relativePath": "src/appearance/avatar-page.js",
+        "sha256": "08593e17b0bd462adcaa4c77b386e7143dfca739e5eb3cb1357b6d49664b61d6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/controls.js",
+      "bytes": 6508,
+      "sha256": "d5668e952057d480b2566e0ab40e1022370b56df714dbbd7ac588e54498e5cec",
+      "source": {
+        "relativePath": "src/appearance/controls.js",
+        "sha256": "d5668e952057d480b2566e0ab40e1022370b56df714dbbd7ac588e54498e5cec",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/default-actor.js",
+      "bytes": 702,
+      "sha256": "9fb49a9d1a9026e74fab93515ab7b50d97de854b4e29c97cadc0c557d9c4db35",
+      "source": {
+        "relativePath": "src/appearance/default-actor.js",
+        "sha256": "9fb49a9d1a9026e74fab93515ab7b50d97de854b4e29c97cadc0c557d9c4db35",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/demo-style.css",
+      "bytes": 57110,
+      "sha256": "d5050c4925949a62ecc1ee800efaebd23763873e2c5b2199abf024062b55638d",
+      "source": {
+        "relativePath": "src/appearance/demo-style.css",
+        "sha256": "d5050c4925949a62ecc1ee800efaebd23763873e2c5b2199abf024062b55638d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/demo-template.js",
+      "bytes": 38942,
+      "sha256": "e1ea8d3762b3775b12d2cf2980f744a2d28cdaf8b60596f4e3a9d14fce3d45bd",
+      "source": {
+        "relativePath": "src/appearance/demo-template.js",
+        "sha256": "e1ea8d3762b3775b12d2cf2980f744a2d28cdaf8b60596f4e3a9d14fce3d45bd",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/demo.js",
+      "bytes": 26071,
+      "sha256": "aad28795d251aac8d4876241b9a0ceb0f419cc53a999deb4b0c3619d27937495",
+      "source": {
+        "relativePath": "src/appearance/demo.js",
+        "sha256": "aad28795d251aac8d4876241b9a0ceb0f419cc53a999deb4b0c3619d27937495",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/dongdong-slots.js",
+      "bytes": 3886,
+      "sha256": "c4fb9247201617b8ab3b7c6ca10a10b8a91a011f5453aaf8819746309214ad50",
+      "source": {
+        "relativePath": "src/appearance/dongdong-slots.js",
+        "sha256": "b977d67819727215491d063af1a58af8f8c23b2d87a9191911a49a20369b8ee4",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/appearance/fragment-thumbnails.js",
+      "bytes": 3576,
+      "sha256": "4f6a21d10974abe550e10d718e5b2f9f07ea434d68f243895e2661eb46e01c41",
+      "source": {
+        "relativePath": "src/appearance/fragment-thumbnails.js",
+        "sha256": "4f6a21d10974abe550e10d718e5b2f9f07ea434d68f243895e2661eb46e01c41",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/fragment-wardrobe.js",
+      "bytes": 4722,
+      "sha256": "4c4182dc7d545d5cfddae8640ec5994569172eab042606f79e3085f130a87c8b",
+      "source": {
+        "relativePath": "src/appearance/fragment-wardrobe.js",
+        "sha256": "4c4182dc7d545d5cfddae8640ec5994569172eab042606f79e3085f130a87c8b",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/local-scenes.js",
+      "bytes": 937,
+      "sha256": "870213e17444b70330fbeed0d8cea1c2ee1de395027562baacbca30aeb055b6c",
+      "source": {
+        "relativePath": "src/appearance/local-scenes.js",
+        "sha256": "870213e17444b70330fbeed0d8cea1c2ee1de395027562baacbca30aeb055b6c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/look-cards.js",
+      "bytes": 2570,
+      "sha256": "1337aac96147c812c0fb26cb0d4edec5cbc547e608eacf24812aa61ea5718bbb",
+      "source": {
+        "relativePath": "src/appearance/look-cards.js",
+        "sha256": "1337aac96147c812c0fb26cb0d4edec5cbc547e608eacf24812aa61ea5718bbb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/main.js",
+      "bytes": 42843,
+      "sha256": "9c2f5a0b1588933fbd4b64216faf509ed4740ba5ae0dc350891e605e15a76b61",
+      "source": {
+        "relativePath": "src/appearance/main.js",
+        "sha256": "b87e3f3a1e977138e7414b13474a8d58e4b2c7df653f33d13140f426847517e3",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/appearance/mirror-ground.js",
+      "bytes": 1630,
+      "sha256": "8144832f0639b5734dfd23775be754a64b360093f0372413abad2dc744bc708a",
+      "source": {
+        "relativePath": "src/appearance/mirror-ground.js",
+        "sha256": "8144832f0639b5734dfd23775be754a64b360093f0372413abad2dc744bc708a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/model-role.js",
+      "bytes": 446,
+      "sha256": "414420547be0260b1a560347008103baf79bfcd2d36e6efbd9800f18cadd56a5",
+      "source": {
+        "relativePath": "src/appearance/model-role.js",
+        "sha256": "414420547be0260b1a560347008103baf79bfcd2d36e6efbd9800f18cadd56a5",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/resource-voices.js",
+      "bytes": 6053,
+      "sha256": "78644332b138379afc60d6f37e923941a8a8392637ffa23b3539c1cb406e3831",
+      "source": {
+        "relativePath": "src/appearance/resource-voices.js",
+        "sha256": "cbb30a21ec07250d3174e143af1db6e151029b37c8805a40513e341104fe3832",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/appearance/runtime/social-runtime.js",
+      "bytes": 23704,
+      "sha256": "335fa54fa69eac8b58c69d6ad9c5950a64499cb3282b03a7eccee0bfdb235058",
+      "source": {
+        "relativePath": "src/appearance/runtime/social-runtime.js",
+        "sha256": "335fa54fa69eac8b58c69d6ad9c5950a64499cb3282b03a7eccee0bfdb235058",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/scenes.js",
+      "bytes": 14285,
+      "sha256": "a4e48676a30f85a83f7c5dd4210319366bfad7197117113524086655456e2d6e",
+      "source": {
+        "relativePath": "src/appearance/scenes.js",
+        "sha256": "a4e48676a30f85a83f7c5dd4210319366bfad7197117113524086655456e2d6e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/session-viewer.js",
+      "bytes": 4703,
+      "sha256": "4cf5690e18ac52e4f57a6212e30816872bb271a10cf40d797a0f1753d323714a",
+      "source": {
+        "relativePath": "src/appearance/session-viewer.js",
+        "sha256": "4cf5690e18ac52e4f57a6212e30816872bb271a10cf40d797a0f1753d323714a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/social-adapter.js",
+      "bytes": 29419,
+      "sha256": "69dbfd8cb45f6ce525ee5a9486606900fa9c6eae53746805763d53e76e9b7dd5",
+      "source": {
+        "relativePath": "src/appearance/social-adapter.js",
+        "sha256": "bccd0f4ed85ed897fa82d70456730888cfd3a60df55448a056890ce25fbe7e1b",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/appearance/style.css",
+      "bytes": 20050,
+      "sha256": "18e48a371ed0109a91b6c5bdf46db45828e4f9af819e43de3b0f0a0563cf74f9",
+      "source": {
+        "relativePath": "src/appearance/style.css",
+        "sha256": "18e48a371ed0109a91b6c5bdf46db45828e4f9af819e43de3b0f0a0563cf74f9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/thumbnail-fit.js",
+      "bytes": 1495,
+      "sha256": "4c6422925c8cf221101718f151ddbc96fdb61385bc7d1318fb170c29812fb5e2",
+      "source": {
+        "relativePath": "src/appearance/thumbnail-fit.js",
+        "sha256": "4c6422925c8cf221101718f151ddbc96fdb61385bc7d1318fb170c29812fb5e2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/appearance/vehicle-parts.js",
+      "bytes": 3148,
+      "sha256": "3e92785b6316cd8f932a921a4f18649fb1cbff53318ffb9206b73b0616a01e9c",
+      "source": {
+        "relativePath": "src/appearance/vehicle-parts.js",
+        "sha256": "9690fcb1ff4f510a9cf98d790319012275d7f3c76f5a8cfc7a04ab1f700b351c",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/appearance/wardrobe.js",
+      "bytes": 9651,
+      "sha256": "117b96bb01d78f584f21a30f925ee84a9f11afa712db65a6fdf517d38b6e530f",
+      "source": {
+        "relativePath": "src/appearance/wardrobe.js",
+        "sha256": "fa91b4ebc1cda79489c08df0541cf547292792f17d73d22a46ce28254de69667",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/back-glass-material.js",
+      "bytes": 4389,
+      "sha256": "fa0e591ea67b8681e436e6dd609ea87a717d8e29f9b12b7cf237a004eb8c222d",
+      "source": {
+        "relativePath": "src/back-glass-material.js",
+        "sha256": "fa0e591ea67b8681e436e6dd609ea87a717d8e29f9b12b7cf237a004eb8c222d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/bath-bubble-material.js",
+      "bytes": 4018,
+      "sha256": "292cb4c60b15107c3847c8bdd5b51ab812013bbbf1b166c3510d76f64d31c4c8",
+      "source": {
+        "relativePath": "src/bath-bubble-material.js",
+        "sha256": "292cb4c60b15107c3847c8bdd5b51ab812013bbbf1b166c3510d76f64d31c4c8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/bath-water-material.js",
+      "bytes": 6032,
+      "sha256": "78ab30a49c67cf1a0bda072ca49dd5d3ca5a4c74c30cfe551aa4c7b2b8a9c0cc",
+      "source": {
+        "relativePath": "src/bath-water-material.js",
+        "sha256": "78ab30a49c67cf1a0bda072ca49dd5d3ca5a4c74c30cfe551aa4c7b2b8a9c0cc",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/blend2mc-material.js",
+      "bytes": 4822,
+      "sha256": "ed198c15655236276690be8eb7c53d2b23287adc5a4904ea609df26dace8f0ed",
+      "source": {
+        "relativePath": "src/blend2mc-material.js",
+        "sha256": "ed198c15655236276690be8eb7c53d2b23287adc5a4904ea609df26dace8f0ed",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/boomsugar-material.js",
+      "bytes": 5244,
+      "sha256": "517e1042e21f70925badb40c7b064f2aceb2260461b0ffbb2c5956157d0b83f6",
+      "source": {
+        "relativePath": "src/boomsugar-material.js",
+        "sha256": "517e1042e21f70925badb40c7b064f2aceb2260461b0ffbb2c5956157d0b83f6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/breath-material.js",
+      "bytes": 4759,
+      "sha256": "1488ff3179fd51904a7aa037fbeaad606f0f1d34eb9785d597a02936f9c05924",
+      "source": {
+        "relativePath": "src/breath-material.js",
+        "sha256": "67e4e682bd3ad21bd37adc0865fd515e89ec97e1dde05e3239710e0d015c13a2",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/bsqs-material.js",
+      "bytes": 5800,
+      "sha256": "c5c11b0b7e070fe00dcb8ba9fca09da67dc81784e7829af6722e04bed1bc4e12",
+      "source": {
+        "relativePath": "src/bsqs-material.js",
+        "sha256": "c5c11b0b7e070fe00dcb8ba9fca09da67dc81784e7829af6722e04bed1bc4e12",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/car-material.js",
+      "bytes": 3240,
+      "sha256": "f5aa57961116cbcfc96e4d0dd5d1f2fb16e26ec224c0688fb8917be87f1e8da8",
+      "source": {
+        "relativePath": "src/car-material.js",
+        "sha256": "f5aa57961116cbcfc96e4d0dd5d1f2fb16e26ec224c0688fb8917be87f1e8da8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/car-paint-material.js",
+      "bytes": 7294,
+      "sha256": "d5389ffcab4332d182185e59c33ee7e53c35bfc5bc94ef245231f433fbb7fc22",
+      "source": {
+        "relativePath": "src/car-paint-material.js",
+        "sha256": "d5389ffcab4332d182185e59c33ee7e53c35bfc5bc94ef245231f433fbb7fc22",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/carbody-material.js",
+      "bytes": 4049,
+      "sha256": "f7bda8be63e9c6d862dcabf34ba3e17778eeb3354ad6810a9d27c6628ae4cd3f",
+      "source": {
+        "relativePath": "src/carbody-material.js",
+        "sha256": "f7bda8be63e9c6d862dcabf34ba3e17778eeb3354ad6810a9d27c6628ae4cd3f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/cartoon-material.js",
+      "bytes": 2075,
+      "sha256": "bc5e67db3207e0ed6d86ddbab5d898f1c0afed2225079296f193baea19c2c6b4",
+      "source": {
+        "relativePath": "src/cartoon-material.js",
+        "sha256": "bc5e67db3207e0ed6d86ddbab5d898f1c0afed2225079296f193baea19c2c6b4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/catwoman-material.js",
+      "bytes": 7386,
+      "sha256": "11aff44b7d952736435a0fd8a7fea477ca2146ea89a5d29fedffd7c4b393854e",
+      "source": {
+        "relativePath": "src/catwoman-material.js",
+        "sha256": "11aff44b7d952736435a0fd8a7fea477ca2146ea89a5d29fedffd7c4b393854e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/change-color-laser-material.js",
+      "bytes": 4178,
+      "sha256": "b8f4637d62bcc4ed6aa4dc4df24044b56b76b255e2d7fc01d1e6ee93987e5bed",
+      "source": {
+        "relativePath": "src/change-color-laser-material.js",
+        "sha256": "b8f4637d62bcc4ed6aa4dc4df24044b56b76b255e2d7fc01d1e6ee93987e5bed",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/change-color-mix-material.js",
+      "bytes": 5917,
+      "sha256": "14bd19292231f552df31e9a5702b08d99f2f7e0d14fe4052a9f6a25da3f434a0",
+      "source": {
+        "relativePath": "src/change-color-mix-material.js",
+        "sha256": "14bd19292231f552df31e9a5702b08d99f2f7e0d14fe4052a9f6a25da3f434a0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/change-color-object-vtxoffset-material.js",
+      "bytes": 2730,
+      "sha256": "6faf360a517ef07cd00ee312272a9f681818de9922746554a6baefacb01ebedc",
+      "source": {
+        "relativePath": "src/change-color-object-vtxoffset-material.js",
+        "sha256": "6faf360a517ef07cd00ee312272a9f681818de9922746554a6baefacb01ebedc",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-aniso-sparkle-material.js",
+      "bytes": 5105,
+      "sha256": "08b5025a160ac3233f94bc938e7119585245ab50767e4d4898f87c7a8936f7f4",
+      "source": {
+        "relativePath": "src/char-aniso-sparkle-material.js",
+        "sha256": "08b5025a160ac3233f94bc938e7119585245ab50767e4d4898f87c7a8936f7f4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-cloud-material.js",
+      "bytes": 5007,
+      "sha256": "b9124ad3d1289bdd18dd69ffeefcff3bb23c6915ae321759867dd50eeb3a2a4e",
+      "source": {
+        "relativePath": "src/char-cloud-material.js",
+        "sha256": "b9124ad3d1289bdd18dd69ffeefcff3bb23c6915ae321759867dd50eeb3a2a4e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-diamond-material.js",
+      "bytes": 5935,
+      "sha256": "bb7fd0f6f8cf60ec90018b67249b9c22690d2c08a624e004e9f03e5f72b328e6",
+      "source": {
+        "relativePath": "src/char-diamond-material.js",
+        "sha256": "bb7fd0f6f8cf60ec90018b67249b9c22690d2c08a624e004e9f03e5f72b328e6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-glitch-material.js",
+      "bytes": 1770,
+      "sha256": "7ff0ec17b18ddfd184cf0e081aa588ebff4e4eeeb0205233b05302d87a3b1fd5",
+      "source": {
+        "relativePath": "src/char-glitch-material.js",
+        "sha256": "7ff0ec17b18ddfd184cf0e081aa588ebff4e4eeeb0205233b05302d87a3b1fd5",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-ice-material.js",
+      "bytes": 4891,
+      "sha256": "55afe13ab5c4006634b5580badbd46b2d3134705c57cd5433f303d622d684dea",
+      "source": {
+        "relativePath": "src/char-ice-material.js",
+        "sha256": "55afe13ab5c4006634b5580badbd46b2d3134705c57cd5433f303d622d684dea",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-laser-material.js",
+      "bytes": 2334,
+      "sha256": "3484402ecbc9eb046eeba4d076dbf2d9db5a517d0c7b209a269fd3ce6290c246",
+      "source": {
+        "relativePath": "src/char-laser-material.js",
+        "sha256": "3484402ecbc9eb046eeba4d076dbf2d9db5a517d0c7b209a269fd3ce6290c246",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-laser-source-material.js",
+      "bytes": 2998,
+      "sha256": "864abcaf7260b473444c3992f7485bdaf996e53781e1658a07d09a6779452cbf",
+      "source": {
+        "relativePath": "src/char-laser-source-material.js",
+        "sha256": "864abcaf7260b473444c3992f7485bdaf996e53781e1658a07d09a6779452cbf",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-local-effects-material.js",
+      "bytes": 7367,
+      "sha256": "e2877dbf0872de1344279637e92733c6988b7cfe0da1836974c94b9af22c98d0",
+      "source": {
+        "relativePath": "src/char-local-effects-material.js",
+        "sha256": "e2877dbf0872de1344279637e92733c6988b7cfe0da1836974c94b9af22c98d0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-nos-material.js",
+      "bytes": 4672,
+      "sha256": "740c62b83eaf5ffb092f3ace1cdb51033978ad94cd2c2900004d4e297ca6c9f3",
+      "source": {
+        "relativePath": "src/char-nos-material.js",
+        "sha256": "740c62b83eaf5ffb092f3ace1cdb51033978ad94cd2c2900004d4e297ca6c9f3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-outline-material.js",
+      "bytes": 4667,
+      "sha256": "9e3a6b7a9cdd32448dc11585d13c228f7850a41cb66d9e174d248efb13a767df",
+      "source": {
+        "relativePath": "src/char-outline-material.js",
+        "sha256": "9e3a6b7a9cdd32448dc11585d13c228f7850a41cb66d9e174d248efb13a767df",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/char-test-material.js",
+      "bytes": 4821,
+      "sha256": "982e9db17851c10fa46d4660b72f6ffde14dfbe19f4f10a60d55a5fbf436aa10",
+      "source": {
+        "relativePath": "src/char-test-material.js",
+        "sha256": "982e9db17851c10fa46d4660b72f6ffde14dfbe19f4f10a60d55a5fbf436aa10",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/ciyuanzhan-material.js",
+      "bytes": 3983,
+      "sha256": "4862197309ede807667fe5d539e8795e17fdc66e4e7ba797155ff88448355039",
+      "source": {
+        "relativePath": "src/ciyuanzhan-material.js",
+        "sha256": "4862197309ede807667fe5d539e8795e17fdc66e4e7ba797155ff88448355039",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/color-variants-material.js",
+      "bytes": 9247,
+      "sha256": "64400777ec796ac69acf20d64ffe97feba54e5622d105fad74a0135bd20f0bda",
+      "source": {
+        "relativePath": "src/color-variants-material.js",
+        "sha256": "64400777ec796ac69acf20d64ffe97feba54e5622d105fad74a0135bd20f0bda",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/common-ice-material.js",
+      "bytes": 5205,
+      "sha256": "5dc1369f66f47896f2bdc06c12f7d73d66d8a7324bf7255b9f38e5d465d32d14",
+      "source": {
+        "relativePath": "src/common-ice-material.js",
+        "sha256": "5dc1369f66f47896f2bdc06c12f7d73d66d8a7324bf7255b9f38e5d465d32d14",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/common-yp-material.js",
+      "bytes": 5912,
+      "sha256": "8b48ea598404f87b43456fc1b5fb7d29d62b983e7bcab7f26636e4bb597cb6a0",
+      "source": {
+        "relativePath": "src/common-yp-material.js",
+        "sha256": "8b48ea598404f87b43456fc1b5fb7d29d62b983e7bcab7f26636e4bb597cb6a0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/compound-shell-material.js",
+      "bytes": 1984,
+      "sha256": "80395eee1000102e68d1b76269807dbfe4852cb930027bba789de2f5dd7a7e41",
+      "source": {
+        "relativePath": "src/compound-shell-material.js",
+        "sha256": "80395eee1000102e68d1b76269807dbfe4852cb930027bba789de2f5dd7a7e41",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/crayon-material.js",
+      "bytes": 3698,
+      "sha256": "f17415f310165197ffa3d5e0bdd4fd9581ac78381669587e01171dc52470aa50",
+      "source": {
+        "relativePath": "src/crayon-material.js",
+        "sha256": "f17415f310165197ffa3d5e0bdd4fd9581ac78381669587e01171dc52470aa50",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/crystal-material.js",
+      "bytes": 3258,
+      "sha256": "859e2456cc63899ac6cbe66b0219ab7f3ff8f08be80bf7b6cb93fc2d67a3827a",
+      "source": {
+        "relativePath": "src/crystal-material.js",
+        "sha256": "859e2456cc63899ac6cbe66b0219ab7f3ff8f08be80bf7b6cb93fc2d67a3827a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/crystal2-material.js",
+      "bytes": 5527,
+      "sha256": "9a08f73fb45a4738773e29b2ea7ca01f53d33c4dcaf1c2667f091cce25bccc8f",
+      "source": {
+        "relativePath": "src/crystal2-material.js",
+        "sha256": "9a08f73fb45a4738773e29b2ea7ca01f53d33c4dcaf1c2667f091cce25bccc8f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/cube-texture.js",
+      "bytes": 2745,
+      "sha256": "6a197ea18ca78868601f568ce60f67d257d108915f490c33df0a720156861c5f",
+      "source": {
+        "relativePath": "src/cube-texture.js",
+        "sha256": "4e66e5b598b0d5d31c844e06f88fbe86a3dcdf1886ec300e856a247678390671",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/cyber-eyes-material.js",
+      "bytes": 2025,
+      "sha256": "4fb28ee1e946804b573fbd2cafe29ee5b31e3a0842f9b6084d4c60dea8caccfc",
+      "source": {
+        "relativePath": "src/cyber-eyes-material.js",
+        "sha256": "4fb28ee1e946804b573fbd2cafe29ee5b31e3a0842f9b6084d4c60dea8caccfc",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/depthoffset-ln-material.js",
+      "bytes": 7251,
+      "sha256": "61066665ab71291347aedc9dea585e1f56dc9a37eeea32675a30d3e7924cf48f",
+      "source": {
+        "relativePath": "src/depthoffset-ln-material.js",
+        "sha256": "61066665ab71291347aedc9dea585e1f56dc9a37eeea32675a30d3e7924cf48f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/depthoffset-material.js",
+      "bytes": 7868,
+      "sha256": "694d9ffe9517c295862f747018adef685dde54ebbb6fed4c5e6dcde1f1682d04",
+      "source": {
+        "relativePath": "src/depthoffset-material.js",
+        "sha256": "694d9ffe9517c295862f747018adef685dde54ebbb6fed4c5e6dcde1f1682d04",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/detail-lighting.js",
+      "bytes": 7107,
+      "sha256": "17d5a0f1f2a628a7afb0111ed175b38abde89b6d0432f8b481e64c613ac00a7b",
+      "source": {
+        "relativePath": "src/detail-lighting.js",
+        "sha256": "17d5a0f1f2a628a7afb0111ed175b38abde89b6d0432f8b481e64c613ac00a7b",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/diamond-metal-material.js",
+      "bytes": 6047,
+      "sha256": "53479f2b647f5fd0d87b445223882447e0358bec7fa43ea36ad601f17627d03e",
+      "source": {
+        "relativePath": "src/diamond-metal-material.js",
+        "sha256": "53479f2b647f5fd0d87b445223882447e0358bec7fa43ea36ad601f17627d03e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/djhdj-material.js",
+      "bytes": 2656,
+      "sha256": "dc61961062fb49ab7d6928759f78c7bf232351fd579c2e1e6fcb06d76e275a6a",
+      "source": {
+        "relativePath": "src/djhdj-material.js",
+        "sha256": "dc61961062fb49ab7d6928759f78c7bf232351fd579c2e1e6fcb06d76e275a6a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/djhdj02-material.js",
+      "bytes": 4223,
+      "sha256": "8622ff227db6f63e6b2137c39bc5251c1f048c3152b9317d6fdb6db267c170e5",
+      "source": {
+        "relativePath": "src/djhdj02-material.js",
+        "sha256": "8622ff227db6f63e6b2137c39bc5251c1f048c3152b9317d6fdb6db267c170e5",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/djlw-hair-material.js",
+      "bytes": 6409,
+      "sha256": "358f20b893aea475f59bb3bbf7181a7a7e216bb63ddff6cc084441257c95451b",
+      "source": {
+        "relativePath": "src/djlw-hair-material.js",
+        "sha256": "358f20b893aea475f59bb3bbf7181a7a7e216bb63ddff6cc084441257c95451b",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/dongdong-fur-color.js",
+      "bytes": 4849,
+      "sha256": "79c99071bd3f1ec3f6f1f5537c0894862ab5477594d1d493450f88fb7bd0b889",
+      "source": {
+        "relativePath": "src/dongdong-fur-color.js",
+        "sha256": "79c99071bd3f1ec3f6f1f5537c0894862ab5477594d1d493450f88fb7bd0b889",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/dwg-head-material.js",
+      "bytes": 3975,
+      "sha256": "83b577fd2e0cb21a517ed82fa1af2d18c0fd5a5a92969e1a02bdfaaa7706d785",
+      "source": {
+        "relativePath": "src/dwg-head-material.js",
+        "sha256": "83b577fd2e0cb21a517ed82fa1af2d18c0fd5a5a92969e1a02bdfaaa7706d785",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/dynlight-material.js",
+      "bytes": 6902,
+      "sha256": "e9d4a970263634747104a235a91dc64766563d2947c79430c8bf1f48b7f8d33f",
+      "source": {
+        "relativePath": "src/dynlight-material.js",
+        "sha256": "e9d4a970263634747104a235a91dc64766563d2947c79430c8bf1f48b7f8d33f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/elec-music-material.js",
+      "bytes": 6526,
+      "sha256": "e7f130445cf8be62918fa9a74449b9e6bb576ee6d46b2d8d97ba8761165f0e36",
+      "source": {
+        "relativePath": "src/elec-music-material.js",
+        "sha256": "e7f130445cf8be62918fa9a74449b9e6bb576ee6d46b2d8d97ba8761165f0e36",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/erciyuan-material.js",
+      "bytes": 6912,
+      "sha256": "be5ae0473063616ac06cabf7ffc23093affb00eb0d6da29450b8e8c9f08c59d8",
+      "source": {
+        "relativePath": "src/erciyuan-material.js",
+        "sha256": "be5ae0473063616ac06cabf7ffc23093affb00eb0d6da29450b8e8c9f08c59d8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/face-animation.js",
+      "bytes": 1142,
+      "sha256": "dc09551c9ea2190d90eca75f7f9d87057948c712c29adfff50bc7f42c27f2782",
+      "source": {
+        "relativePath": "src/face-animation.js",
+        "sha256": "dc09551c9ea2190d90eca75f7f9d87057948c712c29adfff50bc7f42c27f2782",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/face-material.js",
+      "bytes": 1521,
+      "sha256": "7e846e2bb5ddbe5b71049a008239b6fe217cbe1c726a2b3d2245f4b310cf49e3",
+      "source": {
+        "relativePath": "src/face-material.js",
+        "sha256": "7e846e2bb5ddbe5b71049a008239b6fe217cbe1c726a2b3d2245f4b310cf49e3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/fashion-particle-effects.js",
+      "bytes": 12530,
+      "sha256": "1e052e4896a1e5c04f85446946c4a85275633575f9bc9b32a081507ba8e12da1",
+      "source": {
+        "relativePath": "src/fashion-particle-effects.js",
+        "sha256": "087e4d2a44af2c50e1dd0bde2ff3a2df507041bbc994407d97771f188142f6f8",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/female-skin-material.js",
+      "bytes": 4589,
+      "sha256": "f5839955f95bc850d50758e8e8458257abb13bdaf3dfab9ca28b176a7b999a2f",
+      "source": {
+        "relativePath": "src/female-skin-material.js",
+        "sha256": "f5839955f95bc850d50758e8e8458257abb13bdaf3dfab9ca28b176a7b999a2f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/fire-material.js",
+      "bytes": 4208,
+      "sha256": "94b761817ef3a7cc50ab48758217ba3ea41fc75faeb591cb9d7d16ea736106be",
+      "source": {
+        "relativePath": "src/fire-material.js",
+        "sha256": "94b761817ef3a7cc50ab48758217ba3ea41fc75faeb591cb9d7d16ea736106be",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/fire-wing-material.js",
+      "bytes": 5828,
+      "sha256": "92625c91ab524167845ab71c75d9b1fd10d27487ec7b4ac6c7542e77ea2ba337",
+      "source": {
+        "relativePath": "src/fire-wing-material.js",
+        "sha256": "92625c91ab524167845ab71c75d9b1fd10d27487ec7b4ac6c7542e77ea2ba337",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/fire2-material.js",
+      "bytes": 230,
+      "sha256": "b9d54c2527054955982f7b07cd02ae88c17ad4a0738614a00c048923856485bb",
+      "source": {
+        "relativePath": "src/fire2-material.js",
+        "sha256": "b9d54c2527054955982f7b07cd02ae88c17ad4a0738614a00c048923856485bb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/firenoise-material.js",
+      "bytes": 3221,
+      "sha256": "39a1ddd6cde5a37e51a8bd421f56ed2a651151e3fbe07ade9b7a76421789352f",
+      "source": {
+        "relativePath": "src/firenoise-material.js",
+        "sha256": "39a1ddd6cde5a37e51a8bd421f56ed2a651151e3fbe07ade9b7a76421789352f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/firework-text-material.js",
+      "bytes": 3751,
+      "sha256": "812985d02a0d793ba800cef2e6e19ab898a363761d08acfa70741ecee579a175",
+      "source": {
+        "relativePath": "src/firework-text-material.js",
+        "sha256": "812985d02a0d793ba800cef2e6e19ab898a363761d08acfa70741ecee579a175",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/flowmap-material.js",
+      "bytes": 4963,
+      "sha256": "403a98d2b6f637cd3508c8732a0548db76a46ba3eafc9f5da44ebc428a63b7fe",
+      "source": {
+        "relativePath": "src/flowmap-material.js",
+        "sha256": "403a98d2b6f637cd3508c8732a0548db76a46ba3eafc9f5da44ebc428a63b7fe",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/flowsand-material.js",
+      "bytes": 8039,
+      "sha256": "980530dfc341ddc4423021c9556d0a6eeac1068fee86e94f32ca5237e0569d26",
+      "source": {
+        "relativePath": "src/flowsand-material.js",
+        "sha256": "980530dfc341ddc4423021c9556d0a6eeac1068fee86e94f32ca5237e0569d26",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/fried-chicken-material.js",
+      "bytes": 6840,
+      "sha256": "864801e635030345629928a16cf6671360e4ae1f7287f88f8c386bcecbeb0c65",
+      "source": {
+        "relativePath": "src/fried-chicken-material.js",
+        "sha256": "864801e635030345629928a16cf6671360e4ae1f7287f88f8c386bcecbeb0c65",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/fur-material.js",
+      "bytes": 2599,
+      "sha256": "53a82f79d69eba6ece479a818fbcd2b523bc7da9abd55487d22ddf559a831de0",
+      "source": {
+        "relativePath": "src/fur-material.js",
+        "sha256": "53a82f79d69eba6ece479a818fbcd2b523bc7da9abd55487d22ddf559a831de0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/glass-material.js",
+      "bytes": 4673,
+      "sha256": "cfa0daff4add83483dcda801c1674241c2cba9f441b2a98d70f0c333ddd7ce51",
+      "source": {
+        "relativePath": "src/glass-material.js",
+        "sha256": "cfa0daff4add83483dcda801c1674241c2cba9f441b2a98d70f0c333ddd7ce51",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/goldfish-material.js",
+      "bytes": 8813,
+      "sha256": "073ba5f9607c9a34f679f830b982583076430aa5ce5bbda6cced76eec157e8e0",
+      "source": {
+        "relativePath": "src/goldfish-material.js",
+        "sha256": "073ba5f9607c9a34f679f830b982583076430aa5ce5bbda6cced76eec157e8e0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/hair-material.js",
+      "bytes": 6038,
+      "sha256": "309683fcc39062f7c36957530d3c0616e282383b48124321d0debe95cf398ec8",
+      "source": {
+        "relativePath": "src/hair-material.js",
+        "sha256": "309683fcc39062f7c36957530d3c0616e282383b48124321d0debe95cf398ec8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/handoff/asset-loaders.js",
+      "bytes": 1610,
+      "sha256": "3179bfbf7d2acd3a0d7376a9cb20f8c98e1cd5e14147a8ba3cec7e57b90a4567",
+      "source": null
+    },
+    {
+      "path": "src/handoff/bootstrap.js",
+      "bytes": 464,
+      "sha256": "6131ff320ad32042c888d5df37d6b7af499f0a415df8383a95508f80079099ea",
+      "source": null
+    },
+    {
+      "path": "src/handoff/demo-catalog.js",
+      "bytes": 2665,
+      "sha256": "c997a828e16457638e6866fddda0d016936782a0b01bbb65dabec948e6bc172f",
+      "source": null
+    },
+    {
+      "path": "src/handoff/runtime-contracts.js",
+      "bytes": 925,
+      "sha256": "ec0024fcbd318c55c0ea7a03ade9d1bcfba2c121089118a619a0a498bdfdb8bf",
+      "source": null
+    },
+    {
+      "path": "src/handoff/services.js",
+      "bytes": 4178,
+      "sha256": "4d2959e9a86817deff7fd4a70ac83e0c4922b630ca6fefc142590d7cb6947eba",
+      "source": null
+    },
+    {
+      "path": "src/hdcb-crystal-material.js",
+      "bytes": 7991,
+      "sha256": "c47caa4a9d42baacabd7af5c7c32da0a58fdc5cb199fbd368edccecc385bf4dd",
+      "source": {
+        "relativePath": "src/hdcb-crystal-material.js",
+        "sha256": "c47caa4a9d42baacabd7af5c7c32da0a58fdc5cb199fbd368edccecc385bf4dd",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/hdcb-family-material.js",
+      "bytes": 7924,
+      "sha256": "4906ddd47b12078a48e8bb9e00f7fb7b048075129bb42c0c4714b666053d88f2",
+      "source": {
+        "relativePath": "src/hdcb-family-material.js",
+        "sha256": "4906ddd47b12078a48e8bb9e00f7fb7b048075129bb42c0c4714b666053d88f2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/headwear-model-effects.js",
+      "bytes": 4009,
+      "sha256": "4f9875400d4bbfa20316752479f8c47459f26d5db016cdd9ea0c39269fa0faca",
+      "source": {
+        "relativePath": "src/headwear-model-effects.js",
+        "sha256": "2632da71746d60afdd56ae96d3b0eb7bd0c78d0478f767ec122d6a1cf8fa7aab",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/headwear-particle-effects.js",
+      "bytes": 10738,
+      "sha256": "a2299a1eabc92ceed278e5735b976670d8ac88766f73eefca6d06fb0e47bae4f",
+      "source": {
+        "relativePath": "src/headwear-particle-effects.js",
+        "sha256": "786e7197edf4b509aab40bfc43e565cbe9a0c9ac7128063ca575a6cb9a6ec4ba",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/headwear-sprite-effects.js",
+      "bytes": 2400,
+      "sha256": "24db747f54165ecba1aec0653331e9d077baa72678786f4d9ebea3221a9b1615",
+      "source": {
+        "relativePath": "src/headwear-sprite-effects.js",
+        "sha256": "70dfd3aab83a869490271de5c62bddbf073dc3c016c4cfc6d3020850d300a078",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/helmet-material.js",
+      "bytes": 4239,
+      "sha256": "7ffe9a425ed41000fcb76d3b14e32a535cb93a0ad7aa3a4a86e2e6e2ce4ede9d",
+      "source": {
+        "relativePath": "src/helmet-material.js",
+        "sha256": "7ffe9a425ed41000fcb76d3b14e32a535cb93a0ad7aa3a4a86e2e6e2ce4ede9d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/hoof-sphere-particles.js",
+      "bytes": 7358,
+      "sha256": "ba0d37ccdfcee0efffd2308901aa2c9cfed19664a1038a27a97d067544ef7a9c",
+      "source": {
+        "relativePath": "src/hoof-sphere-particles.js",
+        "sha256": "ba0d37ccdfcee0efffd2308901aa2c9cfed19664a1038a27a97d067544ef7a9c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/hoof-trails.js",
+      "bytes": 3143,
+      "sha256": "f68f5670f093432e05b3167c3f65cb270a4e7af81e58f70ff3cdbbb11b23f8f3",
+      "source": {
+        "relativePath": "src/hoof-trails.js",
+        "sha256": "f68f5670f093432e05b3167c3f65cb270a4e7af81e58f70ff3cdbbb11b23f8f3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/horse-material.js",
+      "bytes": 6399,
+      "sha256": "1b565f5d423f199914c625bffc528c3244f09d90d2b6dc542def53b3bb1b8156",
+      "source": {
+        "relativePath": "src/horse-material.js",
+        "sha256": "1b565f5d423f199914c625bffc528c3244f09d90d2b6dc542def53b3bb1b8156",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/horse-wing-material.js",
+      "bytes": 3728,
+      "sha256": "79f90d4a75c57596a1d6e6acf20a48445798888ad9092768178629b70ac0717c",
+      "source": {
+        "relativePath": "src/horse-wing-material.js",
+        "sha256": "79f90d4a75c57596a1d6e6acf20a48445798888ad9092768178629b70ac0717c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/houyi-material.js",
+      "bytes": 5830,
+      "sha256": "182fce2b96c33d10fb74c17ebabc19c4c5bb54aef92aa0609085011bd8f43ad9",
+      "source": {
+        "relativePath": "src/houyi-material.js",
+        "sha256": "182fce2b96c33d10fb74c17ebabc19c4c5bb54aef92aa0609085011bd8f43ad9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/hw-material.js",
+      "bytes": 5495,
+      "sha256": "335c77b4df8dc6942f380c7060d6ac18778b9a5fa2d3ffc7cfb8f5634666b736",
+      "source": {
+        "relativePath": "src/hw-material.js",
+        "sha256": "335c77b4df8dc6942f380c7060d6ac18778b9a5fa2d3ffc7cfb8f5634666b736",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/icefloor-material.js",
+      "bytes": 5793,
+      "sha256": "17b680c58b9b079c428712e527e46e985dda777d0c366af97bf1690c0e5b398d",
+      "source": {
+        "relativePath": "src/icefloor-material.js",
+        "sha256": "17b680c58b9b079c428712e527e46e985dda777d0c366af97bf1690c0e5b398d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/ink-material.js",
+      "bytes": 8259,
+      "sha256": "10eed248b4c9fd39ec60af819d4984fc84d05f1fa165ef6eb9f789bf4a4ecc3a",
+      "source": {
+        "relativePath": "src/ink-material.js",
+        "sha256": "10eed248b4c9fd39ec60af819d4984fc84d05f1fa165ef6eb9f789bf4a4ecc3a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/iridescent-material.js",
+      "bytes": 3211,
+      "sha256": "4db3e21da83463bdde86499e9322824bda1704efe7f52a5b0eecef219758df28",
+      "source": {
+        "relativePath": "src/iridescent-material.js",
+        "sha256": "4db3e21da83463bdde86499e9322824bda1704efe7f52a5b0eecef219758df28",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jade-material.js",
+      "bytes": 5875,
+      "sha256": "6ba07423f5bc9eaaf3d03b8206f19d547e34ccf2ef98c27c6c64f990ab82f900",
+      "source": {
+        "relativePath": "src/jade-material.js",
+        "sha256": "6ba07423f5bc9eaaf3d03b8206f19d547e34ccf2ef98c27c6c64f990ab82f900",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jelly-char01-material.js",
+      "bytes": 3327,
+      "sha256": "f78c18d4e7a488fb95bfcafb0fe1965766cb449dd4c10894611fa353aea7ded0",
+      "source": {
+        "relativePath": "src/jelly-char01-material.js",
+        "sha256": "f78c18d4e7a488fb95bfcafb0fe1965766cb449dd4c10894611fa353aea7ded0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jelly-flakes-material.js",
+      "bytes": 5007,
+      "sha256": "f32351bd2725c5160278416589ec89e9f1b103a5b0a84f290bf137c8cbc6915c",
+      "source": {
+        "relativePath": "src/jelly-flakes-material.js",
+        "sha256": "f32351bd2725c5160278416589ec89e9f1b103a5b0a84f290bf137c8cbc6915c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jelly-material.js",
+      "bytes": 9716,
+      "sha256": "347f341e03d99014bfcee193bd113c03fefd6acce84fe0eb6cd3847b450bcdd8",
+      "source": {
+        "relativePath": "src/jelly-material.js",
+        "sha256": "347f341e03d99014bfcee193bd113c03fefd6acce84fe0eb6cd3847b450bcdd8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jelly-object-material.js",
+      "bytes": 3568,
+      "sha256": "2c2d6b0c650b28a2b17e8c8fe1bcb740b5a3f4375d906ac32505d263bdb8c4df",
+      "source": {
+        "relativePath": "src/jelly-object-material.js",
+        "sha256": "2c2d6b0c650b28a2b17e8c8fe1bcb740b5a3f4375d906ac32505d263bdb8c4df",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jgyj-common-material.js",
+      "bytes": 2907,
+      "sha256": "9168f963353e205468d17f8fc43b3bae091ba0a5013dff40f0aecbb832f9109f",
+      "source": {
+        "relativePath": "src/jgyj-common-material.js",
+        "sha256": "9168f963353e205468d17f8fc43b3bae091ba0a5013dff40f0aecbb832f9109f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/jgyj2-material.js",
+      "bytes": 6000,
+      "sha256": "c1a47dee9746f3c5f3dbebe349f22e30bbbb74236f58621ef6045f1e222943c3",
+      "source": {
+        "relativePath": "src/jgyj2-material.js",
+        "sha256": "c1a47dee9746f3c5f3dbebe349f22e30bbbb74236f58621ef6045f1e222943c3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/kqbs-material.js",
+      "bytes": 6741,
+      "sha256": "e9b15c14c1baffebec8532fc046bbd63d3763b44bddd64a4d9c025c990e3981f",
+      "source": {
+        "relativePath": "src/kqbs-material.js",
+        "sha256": "e9b15c14c1baffebec8532fc046bbd63d3763b44bddd64a4d9c025c990e3981f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/lantern-material.js",
+      "bytes": 4002,
+      "sha256": "f87c025279d1724aea3a24704480997915ad53db49957d2d852af34abec595c6",
+      "source": {
+        "relativePath": "src/lantern-material.js",
+        "sha256": "f87c025279d1724aea3a24704480997915ad53db49957d2d852af34abec595c6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/laser-material.js",
+      "bytes": 2483,
+      "sha256": "fe20b7feeb37edb26a4271e0e973950c8cb09f5ccf68899d90d0683330d6a3f4",
+      "source": {
+        "relativePath": "src/laser-material.js",
+        "sha256": "fe20b7feeb37edb26a4271e0e973950c8cb09f5ccf68899d90d0683330d6a3f4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/line-dog-material.js",
+      "bytes": 5988,
+      "sha256": "9018ce93acb4e77f36f69a7cb181845eb2921bc67568acb93d0f9c95a724ebad",
+      "source": {
+        "relativePath": "src/line-dog-material.js",
+        "sha256": "9018ce93acb4e77f36f69a7cb181845eb2921bc67568acb93d0f9c95a724ebad",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/line-dog-outline.js",
+      "bytes": 2790,
+      "sha256": "8bc901cfb32ecfaa42b818220a8167d200c2164dc327aec8033470d7bf3f2985",
+      "source": {
+        "relativePath": "src/line-dog-outline.js",
+        "sha256": "8bc901cfb32ecfaa42b818220a8167d200c2164dc327aec8033470d7bf3f2985",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/magic-card-material.js",
+      "bytes": 3537,
+      "sha256": "a49a02499b2d0abe6999bccffeb11e906efe667ba1ce522bed0d75880b8f250a",
+      "source": {
+        "relativePath": "src/magic-card-material.js",
+        "sha256": "a49a02499b2d0abe6999bccffeb11e906efe667ba1ce522bed0d75880b8f250a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/marble-material.js",
+      "bytes": 6789,
+      "sha256": "16c4aaf365a6bac84a65f7f6f1d0422ac79b461a41a0223311e9ee0db62fb16c",
+      "source": {
+        "relativePath": "src/marble-material.js",
+        "sha256": "16c4aaf365a6bac84a65f7f6f1d0422ac79b461a41a0223311e9ee0db62fb16c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/matcap-material.js",
+      "bytes": 5139,
+      "sha256": "dc4121d8ffbac814ab7d075375e46c05a4832479b8d9c446a6ea95bed1b38fb9",
+      "source": {
+        "relativePath": "src/matcap-material.js",
+        "sha256": "dc4121d8ffbac814ab7d075375e46c05a4832479b8d9c446a6ea95bed1b38fb9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/material-passes.js",
+      "bytes": 926,
+      "sha256": "fd13d0a8200c10ad6b32c2c78531d20b72a273f83f8bd9a16f2a5aa2dbaacccf",
+      "source": {
+        "relativePath": "src/material-passes.js",
+        "sha256": "fd13d0a8200c10ad6b32c2c78531d20b72a273f83f8bd9a16f2a5aa2dbaacccf",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/materials.js",
+      "bytes": 124457,
+      "sha256": "1bbb4d5b131a8c79ddc51d80ccf1d69ff851c6f49270bc36c66ec26be2efedf9",
+      "source": {
+        "relativePath": "src/materials.js",
+        "sha256": "7349d9d6813617e06d15960819a7f96f2da51aafaaca4970c93388e8a50254a6",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/mffxbb-material.js",
+      "bytes": 4241,
+      "sha256": "a5b4dad86b1248bd105f43fec5f896a7766c63684239b58ee571ff0dc45d2df6",
+      "source": {
+        "relativePath": "src/mffxbb-material.js",
+        "sha256": "a5b4dad86b1248bd105f43fec5f896a7766c63684239b58ee571ff0dc45d2df6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/mjclip-material.js",
+      "bytes": 3463,
+      "sha256": "ae4990a924fe546d48e8e0b5e5fdd116288595f4d50cf285e75bbb72992ed223",
+      "source": {
+        "relativePath": "src/mjclip-material.js",
+        "sha256": "ae4990a924fe546d48e8e0b5e5fdd116288595f4d50cf285e75bbb72992ed223",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/mkf-material.js",
+      "bytes": 2918,
+      "sha256": "37110afbfad0a68cf1cb560062278308b330977bf976752365f3d1de652044f1",
+      "source": {
+        "relativePath": "src/mkf-material.js",
+        "sha256": "37110afbfad0a68cf1cb560062278308b330977bf976752365f3d1de652044f1",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/moba-material.js",
+      "bytes": 2999,
+      "sha256": "cd038cce1a1a2e6b0893dbe224d9de2e5d8da47bbe96f54dd8312a418ab26ec8",
+      "source": {
+        "relativePath": "src/moba-material.js",
+        "sha256": "cd038cce1a1a2e6b0893dbe224d9de2e5d8da47bbe96f54dd8312a418ab26ec8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/model-sprite-effects.js",
+      "bytes": 3902,
+      "sha256": "21c78beecad64defd69001eb3fd6cae4477f379ce5de4061f807db976c83046d",
+      "source": {
+        "relativePath": "src/model-sprite-effects.js",
+        "sha256": "eb65f5bb703ab59b77f548b26ce0f815f032616a01320261f6681cdca0c753c5",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/model-textures.js",
+      "bytes": 713,
+      "sha256": "b69675c09977f952c43ff23052d418fde694780e54ede21d0573d9861d723f51",
+      "source": {
+        "relativePath": "src/model-textures.js",
+        "sha256": "b69675c09977f952c43ff23052d418fde694780e54ede21d0573d9861d723f51",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/mount-festival-material.js",
+      "bytes": 6489,
+      "sha256": "8fb07927ccfe44b8ba3db2284f0560e5f135a601f4cd32c24da4508956857935",
+      "source": {
+        "relativePath": "src/mount-festival-material.js",
+        "sha256": "8fb07927ccfe44b8ba3db2284f0560e5f135a601f4cd32c24da4508956857935",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/mounts-fish-material.js",
+      "bytes": 6194,
+      "sha256": "bb50d433a7972058785bbbc4344105dc7078d23960f003f9d145443f7b1a6b80",
+      "source": {
+        "relativePath": "src/mounts-fish-material.js",
+        "sha256": "bb50d433a7972058785bbbc4344105dc7078d23960f003f9d145443f7b1a6b80",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/mumaxuanzhuan-material.js",
+      "bytes": 3480,
+      "sha256": "b9fa48154a237e314ee13e876ad191ce37b102df6798f86c85ceacb1da177880",
+      "source": {
+        "relativePath": "src/mumaxuanzhuan-material.js",
+        "sha256": "b9fa48154a237e314ee13e876ad191ce37b102df6798f86c85ceacb1da177880",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/musicwing-material.js",
+      "bytes": 4495,
+      "sha256": "2cddcfbb5811589c083fe87a9f8dd9a25c20687d7f9e09bc0e1a5f9df62ddf6a",
+      "source": {
+        "relativePath": "src/musicwing-material.js",
+        "sha256": "2cddcfbb5811589c083fe87a9f8dd9a25c20687d7f9e09bc0e1a5f9df62ddf6a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/nfx-grass-material.js",
+      "bytes": 6744,
+      "sha256": "9bbd2fb82649edb2d6d840c740f9cd3c3bc07c6b0c9a92d84ed9fc3e8a4591cb",
+      "source": {
+        "relativePath": "src/nfx-grass-material.js",
+        "sha256": "b3abcc9bd1c1c045a435e1dfaf90d60347703a625cfd18819d9cb3e334b59f7c",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/ninecolor-material.js",
+      "bytes": 5439,
+      "sha256": "0ac008a3294391a6e4edfc00801ca4b23ee55e5779cee47f30554c78199296e2",
+      "source": {
+        "relativePath": "src/ninecolor-material.js",
+        "sha256": "0ac008a3294391a6e4edfc00801ca4b23ee55e5779cee47f30554c78199296e2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/nl-material.js",
+      "bytes": 5624,
+      "sha256": "7853487e0f1620db7494d7bc8e67423f1f828ceae08a32fccb12c9a9a5e1fe51",
+      "source": {
+        "relativePath": "src/nl-material.js",
+        "sha256": "7853487e0f1620db7494d7bc8e67423f1f828ceae08a32fccb12c9a9a5e1fe51",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/normalblend-material.js",
+      "bytes": 3794,
+      "sha256": "b9463b92a29943cab841f21ea65d71ffeeaebe39ac25d1606ea9868ede3e8afe",
+      "source": {
+        "relativePath": "src/normalblend-material.js",
+        "sha256": "b9463b92a29943cab841f21ea65d71ffeeaebe39ac25d1606ea9868ede3e8afe",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/outline-soul-material.js",
+      "bytes": 3807,
+      "sha256": "c48f3b298d4707c3c3d37bcf2190a294efa2840288aac7e2aac3a7c902e29ac5",
+      "source": {
+        "relativePath": "src/outline-soul-material.js",
+        "sha256": "667ee54c81eca71951956b487f84598cb95f0e1efa5a45ff2d324b6e2335eeeb",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/particle-material.js",
+      "bytes": 9011,
+      "sha256": "7fb5bdfc369fb4f15460571e6a1e9bba00aed10705040c3af56b0b9486067829",
+      "source": {
+        "relativePath": "src/particle-material.js",
+        "sha256": "7fb5bdfc369fb4f15460571e6a1e9bba00aed10705040c3af56b0b9486067829",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pbr-matcap-material.js",
+      "bytes": 2461,
+      "sha256": "5307ce25838896dd61abb341ce6a17d714bc22ef01daccdd530278bffe98fc5f",
+      "source": {
+        "relativePath": "src/pbr-matcap-material.js",
+        "sha256": "5307ce25838896dd61abb341ce6a17d714bc22ef01daccdd530278bffe98fc5f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pearl-material.js",
+      "bytes": 3368,
+      "sha256": "da0ee640b653806a6d97349d9c1ecd59a6d10d5103103c63a2d436e32623e6f4",
+      "source": {
+        "relativePath": "src/pearl-material.js",
+        "sha256": "da0ee640b653806a6d97349d9c1ecd59a6d10d5103103c63a2d436e32623e6f4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pearl03-material.js",
+      "bytes": 4793,
+      "sha256": "11c0deb06bc1b802ddbd2e8167582bda8a40f6e5349970d328ecfd31138fa743",
+      "source": {
+        "relativePath": "src/pearl03-material.js",
+        "sha256": "11c0deb06bc1b802ddbd2e8167582bda8a40f6e5349970d328ecfd31138fa743",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pet-emote-material.js",
+      "bytes": 3284,
+      "sha256": "36ad0b0bf58ea0c6db31ba59a09644001296803c2ead44c0c95a5306335489c3",
+      "source": {
+        "relativePath": "src/pet-emote-material.js",
+        "sha256": "36ad0b0bf58ea0c6db31ba59a09644001296803c2ead44c0c95a5306335489c3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pet-especial-material.js",
+      "bytes": 8569,
+      "sha256": "eba3d670efbaf5d41b2afdf5b79492d29762390f7391749c9bc18363c04e56cc",
+      "source": {
+        "relativePath": "src/pet-especial-material.js",
+        "sha256": "eba3d670efbaf5d41b2afdf5b79492d29762390f7391749c9bc18363c04e56cc",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pet-material.js",
+      "bytes": 5451,
+      "sha256": "2ecd79580ce79e3b7b6fefbc02a712628158667fcf3e86918d794b5e2cb21d5c",
+      "source": {
+        "relativePath": "src/pet-material.js",
+        "sha256": "2ecd79580ce79e3b7b6fefbc02a712628158667fcf3e86918d794b5e2cb21d5c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pgy-material.js",
+      "bytes": 5876,
+      "sha256": "b7009dbf333eae1871118d9fd128fcfdb04c9e96b05ca4a9bc95e43c310bad00",
+      "source": {
+        "relativePath": "src/pgy-material.js",
+        "sha256": "b7009dbf333eae1871118d9fd128fcfdb04c9e96b05ca4a9bc95e43c310bad00",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/plant-growth-material.js",
+      "bytes": 2371,
+      "sha256": "05db64e28fd595f0e8bd5edaea1d58fbeba6294d0a27642fccd64eaf5eff391a",
+      "source": {
+        "relativePath": "src/plant-growth-material.js",
+        "sha256": "05db64e28fd595f0e8bd5edaea1d58fbeba6294d0a27642fccd64eaf5eff391a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/play/outfit.js",
+      "bytes": 1895,
+      "sha256": "6916816fa58d1a3b8c5b83c0ec3f56109a382f75f760fcb729a51e2354fe95a2",
+      "source": {
+        "relativePath": "src/play/outfit.js",
+        "sha256": "6916816fa58d1a3b8c5b83c0ec3f56109a382f75f760fcb729a51e2354fe95a2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/posed-bounds.js",
+      "bytes": 2914,
+      "sha256": "9ded2eb2e6f60bd8235b12c97b08b80f5c023904e7db38743718aa8ff7145f17",
+      "source": {
+        "relativePath": "src/posed-bounds.js",
+        "sha256": "9ded2eb2e6f60bd8235b12c97b08b80f5c023904e7db38743718aa8ff7145f17",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/prop-metallica-material.js",
+      "bytes": 5772,
+      "sha256": "83476e25fd535456a9179dad9b3d8c31f7835e0e100ff7ea8936bd752def2f12",
+      "source": {
+        "relativePath": "src/prop-metallica-material.js",
+        "sha256": "83476e25fd535456a9179dad9b3d8c31f7835e0e100ff7ea8936bd752def2f12",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/pudding-material.js",
+      "bytes": 3848,
+      "sha256": "606b7700b28682514f7c10c17905bde8bd7ae2a5a3f92d903e20e35daae73aa9",
+      "source": {
+        "relativePath": "src/pudding-material.js",
+        "sha256": "606b7700b28682514f7c10c17905bde8bd7ae2a5a3f92d903e20e35daae73aa9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/qingshe-cloth-material.js",
+      "bytes": 8086,
+      "sha256": "f8c6de84838bab3f83c575c068358f36fb21e2e8a3346cece5be35409386ed90",
+      "source": {
+        "relativePath": "src/qingshe-cloth-material.js",
+        "sha256": "0e892bc7f1cc4d2507a393c839a747b2b26d17b7c58bcbad42340436a10d637a",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/radialcolor-material.js",
+      "bytes": 3953,
+      "sha256": "03f4d9ab4b97aeabf11e0af1bd887a3902e08aaba5dfaf300079ea365813e587",
+      "source": {
+        "relativePath": "src/radialcolor-material.js",
+        "sha256": "03f4d9ab4b97aeabf11e0af1bd887a3902e08aaba5dfaf300079ea365813e587",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/rainbow-material.js",
+      "bytes": 10093,
+      "sha256": "37cf95b6b6bc82a4661eb17ba365a57da55a9552436a5208972161e73fe14ce2",
+      "source": {
+        "relativePath": "src/rainbow-material.js",
+        "sha256": "f1b03051f9e44f218ea95bc356ee878cfc8e474466d149aeff2c0c1fbdf5e3d8",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/rainbow-star-material.js",
+      "bytes": 10473,
+      "sha256": "f51a87cfcc186f74202f5840ecf90d99f663c137fad605d57179ac09b420086e",
+      "source": {
+        "relativePath": "src/rainbow-star-material.js",
+        "sha256": "9c822bfe278109ce618907e23cd566e1cca7133f433edc04ac4805f6f714bc13",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/rampdistort-material.js",
+      "bytes": 5755,
+      "sha256": "037905b1eebd7edd202a74d60dcdf37f2f33126cd343ae8e875a7863e2666001",
+      "source": {
+        "relativePath": "src/rampdistort-material.js",
+        "sha256": "037905b1eebd7edd202a74d60dcdf37f2f33126cd343ae8e875a7863e2666001",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/roses-material.js",
+      "bytes": 2517,
+      "sha256": "aa412c7f8870e2a297814ebfa25bf479602634a43c1a7063e5e6683d3ccafade",
+      "source": {
+        "relativePath": "src/roses-material.js",
+        "sha256": "aa412c7f8870e2a297814ebfa25bf479602634a43c1a7063e5e6683d3ccafade",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/rr-deco-material.js",
+      "bytes": 1495,
+      "sha256": "ab4ba203f0c49c64aac247d18fdad56ec352416d4fce54d8d709de367754b7ee",
+      "source": {
+        "relativePath": "src/rr-deco-material.js",
+        "sha256": "ab4ba203f0c49c64aac247d18fdad56ec352416d4fce54d8d709de367754b7ee",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/rr-star-material.js",
+      "bytes": 4743,
+      "sha256": "0c22042d85be920f6e803ed8c72b590284002977a5a05d4ad72c326f9cad9d86",
+      "source": {
+        "relativePath": "src/rr-star-material.js",
+        "sha256": "0c22042d85be920f6e803ed8c72b590284002977a5a05d4ad72c326f9cad9d86",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/ryxs-material.js",
+      "bytes": 3696,
+      "sha256": "83582641615a82e4795ba6c04f085eb9991484025fe364b6b8057b9ac216e417",
+      "source": {
+        "relativePath": "src/ryxs-material.js",
+        "sha256": "83582641615a82e4795ba6c04f085eb9991484025fe364b6b8057b9ac216e417",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/sand-hat-material.js",
+      "bytes": 7078,
+      "sha256": "58cbe5f95b49aeca8c81f201f93170b79480e886f122086c9952115a1c6d8949",
+      "source": {
+        "relativePath": "src/sand-hat-material.js",
+        "sha256": "58cbe5f95b49aeca8c81f201f93170b79480e886f122086c9952115a1c6d8949",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/scene-material-shadow.js",
+      "bytes": 5439,
+      "sha256": "36316b14fdded8a8b979697876a398f42b7687112fde3321b0a69851025a355c",
+      "source": {
+        "relativePath": "src/scene-material-shadow.js",
+        "sha256": "301b712dcfd852960b29ca7e6441bf1b4c894bb2789f0b9fc72ef63e514c6931",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/scene-refraction.js",
+      "bytes": 2002,
+      "sha256": "77b8c3fb77407d837ba2ce44b3eb3e939dfd921348c6fab52193818fc815d37f",
+      "source": {
+        "relativePath": "src/scene-refraction.js",
+        "sha256": "77b8c3fb77407d837ba2ce44b3eb3e939dfd921348c6fab52193818fc815d37f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/sdg-material.js",
+      "bytes": 6504,
+      "sha256": "f83235aefa0034cc6ff0b75a5b0fb511134c946bd58c8fef5ff9391dbe721ce6",
+      "source": {
+        "relativePath": "src/sdg-material.js",
+        "sha256": "f83235aefa0034cc6ff0b75a5b0fb511134c946bd58c8fef5ff9391dbe721ce6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/shell-crystal-material.js",
+      "bytes": 1729,
+      "sha256": "0871e19545effdddb45420556d7787ef2c314d28660a3fb1660dc7425441d206",
+      "source": {
+        "relativePath": "src/shell-crystal-material.js",
+        "sha256": "0871e19545effdddb45420556d7787ef2c314d28660a3fb1660dc7425441d206",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/shenianzuoqi-star-material.js",
+      "bytes": 9432,
+      "sha256": "ae5d757d8a7723d75af7c58335d0c0cb52f4e3d3e8179bb5f9f752b8e0cf2481",
+      "source": {
+        "relativePath": "src/shenianzuoqi-star-material.js",
+        "sha256": "ae5d757d8a7723d75af7c58335d0c0cb52f4e3d3e8179bb5f9f752b8e0cf2481",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/silver-jade-material.js",
+      "bytes": 7025,
+      "sha256": "aed4bebc619f047cbeae9d4b36c8908fa33f1a2e5af3114f21327fc1fbeb70d6",
+      "source": {
+        "relativePath": "src/silver-jade-material.js",
+        "sha256": "aed4bebc619f047cbeae9d4b36c8908fa33f1a2e5af3114f21327fc1fbeb70d6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/sjmgcb-material.js",
+      "bytes": 2598,
+      "sha256": "0d7b6447e3554d2da2f7cefaa06cb0ffe64b16c997af6a32126bac46eebe619f",
+      "source": {
+        "relativePath": "src/sjmgcb-material.js",
+        "sha256": "0d7b6447e3554d2da2f7cefaa06cb0ffe64b16c997af6a32126bac46eebe619f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/skin-voices.css",
+      "bytes": 2105,
+      "sha256": "e80efaee86399e65e09024e27d2999dd80242baab93ad53b8a2a1e07f1c4cef6",
+      "source": {
+        "relativePath": "src/skin-voices.css",
+        "sha256": "e80efaee86399e65e09024e27d2999dd80242baab93ad53b8a2a1e07f1c4cef6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/skin-voices.js",
+      "bytes": 7356,
+      "sha256": "df9b5f698b3cb701c9e0a77ee4b7641c4702da05b3e0b027a77b4c5d3d211524",
+      "source": {
+        "relativePath": "src/skin-voices.js",
+        "sha256": "b7c0b901686d2ed9f18a8a23a29ab6311322c836186063cfd6833e7c0a2d7a70",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/slzs-cloth-material.js",
+      "bytes": 4998,
+      "sha256": "7ef3f729677387eb7d8100f0245fff0f25cf817b394b3590d914772cb0e835d5",
+      "source": {
+        "relativePath": "src/slzs-cloth-material.js",
+        "sha256": "7ef3f729677387eb7d8100f0245fff0f25cf817b394b3590d914772cb0e835d5",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/slzs-sha-material.js",
+      "bytes": 7365,
+      "sha256": "2a73754b99a07e426de28860ad545cee83bd558c1bc9a59e732edc6ccd29cf06",
+      "source": {
+        "relativePath": "src/slzs-sha-material.js",
+        "sha256": "2a73754b99a07e426de28860ad545cee83bd558c1bc9a59e732edc6ccd29cf06",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/snow-material.js",
+      "bytes": 3835,
+      "sha256": "9192473a19b7e2cdea550833b7c3de1cd47c263be749c1a1de6eba151d0832eb",
+      "source": {
+        "relativePath": "src/snow-material.js",
+        "sha256": "9192473a19b7e2cdea550833b7c3de1cd47c263be749c1a1de6eba151d0832eb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/snzq-material.js",
+      "bytes": 7373,
+      "sha256": "512cf368bcf947c4d7877a0de8e1c154347a4b1d9e3843b856e26293f57d577e",
+      "source": {
+        "relativePath": "src/snzq-material.js",
+        "sha256": "512cf368bcf947c4d7877a0de8e1c154347a4b1d9e3843b856e26293f57d577e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/social.js",
+      "bytes": 14243,
+      "sha256": "c1d0ec708ffd970f5b4fc1c55d2db7a9f6ed98494d91b371d7f0b2614e408a4a",
+      "source": {
+        "relativePath": "src/social.js",
+        "sha256": "142d4cf62f07d5913f7aba650ffc4ded64e8ed2d125344f3956d2365026ac393",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/source-animation-start.js",
+      "bytes": 1582,
+      "sha256": "b1fa75f825f346f63dd2506436364219f11d04381825310bfc0055de0a4fc5d6",
+      "source": {
+        "relativePath": "src/source-animation-start.js",
+        "sha256": "b1fa75f825f346f63dd2506436364219f11d04381825310bfc0055de0a4fc5d6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-chain-spring-player.js",
+      "bytes": 2650,
+      "sha256": "72f5d916fdbd732346f124257fdf96af6136d552760a832665672ea84a76c05b",
+      "source": {
+        "relativePath": "src/source-chain-spring-player.js",
+        "sha256": "72f5d916fdbd732346f124257fdf96af6136d552760a832665672ea84a76c05b",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-chain-spring.js",
+      "bytes": 3394,
+      "sha256": "a219cc72788bf7ca74bbe7e82227bb9079bcf473986ee79a770ca86213c4e1c0",
+      "source": {
+        "relativePath": "src/source-chain-spring.js",
+        "sha256": "a219cc72788bf7ca74bbe7e82227bb9079bcf473986ee79a770ca86213c4e1c0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-fashion-assembly.js",
+      "bytes": 4285,
+      "sha256": "3dae8980a6a5e4cdb00bb67e9b597abe02aed74e7dab2f4fd524058601aeb126",
+      "source": {
+        "relativePath": "src/source-fashion-assembly.js",
+        "sha256": "3dae8980a6a5e4cdb00bb67e9b597abe02aed74e7dab2f4fd524058601aeb126",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-fragment-assembly.js",
+      "bytes": 4820,
+      "sha256": "d5bd2b0a6d651b852303a607df166cfcfb6212eb5bf8033bebf6c5c70de11daa",
+      "source": {
+        "relativePath": "src/source-fragment-assembly.js",
+        "sha256": "d5bd2b0a6d651b852303a607df166cfcfb6212eb5bf8033bebf6c5c70de11daa",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-isotropy.js",
+      "bytes": 2995,
+      "sha256": "86eedbc2fb0689290bfe1fc744c2bb1122e7279bfcd317ec7ecc2c3680cd14fc",
+      "source": {
+        "relativePath": "src/source-isotropy.js",
+        "sha256": "86eedbc2fb0689290bfe1fc744c2bb1122e7279bfcd317ec7ecc2c3680cd14fc",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-leaf-spring-player.js",
+      "bytes": 2439,
+      "sha256": "fd4668f70c8eab5eec905f2d45192b6689e1c46cb3233d359cb5ae40626d61a4",
+      "source": {
+        "relativePath": "src/source-leaf-spring-player.js",
+        "sha256": "fd4668f70c8eab5eec905f2d45192b6689e1c46cb3233d359cb5ae40626d61a4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-leaf-spring.js",
+      "bytes": 2724,
+      "sha256": "87f0a74cd388e19f688afd6122b75576abbd52bd3b7ab22f4d96cdd2ff6572ed",
+      "source": {
+        "relativePath": "src/source-leaf-spring.js",
+        "sha256": "87f0a74cd388e19f688afd6122b75576abbd52bd3b7ab22f4d96cdd2ff6572ed",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-matcap-inputs.js",
+      "bytes": 2047,
+      "sha256": "3c4c4401c81ce97c09d1b0a973e4a089693495ac51c0d0bd27e3c68350d233d9",
+      "source": {
+        "relativePath": "src/source-matcap-inputs.js",
+        "sha256": "3c4c4401c81ce97c09d1b0a973e4a089693495ac51c0d0bd27e3c68350d233d9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-model-sfx-controllers.js",
+      "bytes": 1421,
+      "sha256": "b9758e5440c8f1096149ffdad572cdcdce4fe5d951d98a214c04489048b17c27",
+      "source": {
+        "relativePath": "src/source-model-sfx-controllers.js",
+        "sha256": "b9758e5440c8f1096149ffdad572cdcdce4fe5d951d98a214c04489048b17c27",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-motion-extras.js",
+      "bytes": 9918,
+      "sha256": "02efd1d5e0b12ace6f9acfd095087184e955eecb36c33f60b25d70a1719a8b5c",
+      "source": {
+        "relativePath": "src/source-motion-extras.js",
+        "sha256": "02efd1d5e0b12ace6f9acfd095087184e955eecb36c33f60b25d70a1719a8b5c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-motion-overlay.js",
+      "bytes": 8331,
+      "sha256": "2b22aa1d75b8860a01db4e2333a42cab0f7a73cddd9089e2d5c49ec539b36801",
+      "source": {
+        "relativePath": "src/source-motion-overlay.js",
+        "sha256": "2b22aa1d75b8860a01db4e2333a42cab0f7a73cddd9089e2d5c49ec539b36801",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-motion-sequence.js",
+      "bytes": 5008,
+      "sha256": "11ac6d777da481e817e6a1ebbc41c92c853e1c850e3d1cbdcdf7b70614f799d0",
+      "source": {
+        "relativePath": "src/source-motion-sequence.js",
+        "sha256": "11ac6d777da481e817e6a1ebbc41c92c853e1c850e3d1cbdcdf7b70614f799d0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-nstb-chain.js",
+      "bytes": 5375,
+      "sha256": "86e970c229a21478bc51b7135b777a05b64b12405b9f6bd3e74bd6eff949bd59",
+      "source": {
+        "relativePath": "src/source-nstb-chain.js",
+        "sha256": "86e970c229a21478bc51b7135b777a05b64b12405b9f6bd3e74bd6eff949bd59",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-nstb-pbd.js",
+      "bytes": 3374,
+      "sha256": "afe270abc51d49a2346955d330f7a817c60520e5479c5d618affc8ee722567d6",
+      "source": {
+        "relativePath": "src/source-nstb-pbd.js",
+        "sha256": "afe270abc51d49a2346955d330f7a817c60520e5479c5d618affc8ee722567d6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-nstb-player.js",
+      "bytes": 4086,
+      "sha256": "93dfd8cb7f2074cb51cd442f2cfb226872ffb71f2e4dc441665e7690825892bc",
+      "source": {
+        "relativePath": "src/source-nstb-player.js",
+        "sha256": "93dfd8cb7f2074cb51cd442f2cfb226872ffb71f2e4dc441665e7690825892bc",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-nstb-rsqrt.js",
+      "bytes": 791,
+      "sha256": "86b44ededf93cc4e8617da35e2f4f3ea18f2f96ba090abc1fcc4fc624eec87a2",
+      "source": {
+        "relativePath": "src/source-nstb-rsqrt.js",
+        "sha256": "a4cec1d64ce04a663038bff946838d78c39439e0f0193c5f874eaad12402ee0e",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/source-nstb-spatial.js",
+      "bytes": 4969,
+      "sha256": "7f31c8a1c8269de402d5ae0160cfb6fc38fb75273ec855c50b92ab36754848ca",
+      "source": {
+        "relativePath": "src/source-nstb-spatial.js",
+        "sha256": "7f31c8a1c8269de402d5ae0160cfb6fc38fb75273ec855c50b92ab36754848ca",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-part-pose.js",
+      "bytes": 2474,
+      "sha256": "a4031ade72e74ca44750a3677c0ed34e788404dd4b9ef1dc2dec68fad7e07695",
+      "source": {
+        "relativePath": "src/source-part-pose.js",
+        "sha256": "a4031ade72e74ca44750a3677c0ed34e788404dd4b9ef1dc2dec68fad7e07695",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-perlin.js",
+      "bytes": 1542,
+      "sha256": "2bb4259f696f0904576dd3259564d0a40106ab5f2f21ce8b1fa92fbab9db62e9",
+      "source": {
+        "relativePath": "src/source-perlin.js",
+        "sha256": "2bb4259f696f0904576dd3259564d0a40106ab5f2f21ce8b1fa92fbab9db62e9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-pose-additive.js",
+      "bytes": 2858,
+      "sha256": "bc9c7310627ec470ea45f7a983b8c58eb69c4b2ec4c7a03eaf203592e759dc54",
+      "source": {
+        "relativePath": "src/source-pose-additive.js",
+        "sha256": "bc9c7310627ec470ea45f7a983b8c58eb69c4b2ec4c7a03eaf203592e759dc54",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-rig.js",
+      "bytes": 2055,
+      "sha256": "851cfab10576265b6375aad8cfa4852c2892e76ea87dadc3f4c5b576b3e081af",
+      "source": {
+        "relativePath": "src/source-rig.js",
+        "sha256": "851cfab10576265b6375aad8cfa4852c2892e76ea87dadc3f4c5b576b3e081af",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-scene-fog.js",
+      "bytes": 253,
+      "sha256": "f96014e01c873ddfbeec6d66777ebc110de82ac80c21cc5bc32480269f1f669c",
+      "source": {
+        "relativePath": "src/source-scene-fog.js",
+        "sha256": "e234c3c38d36dae48202f2c144ecd7ad061427cd329c3a5f27ff0837707328cd",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/source-scene-light.js",
+      "bytes": 1315,
+      "sha256": "67254d73c3d5549a0dafeb9a1975381fae486ee11afe039df5216a3d91e26f55",
+      "source": {
+        "relativePath": "src/source-scene-light.js",
+        "sha256": "b3d5f220a19e66cb98cc537ba11a5faceef86462a9daff9389071b7ea281bd28",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-atlas.js",
+      "bytes": 2320,
+      "sha256": "a53013fd458d45f76b31eb7cdc8b3fd56f1f4378106d9d522aeb8587b6aa6afa",
+      "source": {
+        "relativePath": "src/source-sfx-atlas.js",
+        "sha256": "a53013fd458d45f76b31eb7cdc8b3fd56f1f4378106d9d522aeb8587b6aa6afa",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-base-reader.js",
+      "bytes": 2080,
+      "sha256": "7890ab66db26aa217da2da444b620f7b35d7218445f44985dff2fb717b2826e4",
+      "source": {
+        "relativePath": "src/source-sfx-base-reader.js",
+        "sha256": "7890ab66db26aa217da2da444b620f7b35d7218445f44985dff2fb717b2826e4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-circle.js",
+      "bytes": 3436,
+      "sha256": "574dc049d63a56d2aad6c8ee68eb2056dbb3cc426f9c101d73ce4d75194c38ad",
+      "source": {
+        "relativePath": "src/source-sfx-circle.js",
+        "sha256": "574dc049d63a56d2aad6c8ee68eb2056dbb3cc426f9c101d73ce4d75194c38ad",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-clock.js",
+      "bytes": 3559,
+      "sha256": "4de951cab7fdda82374facf01a75a207819e924dfc83fa36266cc5fbc6d5711c",
+      "source": {
+        "relativePath": "src/source-sfx-clock.js",
+        "sha256": "4de951cab7fdda82374facf01a75a207819e924dfc83fa36266cc5fbc6d5711c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-controller.js",
+      "bytes": 8046,
+      "sha256": "8891282ee87ac43f77865e657d1a21ecbfa54d931a9cfb2823c6aa5280ee04ea",
+      "source": {
+        "relativePath": "src/source-sfx-controller.js",
+        "sha256": "8891282ee87ac43f77865e657d1a21ecbfa54d931a9cfb2823c6aa5280ee04ea",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-curves.js",
+      "bytes": 5875,
+      "sha256": "effaaceff2f61d91bef06d3718211558e4de3fcdde7db36580b383c6732f7e71",
+      "source": {
+        "relativePath": "src/source-sfx-curves.js",
+        "sha256": "effaaceff2f61d91bef06d3718211558e4de3fcdde7db36580b383c6732f7e71",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-direction.js",
+      "bytes": 2278,
+      "sha256": "aec01c7f00cd4ad39f6e3802d3c68613d1091b1bdc9be07d0dc1699d63146019",
+      "source": {
+        "relativePath": "src/source-sfx-direction.js",
+        "sha256": "aec01c7f00cd4ad39f6e3802d3c68613d1091b1bdc9be07d0dc1699d63146019",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-emitter.js",
+      "bytes": 6943,
+      "sha256": "f13741bcacfafa50e4ab4d9f732d6e36b5e2d106e0f757ae441a599fbf655071",
+      "source": {
+        "relativePath": "src/source-sfx-emitter.js",
+        "sha256": "f13741bcacfafa50e4ab4d9f732d6e36b5e2d106e0f757ae441a599fbf655071",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-extra-scale.js",
+      "bytes": 2149,
+      "sha256": "6100d68ca9b26ee4951f5e20d858585a20047bd262027447aa8ee3edd289a34d",
+      "source": {
+        "relativePath": "src/source-sfx-extra-scale.js",
+        "sha256": "6100d68ca9b26ee4951f5e20d858585a20047bd262027447aa8ee3edd289a34d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-lifecycle.js",
+      "bytes": 6511,
+      "sha256": "794b5c2ba66f5a525e8cbe333ac5ba553f1266ad61813b2c2bebde66c59bbbed",
+      "source": {
+        "relativePath": "src/source-sfx-lifecycle.js",
+        "sha256": "794b5c2ba66f5a525e8cbe333ac5ba553f1266ad61813b2c2bebde66c59bbbed",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-material-bindings.js",
+      "bytes": 4090,
+      "sha256": "1f20f93ad770175db9b1805ee7f2c61a936ff6370d1341f9b4660031316513d1",
+      "source": {
+        "relativePath": "src/source-sfx-material-bindings.js",
+        "sha256": "1f20f93ad770175db9b1805ee7f2c61a936ff6370d1341f9b4660031316513d1",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-node.js",
+      "bytes": 5826,
+      "sha256": "7eb3c6ddc543ba751ced009c6b9852390a9e3c254a6b6f60bb0756baff41d3a1",
+      "source": {
+        "relativePath": "src/source-sfx-node.js",
+        "sha256": "7eb3c6ddc543ba751ced009c6b9852390a9e3c254a6b6f60bb0756baff41d3a1",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-particle-quad.js",
+      "bytes": 2727,
+      "sha256": "0a1f6aa53258635825820c64525056bd53d1aea4dcf84b3bf50005ef70819c95",
+      "source": {
+        "relativePath": "src/source-sfx-particle-quad.js",
+        "sha256": "0a1f6aa53258635825820c64525056bd53d1aea4dcf84b3bf50005ef70819c95",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-particle.js",
+      "bytes": 3773,
+      "sha256": "c46122030e486610261092288ca72daebd248f42047562d0ab086e312d22a0f2",
+      "source": {
+        "relativePath": "src/source-sfx-particle.js",
+        "sha256": "c46122030e486610261092288ca72daebd248f42047562d0ab086e312d22a0f2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-poly-initialize.js",
+      "bytes": 2115,
+      "sha256": "e583657d0899f1eb6c987fed7b8545cd049244aee76371bc7cab5b96e252f747",
+      "source": {
+        "relativePath": "src/source-sfx-poly-initialize.js",
+        "sha256": "e583657d0899f1eb6c987fed7b8545cd049244aee76371bc7cab5b96e252f747",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-poly.js",
+      "bytes": 10974,
+      "sha256": "bbbd4cf7b424b1c17db688f0f98a59a8678352a6c45fa24e6ee6c2937977bab4",
+      "source": {
+        "relativePath": "src/source-sfx-poly.js",
+        "sha256": "bbbd4cf7b424b1c17db688f0f98a59a8678352a6c45fa24e6ee6c2937977bab4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-properties.js",
+      "bytes": 4189,
+      "sha256": "2cff5edc928f684ab35205df73e1c599c32536318c708fd983055ae943025315",
+      "source": {
+        "relativePath": "src/source-sfx-properties.js",
+        "sha256": "2cff5edc928f684ab35205df73e1c599c32536318c708fd983055ae943025315",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-random.js",
+      "bytes": 2172,
+      "sha256": "c08fd05b01c3a334af88a008a4d70550b46ef87a4d587918546a386443d89dfd",
+      "source": {
+        "relativePath": "src/source-sfx-random.js",
+        "sha256": "c08fd05b01c3a334af88a008a4d70550b46ef87a4d587918546a386443d89dfd",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-rotate.js",
+      "bytes": 4996,
+      "sha256": "97c08077a83ab8b3b2765e7f5ccd81af41854c56807477cb6b894fed1b4ea46a",
+      "source": {
+        "relativePath": "src/source-sfx-rotate.js",
+        "sha256": "97c08077a83ab8b3b2765e7f5ccd81af41854c56807477cb6b894fed1b4ea46a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-scene-initialize.js",
+      "bytes": 2499,
+      "sha256": "5ae0279b21a720bbe998c464e5349a61bd50c14c83f95bc54627a37151cb7de4",
+      "source": {
+        "relativePath": "src/source-sfx-scene-initialize.js",
+        "sha256": "5ae0279b21a720bbe998c464e5349a61bd50c14c83f95bc54627a37151cb7de4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-scene-services.js",
+      "bytes": 1238,
+      "sha256": "991f0d4d85df9292a13521830ba3d3b314fef5864244504fad5f724b3abe3d1c",
+      "source": {
+        "relativePath": "src/source-sfx-scene-services.js",
+        "sha256": "991f0d4d85df9292a13521830ba3d3b314fef5864244504fad5f724b3abe3d1c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-scene.js",
+      "bytes": 6823,
+      "sha256": "4fa6ff6150cb4aecc7ff1f900b999bc391b30b56ca5758c23afb8ccf140edc87",
+      "source": {
+        "relativePath": "src/source-sfx-scene.js",
+        "sha256": "4fa6ff6150cb4aecc7ff1f900b999bc391b30b56ca5758c23afb8ccf140edc87",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-spawn.js",
+      "bytes": 10423,
+      "sha256": "4cdf53fabe5795aec006114fc052780f12dc47a670717d91160ff8b5689d08d3",
+      "source": {
+        "relativePath": "src/source-sfx-spawn.js",
+        "sha256": "4cdf53fabe5795aec006114fc052780f12dc47a670717d91160ff8b5689d08d3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-stop.js",
+      "bytes": 4049,
+      "sha256": "9749e6b61942950da386fa4c69047e249b1564403cf7afb6dd2bb92e134e1061",
+      "source": {
+        "relativePath": "src/source-sfx-stop.js",
+        "sha256": "9749e6b61942950da386fa4c69047e249b1564403cf7afb6dd2bb92e134e1061",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-time.js",
+      "bytes": 977,
+      "sha256": "68a2e38fa340ef1b70cf260f193f485868b074789a6258a9f0c007a9b46f67b2",
+      "source": {
+        "relativePath": "src/source-sfx-time.js",
+        "sha256": "68a2e38fa340ef1b70cf260f193f485868b074789a6258a9f0c007a9b46f67b2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-track-clock.js",
+      "bytes": 6371,
+      "sha256": "8225ee719ddaec87686f13b1c3d81dd1606da884665d424be0ad3a238e854eef",
+      "source": {
+        "relativePath": "src/source-sfx-track-clock.js",
+        "sha256": "8225ee719ddaec87686f13b1c3d81dd1606da884665d424be0ad3a238e854eef",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-track-initialize.js",
+      "bytes": 4117,
+      "sha256": "ce6c7351bfcb76502fcd9b047c7861f1e72408ede249081b73ffc59c6ae5a386",
+      "source": {
+        "relativePath": "src/source-sfx-track-initialize.js",
+        "sha256": "ce6c7351bfcb76502fcd9b047c7861f1e72408ede249081b73ffc59c6ae5a386",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-track-update.js",
+      "bytes": 2769,
+      "sha256": "0c257853ab05e100441ca7b3fd1c9e2c21874d8d1b21cd9dd959fe3edc5e05e0",
+      "source": {
+        "relativePath": "src/source-sfx-track-update.js",
+        "sha256": "0c257853ab05e100441ca7b3fd1c9e2c21874d8d1b21cd9dd959fe3edc5e05e0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-track.js",
+      "bytes": 6791,
+      "sha256": "3d724011adffe219ef644c4ef3c5ff7e1e69ad29362dcaa0606ca5f0405b014f",
+      "source": {
+        "relativePath": "src/source-sfx-track.js",
+        "sha256": "3d724011adffe219ef644c4ef3c5ff7e1e69ad29362dcaa0606ca5f0405b014f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-trail.js",
+      "bytes": 4639,
+      "sha256": "9abfbeeac2151992e7c062e96b75546186bdbf6c683dd0bb23d70cab25b23ecd",
+      "source": {
+        "relativePath": "src/source-sfx-trail.js",
+        "sha256": "9abfbeeac2151992e7c062e96b75546186bdbf6c683dd0bb23d70cab25b23ecd",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-type-scene.js",
+      "bytes": 1809,
+      "sha256": "0356797ca50cd2a1c211741beebc22b10690e55283c3ec2bcb6e1f83ab8bda40",
+      "source": {
+        "relativePath": "src/source-sfx-type-scene.js",
+        "sha256": "0356797ca50cd2a1c211741beebc22b10690e55283c3ec2bcb6e1f83ab8bda40",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-vector.js",
+      "bytes": 1979,
+      "sha256": "f5fe52b6fd05eca05317c8a5256a2cc8ae74f4ea93a1df72013d46fc6253ff2e",
+      "source": {
+        "relativePath": "src/source-sfx-vector.js",
+        "sha256": "068e614d4d01e4f7c267331f3a3575ab6eac1f5c9ff768e8324856814ff874d9",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/source-sfx-visibility.js",
+      "bytes": 2627,
+      "sha256": "6b3cd4ddfc5c8ed3310be3ef18abce9f6d3c3091ad91641a87880ff57270c5f6",
+      "source": {
+        "relativePath": "src/source-sfx-visibility.js",
+        "sha256": "6b3cd4ddfc5c8ed3310be3ef18abce9f6d3c3091ad91641a87880ff57270c5f6",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-specular.js",
+      "bytes": 1079,
+      "sha256": "0df731925dbd44125ccd6d3666de8c6ed97832d11c44822e2c0d7d9dcf4c602a",
+      "source": {
+        "relativePath": "src/source-specular.js",
+        "sha256": "0df731925dbd44125ccd6d3666de8c6ed97832d11c44822e2c0d7d9dcf4c602a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-submodel.js",
+      "bytes": 3052,
+      "sha256": "af0c05c76c57bbd2afaabb3d5872caac7def22ab608f9ee375686e6b8ac7fe28",
+      "source": {
+        "relativePath": "src/source-submodel.js",
+        "sha256": "af0c05c76c57bbd2afaabb3d5872caac7def22ab608f9ee375686e6b8ac7fe28",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-value-noise.js",
+      "bytes": 480,
+      "sha256": "04f8ce781ad8845b87ef6d4fa1a4dbe04fffb3c540ca2f6478165946fec37e8d",
+      "source": {
+        "relativePath": "src/source-value-noise.js",
+        "sha256": "04f8ce781ad8845b87ef6d4fa1a4dbe04fffb3c540ca2f6478165946fec37e8d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/source-vehicle-parts.js",
+      "bytes": 1448,
+      "sha256": "389cc8cafaa6e0fa46203d553721c0083f12b6cce2ffd8dd0ce282ba4e8df562",
+      "source": {
+        "relativePath": "src/source-vehicle-parts.js",
+        "sha256": "389cc8cafaa6e0fa46203d553721c0083f12b6cce2ffd8dd0ce282ba4e8df562",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/sparkle-material.js",
+      "bytes": 3399,
+      "sha256": "bfdbbf997497f9a6642becfa90db07067dbee2cf84a08e08eb9cf184616c87a7",
+      "source": {
+        "relativePath": "src/sparkle-material.js",
+        "sha256": "bfdbbf997497f9a6642becfa90db07067dbee2cf84a08e08eb9cf184616c87a7",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/sparkle02-material.js",
+      "bytes": 3833,
+      "sha256": "20aea483ec0f92e83fa6d0d9a44edee105a57ae965131544a2bac93341ecbd62",
+      "source": {
+        "relativePath": "src/sparkle02-material.js",
+        "sha256": "20aea483ec0f92e83fa6d0d9a44edee105a57ae965131544a2bac93341ecbd62",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/special-jade-material.js",
+      "bytes": 6905,
+      "sha256": "f2d53658e81544cc487a530920e365ab33d3bf21941930ac189a1f531173c84c",
+      "source": {
+        "relativePath": "src/special-jade-material.js",
+        "sha256": "f2d53658e81544cc487a530920e365ab33d3bf21941930ac189a1f531173c84c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/special-scale-material.js",
+      "bytes": 2725,
+      "sha256": "c4a5e1f4250a1fa2dc5d33e8a867987a0765f04682a2b53b715b422e9aa10167",
+      "source": {
+        "relativePath": "src/special-scale-material.js",
+        "sha256": "c4a5e1f4250a1fa2dc5d33e8a867987a0765f04682a2b53b715b422e9aa10167",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/special-wings-material.js",
+      "bytes": 4570,
+      "sha256": "46110481d77656d223fdf833413b7b1697ca2712f1ab6ab0af986b4b0005e61b",
+      "source": {
+        "relativePath": "src/special-wings-material.js",
+        "sha256": "46110481d77656d223fdf833413b7b1697ca2712f1ab6ab0af986b4b0005e61b",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/splendor-jiguangramp.js",
+      "bytes": 1344,
+      "sha256": "4038a29abfa2d61688288df413fcc7b40efcb43789cc723989c0f46e6eb00849",
+      "source": {
+        "relativePath": "src/splendor-jiguangramp.js",
+        "sha256": "4038a29abfa2d61688288df413fcc7b40efcb43789cc723989c0f46e6eb00849",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/splendor-material.js",
+      "bytes": 14829,
+      "sha256": "b16fe7d6ac33eaa92418e421c7c4930fb931d5b7bee5b2d6cbd0ffadfda1edde",
+      "source": {
+        "relativePath": "src/splendor-material.js",
+        "sha256": "56046b1604c6ffd202e2b42cf9ab1c584abc37071d21c0be66d4d31db8ce34a5",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/splendor-paopao.js",
+      "bytes": 2542,
+      "sha256": "103b0a1b204039b40e4b83b4292c77c6d2a8eb746e8068c22b2b6a39f8d19536",
+      "source": {
+        "relativePath": "src/splendor-paopao.js",
+        "sha256": "103b0a1b204039b40e4b83b4292c77c6d2a8eb746e8068c22b2b6a39f8d19536",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/splendor-specialization.js",
+      "bytes": 13651,
+      "sha256": "2a37bb6cde76fb30012137f3008f5b35b8f924c28efe7139ae948a85e384c8f1",
+      "source": {
+        "relativePath": "src/splendor-specialization.js",
+        "sha256": "865c73ba398dc3853cf982625a2ee3056402849c21672b2272a4e5cf8259c643",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/standard-color.js",
+      "bytes": 1360,
+      "sha256": "fc388dbdd3bc5f89df323e280a073f7fb007ad52627c99db8c402dfd821710ac",
+      "source": {
+        "relativePath": "src/standard-color.js",
+        "sha256": "fc388dbdd3bc5f89df323e280a073f7fb007ad52627c99db8c402dfd821710ac",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/standard-crystal-ball-material.js",
+      "bytes": 6326,
+      "sha256": "2f3982c1a4c92bd69162a1984983a65c9dc15508f575466f66ee8ccee7b4554c",
+      "source": {
+        "relativePath": "src/standard-crystal-ball-material.js",
+        "sha256": "2f3982c1a4c92bd69162a1984983a65c9dc15508f575466f66ee8ccee7b4554c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/standard-emission.js",
+      "bytes": 3894,
+      "sha256": "3c8fa8e122322e6b189cbcbce4aff4e1d17c546f8592526862dc46197131396e",
+      "source": {
+        "relativePath": "src/standard-emission.js",
+        "sha256": "3c8fa8e122322e6b189cbcbce4aff4e1d17c546f8592526862dc46197131396e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/standard-lighting.js",
+      "bytes": 2897,
+      "sha256": "6efd87c69a57666ebb13a415b497f73c129b65ca611e77d47d1aa3b3d0fee60b",
+      "source": {
+        "relativePath": "src/standard-lighting.js",
+        "sha256": "6efd87c69a57666ebb13a415b497f73c129b65ca611e77d47d1aa3b3d0fee60b",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/star-screen-material.js",
+      "bytes": 11543,
+      "sha256": "2bdaa60bb14bec8f3b7217f2bf1003efc7ae46f128cfdc68ee28d40ecd3024ad",
+      "source": {
+        "relativePath": "src/star-screen-material.js",
+        "sha256": "2bdaa60bb14bec8f3b7217f2bf1003efc7ae46f128cfdc68ee28d40ecd3024ad",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/streamer-mask-material.js",
+      "bytes": 3875,
+      "sha256": "8692f18308fb8e6fe556f0f087cfbf057ab5a972433ad4d8a633d9d0fe48e7cb",
+      "source": {
+        "relativePath": "src/streamer-mask-material.js",
+        "sha256": "8692f18308fb8e6fe556f0f087cfbf057ab5a972433ad4d8a633d9d0fe48e7cb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t101-hair-material.js",
+      "bytes": 12459,
+      "sha256": "a1d538cc1882dc6448d3a2425f79ea3b518483fa5091c38afd6ff63fa5e7b060",
+      "source": {
+        "relativePath": "src/t101-hair-material.js",
+        "sha256": "a1d538cc1882dc6448d3a2425f79ea3b518483fa5091c38afd6ff63fa5e7b060",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t107-frame.js",
+      "bytes": 1907,
+      "sha256": "1501c976816c278286de6473931ab9f050873546a1d3df7b061ec269e42883c3",
+      "source": {
+        "relativePath": "src/t107-frame.js",
+        "sha256": "1501c976816c278286de6473931ab9f050873546a1d3df7b061ec269e42883c3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t120-material.js",
+      "bytes": 10832,
+      "sha256": "c313553b1122e083938bd2b4b74e9863837622c3740b9ada213681c7ed581993",
+      "source": {
+        "relativePath": "src/t120-material.js",
+        "sha256": "c313553b1122e083938bd2b4b74e9863837622c3740b9ada213681c7ed581993",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t121-material.js",
+      "bytes": 9149,
+      "sha256": "93d6f282ff5b7a4ac716859d0221acac631f71c090a7696eb84a5509f427c355",
+      "source": {
+        "relativePath": "src/t121-material.js",
+        "sha256": "93d6f282ff5b7a4ac716859d0221acac631f71c090a7696eb84a5509f427c355",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t124-material.js",
+      "bytes": 8020,
+      "sha256": "5f5a1951b4b40de2014a3bb16e1ce1d1f1fa1fd2aa898f1a4260c1a8d42b1edb",
+      "source": {
+        "relativePath": "src/t124-material.js",
+        "sha256": "5f5a1951b4b40de2014a3bb16e1ce1d1f1fa1fd2aa898f1a4260c1a8d42b1edb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t125-material.js",
+      "bytes": 6346,
+      "sha256": "423394bbdd2469f72b75c187114591d3eacc9a46e69bda357465a6982b146337",
+      "source": {
+        "relativePath": "src/t125-material.js",
+        "sha256": "423394bbdd2469f72b75c187114591d3eacc9a46e69bda357465a6982b146337",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/t145-materials.js",
+      "bytes": 5704,
+      "sha256": "f83455eaacc205945e4c52b25886cfd436ac95cc20f3d5e9cfdc218c0bc9e7ec",
+      "source": {
+        "relativePath": "src/t145-materials.js",
+        "sha256": "f83455eaacc205945e4c52b25886cfd436ac95cc20f3d5e9cfdc218c0bc9e7ec",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/tangzhi-material.js",
+      "bytes": 7035,
+      "sha256": "5bed1754e91b5200bdb0f142ea7fce5ce4adf6471bef3d07a50d2aeea7464643",
+      "source": {
+        "relativePath": "src/tangzhi-material.js",
+        "sha256": "5bed1754e91b5200bdb0f142ea7fce5ce4adf6471bef3d07a50d2aeea7464643",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/texemis-material.js",
+      "bytes": 12641,
+      "sha256": "14dea211ba7a07c5a21cbb8aa0c079ad52efa66755ea460888aef4dbcccb52a0",
+      "source": {
+        "relativePath": "src/texemis-material.js",
+        "sha256": "14dea211ba7a07c5a21cbb8aa0c079ad52efa66755ea460888aef4dbcccb52a0",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/texture-mips.js",
+      "bytes": 817,
+      "sha256": "b57235204203438ea034d7012928324ef39e78981d69813508e837ce8f72be33",
+      "source": {
+        "relativePath": "src/texture-mips.js",
+        "sha256": "b57235204203438ea034d7012928324ef39e78981d69813508e837ce8f72be33",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/thumbnails.js",
+      "bytes": 3472,
+      "sha256": "b5ae85645abaf9d5bec4a228bd2053bae3b2ca1c2f5e3f5c4bfa1b52170cb7c9",
+      "source": {
+        "relativePath": "src/thumbnails.js",
+        "sha256": "f1d66aa34cd6574b01903e72053b1ef0c4a1cef0855182a3502807d234ebe095",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/tiling-all-material.js",
+      "bytes": 5538,
+      "sha256": "5536b7780e4c43f3278a25570b5fd9f9bb646de35857bcf4ae87b6b34d028731",
+      "source": {
+        "relativePath": "src/tiling-all-material.js",
+        "sha256": "5536b7780e4c43f3278a25570b5fd9f9bb646de35857bcf4ae87b6b34d028731",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/tint-wing-material.js",
+      "bytes": 4460,
+      "sha256": "0abdd9551759c11520843533f7c0bb531129d8f3a58368786f8e37d54e7126cb",
+      "source": {
+        "relativePath": "src/tint-wing-material.js",
+        "sha256": "0abdd9551759c11520843533f7c0bb531129d8f3a58368786f8e37d54e7126cb",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/tonefix-material.js",
+      "bytes": 3800,
+      "sha256": "9ee41354c1e8fdbf895c36ba3013272a61962d6009d983e617bcc67f7300845a",
+      "source": {
+        "relativePath": "src/tonefix-material.js",
+        "sha256": "9ee41354c1e8fdbf895c36ba3013272a61962d6009d983e617bcc67f7300845a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/tpl-material.js",
+      "bytes": 6128,
+      "sha256": "9ac427a0f22d3efa528993375109f2c54b29244aa4dcb19a1a026fa03c8f0d71",
+      "source": {
+        "relativePath": "src/tpl-material.js",
+        "sha256": "9ac427a0f22d3efa528993375109f2c54b29244aa4dcb19a1a026fa03c8f0d71",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/twosided-material.js",
+      "bytes": 7131,
+      "sha256": "862f45af433a3e500cf80a130a6191ce48ed474de76b953837554d6b127c3e6f",
+      "source": {
+        "relativePath": "src/twosided-material.js",
+        "sha256": "862f45af433a3e500cf80a130a6191ce48ed474de76b953837554d6b127c3e6f",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/u5-lb-material.js",
+      "bytes": 8457,
+      "sha256": "4a1e99544910547f25adf439f00801fe6f857d71d9c45e2e4fb54070c4b98068",
+      "source": {
+        "relativePath": "src/u5-lb-material.js",
+        "sha256": "4a1e99544910547f25adf439f00801fe6f857d71d9c45e2e4fb54070c4b98068",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/ugc-crystal-material.js",
+      "bytes": 3744,
+      "sha256": "cb2ef457b448cf0549a600f5e92a1d97712c68923774836ebcc9b88a9fae38c4",
+      "source": {
+        "relativePath": "src/ugc-crystal-material.js",
+        "sha256": "cb2ef457b448cf0549a600f5e92a1d97712c68923774836ebcc9b88a9fae38c4",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/unlit-crystal-material.js",
+      "bytes": 4916,
+      "sha256": "4965da321b1d000089aeab0cecf240651c48393e64923435af9f74df38bda3bf",
+      "source": {
+        "relativePath": "src/unlit-crystal-material.js",
+        "sha256": "4965da321b1d000089aeab0cecf240651c48393e64923435af9f74df38bda3bf",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/unlit-diffuse-changecol-material.js",
+      "bytes": 2812,
+      "sha256": "f9c8564c74a1efb5f826745e337d61135dd82ea21fc860304eb6757bb7a35ba9",
+      "source": {
+        "relativePath": "src/unlit-diffuse-changecol-material.js",
+        "sha256": "f9c8564c74a1efb5f826745e337d61135dd82ea21fc860304eb6757bb7a35ba9",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/unlit-diffuse-material.js",
+      "bytes": 3473,
+      "sha256": "39990566846686a3e86b8e3d0f7bba5ddf4778854406dc38302e57a4246f5aaf",
+      "source": {
+        "relativePath": "src/unlit-diffuse-material.js",
+        "sha256": "39990566846686a3e86b8e3d0f7bba5ddf4778854406dc38302e57a4246f5aaf",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/unlit-rim-material.js",
+      "bytes": 3661,
+      "sha256": "7a3f5a5b4eeffb7ff501724e9e6fbbb95dfd659c517f455dfbdc7f6d12d29de8",
+      "source": {
+        "relativePath": "src/unlit-rim-material.js",
+        "sha256": "7a3f5a5b4eeffb7ff501724e9e6fbbb95dfd659c517f455dfbdc7f6d12d29de8",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/uvflow-material.js",
+      "bytes": 3601,
+      "sha256": "1c0ad0782c784f8469c1a5d60b2ba32f6dbc741276c7b43db24de8412572183c",
+      "source": {
+        "relativePath": "src/uvflow-material.js",
+        "sha256": "1c0ad0782c784f8469c1a5d60b2ba32f6dbc741276c7b43db24de8412572183c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/vehicle-hoof-effects.js",
+      "bytes": 7275,
+      "sha256": "8857c890579ddf1a1e876644af1e0aa8030bcad08e4ce38311b6e08e6fb5c53a",
+      "source": {
+        "relativePath": "src/vehicle-hoof-effects.js",
+        "sha256": "f1b56539e5fad72b878b043f7a2c56fa8e0c3c3b25f1fd9f8529704e0f745c18",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/vehicle-wheel-particles.js",
+      "bytes": 9272,
+      "sha256": "07c5bffc5f62d1936628012addf60156c783a2d33fed2b3475750d4598b70c28",
+      "source": {
+        "relativePath": "src/vehicle-wheel-particles.js",
+        "sha256": "ae229eae59bc21a9f00b6955b890551320356b884c64ec8c1e9b7a6986628c31",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/vertoffset-material.js",
+      "bytes": 6009,
+      "sha256": "63410d1ea0b3aff88a401c9a3c08a51d0dc605a27029f51faffc798bad02f644",
+      "source": {
+        "relativePath": "src/vertoffset-material.js",
+        "sha256": "63410d1ea0b3aff88a401c9a3c08a51d0dc605a27029f51faffc798bad02f644",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/viewer.js",
+      "bytes": 54431,
+      "sha256": "1c6d554cbad46e4d9b90a7fd4101d331b6144485e37d9211ecbef6d7b7865c7e",
+      "source": {
+        "relativePath": "src/viewer.js",
+        "sha256": "fc8e02709619e48377fe2e95e6188d50e3910bc2d3e23969693f1fa249ba8e5b",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/voice-random.js",
+      "bytes": 1160,
+      "sha256": "ab4f53f6c715cc1aa273e937383ab6bdcdd4e73bd56e845d2c934d2b8d415ed3",
+      "source": {
+        "relativePath": "src/voice-random.js",
+        "sha256": "ab4f53f6c715cc1aa273e937383ab6bdcdd4e73bd56e845d2c934d2b8d415ed3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/water-hat-material.js",
+      "bytes": 6725,
+      "sha256": "161b21c6d76aec81303943f62106f42711e13dd726fe7dfa85fd102f334dd467",
+      "source": {
+        "relativePath": "src/water-hat-material.js",
+        "sha256": "161b21c6d76aec81303943f62106f42711e13dd726fe7dfa85fd102f334dd467",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/water-painting-material.js",
+      "bytes": 2602,
+      "sha256": "7f6eb32307ccaf5f09fb1bd4e320ad56485d12fac9c4d3e6c6dab10b381f5b4c",
+      "source": {
+        "relativePath": "src/water-painting-material.js",
+        "sha256": "7f6eb32307ccaf5f09fb1bd4e320ad56485d12fac9c4d3e6c6dab10b381f5b4c",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/water-wings-material.js",
+      "bytes": 6170,
+      "sha256": "842ea3f4887de7239928a3b8607388de49c130520f0c1ed915006659931fb25d",
+      "source": {
+        "relativePath": "src/water-wings-material.js",
+        "sha256": "c790465573f45b0f7aaf321f42a9ae0f0b76f761c6158aba60aa5da8a7c5f368",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/wheel-trails.js",
+      "bytes": 5107,
+      "sha256": "356095c0345ce84587398074a05bf7c2412932cd17c1e0b784bcba4160dd605a",
+      "source": {
+        "relativePath": "src/wheel-trails.js",
+        "sha256": "356095c0345ce84587398074a05bf7c2412932cd17c1e0b784bcba4160dd605a",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/wing-crystal-material.js",
+      "bytes": 4976,
+      "sha256": "f40f94ec3d496f92ba12d116d3da9885825af2c99a605c02c619c3871275680e",
+      "source": {
+        "relativePath": "src/wing-crystal-material.js",
+        "sha256": "f40f94ec3d496f92ba12d116d3da9885825af2c99a605c02c619c3871275680e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/wing-material.js",
+      "bytes": 5838,
+      "sha256": "03577ad44fd549d060058a4c17aac923b9fe00721af6acccef86d84b0dd59cf7",
+      "source": {
+        "relativePath": "src/wing-material.js",
+        "sha256": "03577ad44fd549d060058a4c17aac923b9fe00721af6acccef86d84b0dd59cf7",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/wing-obj-material.js",
+      "bytes": 6170,
+      "sha256": "6ed49aebab3e5c64702d8aea7b778af267d5cecd37330b47440b472552079937",
+      "source": {
+        "relativePath": "src/wing-obj-material.js",
+        "sha256": "cb54fb9e4ef1922d312f48a85654f6d3a70519e82cfed9f75684afa80a3e512f",
+        "status": "adapted-copy"
+      }
+    },
+    {
+      "path": "src/wing-pearl-material.js",
+      "bytes": 4044,
+      "sha256": "170f68fb04aaf13686bb010dfeaa08e586dabc1b3f2f92ece313b7cebb7b1ce3",
+      "source": {
+        "relativePath": "src/wing-pearl-material.js",
+        "sha256": "170f68fb04aaf13686bb010dfeaa08e586dabc1b3f2f92ece313b7cebb7b1ce3",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/wpjs-glass-material.js",
+      "bytes": 4655,
+      "sha256": "547c92f7cac4c8ea77d69594e163b26f2fc1464ec8abe5a1cc934ae3fee2f97e",
+      "source": {
+        "relativePath": "src/wpjs-glass-material.js",
+        "sha256": "547c92f7cac4c8ea77d69594e163b26f2fc1464ec8abe5a1cc934ae3fee2f97e",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/xced-material.js",
+      "bytes": 5773,
+      "sha256": "0cf3f4a7aabee666462f5c1a946dea5c16c4c3b45425249c963773fcfb0b27ad",
+      "source": {
+        "relativePath": "src/xced-material.js",
+        "sha256": "0cf3f4a7aabee666462f5c1a946dea5c16c4c3b45425249c963773fcfb0b27ad",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/xiaohei-material.js",
+      "bytes": 11319,
+      "sha256": "87dc5984d60103720e6fe9b17298d66a8417d7f445921dac45d86aef20222fa2",
+      "source": {
+        "relativePath": "src/xiaohei-material.js",
+        "sha256": "87dc5984d60103720e6fe9b17298d66a8417d7f445921dac45d86aef20222fa2",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/xmbl2-material.js",
+      "bytes": 5226,
+      "sha256": "204fd1ce51e8ec14565d597a19854fa8187164b6d80458cb8ac12035e082da48",
+      "source": {
+        "relativePath": "src/xmbl2-material.js",
+        "sha256": "204fd1ce51e8ec14565d597a19854fa8187164b6d80458cb8ac12035e082da48",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/xy-hair-material.js",
+      "bytes": 4041,
+      "sha256": "6c2fba05fddcda499917b21687befc3c0bb3c42a5d4c7e6fe3c3f4e986513ecd",
+      "source": {
+        "relativePath": "src/xy-hair-material.js",
+        "sha256": "6c2fba05fddcda499917b21687befc3c0bb3c42a5d4c7e6fe3c3f4e986513ecd",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/xy-star-material.js",
+      "bytes": 3643,
+      "sha256": "b6d117519ca9160a8423fb2d7085abe6330250861d9453df217b54ca81b357fa",
+      "source": {
+        "relativePath": "src/xy-star-material.js",
+        "sha256": "b6d117519ca9160a8423fb2d7085abe6330250861d9453df217b54ca81b357fa",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/ycymv-hair-material.js",
+      "bytes": 5831,
+      "sha256": "2e451f26962de6d257b8cdd896480f5a31b56a960cc9be1db8fe5f0c59601108",
+      "source": {
+        "relativePath": "src/ycymv-hair-material.js",
+        "sha256": "2e451f26962de6d257b8cdd896480f5a31b56a960cc9be1db8fe5f0c59601108",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/zmt-material.js",
+      "bytes": 5525,
+      "sha256": "0b99a99b90f211fb8a0410f6fb9d127d3da95f5b6b142e8c81894cbcd9d5ac49",
+      "source": {
+        "relativePath": "src/zmt-material.js",
+        "sha256": "0b99a99b90f211fb8a0410f6fb9d127d3da95f5b6b142e8c81894cbcd9d5ac49",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "src/znq-audiokey-material.js",
+      "bytes": 4238,
+      "sha256": "3459777abef579ccde2605cbdb79c589413f6e54e9266f8166d5a474dd21736d",
+      "source": {
+        "relativePath": "src/znq-audiokey-material.js",
+        "sha256": "3459777abef579ccde2605cbdb79c589413f6e54e9266f8166d5a474dd21736d",
+        "status": "unchanged-copy"
+      }
+    },
+    {
+      "path": "tests/adapter-contract.test.mjs",
+      "bytes": 1668,
+      "sha256": "0d0a8486a6794895b27867424894d0ae38dcd0dc6278adffe54e9f0c9bb62658",
+      "source": null
+    },
+    {
+      "path": "tests/audio-adapter-behavior.test.mjs",
+      "bytes": 4495,
+      "sha256": "3ba0e30af868a286afee80ed574517f6ee948e370773cb99f9358374fef67358",
+      "source": null
+    },
+    {
+      "path": "tests/cube-texture-resolver.test.mjs",
+      "bytes": 1659,
+      "sha256": "05282a3f015650d83526b8a71b3641ac91b63acfd6558cfbd849054d4213c902",
+      "source": null
+    },
+    {
+      "path": "tests/session-viewer-behavior.test.mjs",
+      "bytes": 5098,
+      "sha256": "eef967a2d2ac86123b7e991f6e0f80aacbf3b6d00aabf7d03a5fdf33ffdf2065",
+      "source": null
+    },
+    {
+      "path": "tests/social-runtime-behavior.test.mjs",
+      "bytes": 10199,
+      "sha256": "7b8770eb4308648974e4ecd2020e7b90e2204e7b7b7bd452cf3641f742f293df",
+      "source": null
+    },
+    {
+      "path": "tests/source-motion-extra-behavior.test.mjs",
+      "bytes": 5386,
+      "sha256": "6c9e9548d64dc1425887a43d7a5537699d14c04ac55b3bb80e4b26e3b7b93769",
+      "source": null
+    },
+    {
+      "path": "tests/source-rig-behavior.test.mjs",
+      "bytes": 3277,
+      "sha256": "20eb40fa0625d2c4b16c167e1438e719bc68cf0736ff9ad15073caf1d63a3820",
+      "source": null
+    },
+    {
+      "path": "tests/viewer-cube-policy.test.mjs",
+      "bytes": 2690,
+      "sha256": "2ce86bc4aaa70462a979cf49427b7044f7f45abfcf652146745db612f727106f",
+      "source": null
+    },
+    {
+      "path": "tests/wardrobe-behavior.test.mjs",
+      "bytes": 9099,
+      "sha256": "4fd58c08def105268ce7fa2602b5ed3c1e87c3b77ae1e40711053c5ae546d175",
+      "source": null
+    },
+    {
+      "path": "vite.config.js",
+      "bytes": 297,
+      "sha256": "79d716da0a1f93934a6df60709bef84290d87cda8264382e5b05500cf6aace05",
+      "source": null
+    }
+  ]
+}

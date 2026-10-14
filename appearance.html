@@ -1,0 +1,260 @@
+<!doctype html> <!-- 中文注释：声明 HTML5 文档类型 -->
+<!-- 页面根节点：声明中文界面语言 -->
+<html lang="zh-CN"> <!-- 中文注释：开始中文页面根节点 -->
+  <!-- 页面头部：配置编码、视口、样式和交互脚本 -->
+  <head> <!-- 中文注释：开始页面配置区域 -->
+    <!-- 使用 UTF-8 编码保存中文内容 -->
+    <meta charset="UTF-8" /><link rel="icon" href="data:,"> <!-- 中文注释：配置页面元数据 -->
+    <!-- 让界面宽度跟随浏览器视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- 中文注释：配置页面元数据 -->
+    <!-- 设置浏览器标签页标题 -->
+    <title>蛋仔背包</title> <!-- 中文注释：设置浏览器标签页标题 -->
+    <!-- 加载背包界面的全部样式 -->
+    <link rel="stylesheet"  /> <!-- 中文注释：加载页面样式文件 -->
+    <!-- 延迟加载背包界面的交互逻辑 -->
+    <script type="module" src="/src/handoff/bootstrap.js"></script> <!-- 中文注释：加载页面交互脚本 -->
+  </head> <!-- 中文注释：结束页面配置区域 -->
+  <!-- 页面主体：记录当前预览模式 -->
+  <body data-preview-mode="装扮"> <!-- 中文注释：开始页面可见内容 -->
+    <!-- 顶部状态栏：承载标题、资源操作和播放控制 -->
+    <header class="status-bar"> <!-- 中文注释：开始页面配置区域 -->
+      <!-- 左上角标题图标 -->
+      <a class="brand-logo-link" href="#" aria-disabled="true" title="游玩入口由宿主提供"><img class="brand-logo" src="/src/appearance/assets/标题.svg" alt="成熟衣橱" /></a> <!-- 中文注释：显示当前功能图标或缩略图 -->
+      <!-- 资源容器左边界内的顶部操作按钮组 -->
+      <div class="resource-header-actions"> <!-- 中文注释：开始当前布局容器 -->
+        <!-- 资源信息按钮：仅显示信息图标 -->
+        <label class="ui-skip-animation" title="切换角色时直接进入待机"><input id="ui-skip-animation" type="checkbox">跳过动画</label> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 预览模式按钮：点击后轮换装扮与单品 -->
+         <!-- 中文注释：结束当前交互按钮 -->
+      </div> <!-- 中文注释：结束当前布局容器 -->
+      <!-- 两行播放区：第一行显示时间与按钮，第二行显示进度 -->
+      <div class="playback-header" hidden aria-label="预览播放控制"> <!-- 中文注释：开始当前布局容器 -->
+        <!-- 播放控制第一行 -->
+        <div class="playback-row"> <!-- 中文注释：开始当前布局容器 -->
+          <!-- 当前时间与总时长，统一显示一位小数 -->
+          <output id="playback-time" for="playback-progress">0.0/30.0</output> <!-- 中文注释：显示当前状态或提示文字 -->
+          <!-- 播放与暂停切换按钮 -->
+          <button id="playback-toggle" class="playback-toggle" type="button" aria-label="播放" aria-pressed="false" title="播放"> <!-- 中文注释：创建当前交互按钮 -->
+            <!-- 播放状态图标 -->
+            <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7V5Z"></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+            <!-- 暂停状态图标 -->
+            <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+          </button> <!-- 中文注释：结束当前交互按钮 -->
+          <!-- 倍速按钮：点击后按预设倍率轮换 -->
+          <button id="playback-speed" class="speed-toggle" type="button" data-rate-index="2" aria-label="播放倍速，当前1倍" title="点击切换倍速">1×</button> <!-- 中文注释：创建当前交互按钮 -->
+        </div> <!-- 中文注释：结束当前布局容器 -->
+        <!-- 播放进度拖动条 -->
+        <input id="playback-progress" type="range" min="0" max="30000" step="10" value="0" aria-label="播放进度" /> <!-- 中文注释：创建当前输入控件 -->
+      </div> <!-- 中文注释：结束当前布局容器 -->
+    </header> <!-- 中文注释：结束顶部状态栏 -->
+    <!-- 主页面布局：左菜单、画布、资源容器和右菜单按层级排列 -->
+    <div class="page-layout"> <!-- 中文注释：开始当前布局容器 -->
+      <!-- 一级左菜单：切换皮肤、社交、其他和场景页面 -->
+      <aside class="left-menu" aria-label="主菜单"> <!-- 中文注释：开始当前侧边菜单区域 -->
+        <!-- 皮肤一级菜单按钮 -->
+        <button class="left-menu-button is-active" type="button" data-section="skin">皮肤</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 社交一级菜单按钮 -->
+        <button class="left-menu-button" type="button" data-section="social">社交</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 其他一级菜单按钮 -->
+        <button class="left-menu-button" type="button" data-section="other">其他</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 场景一级菜单按钮 -->
+        <button class="left-menu-button" type="button" data-section="scene" data-action="background">场景</button> <!-- 中文注释：创建当前交互按钮 -->
+        <a class="left-menu-button map-page-link" href="#" aria-disabled="true" title="地图入口由宿主提供">地图</a> <!-- 中文注释：进入地图编辑器 -->
+      <button class="left-menu-button" type="button" data-section="admin">管理</button></aside> <!-- 中文注释：结束当前侧边菜单区域 -->
+      <!-- 中央预览画布：承载染色入口、画布操作和底部工具栏 -->
+      <main class="canvas-area"> <!-- 中文注释：开始中央画布区域 -->
+        <!-- 染色入口按钮：仅控制染色面板的展开与收起 -->
+        <button class="dye-toggle" id="dye-toggle" hidden type="button" aria-label="默认染色" aria-pressed="false" disabled> <!-- 中文注释：创建当前交互按钮 -->
+          <img id="dye-preview" src="" alt="" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+          <span class="dye-toggle-label">染色</span> <!-- 中文注释：显示当前状态或提示文字 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 染色方案面板：根据选中资源加载 36 种或 3 种模板缩略图 -->
+        <section class="dye-panel" id="dye-panel" data-level="compact" aria-label="染色方案" hidden> <!-- 中文注释：开始当前功能区域 -->
+          <!-- 染色面板动态外框：仅由脚本改变横线和竖线长度 -->
+          <svg class="dynamic-container-shape" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+          <!-- 染色面板返回按钮：关闭当前染色面板 -->
+          <button class="dye-return" id="dye-return" type="button" aria-label="返回资源列表"> <!-- 中文注释：创建当前交互按钮 -->
+            <img src="/src/appearance/assets/返回.svg" alt="" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+          </button> <!-- 中文注释：结束当前交互按钮 -->
+          <!-- 染色缩略图滚动区域：一级显示 8 个，二级显示全部 -->
+          <div class="dye-scroll" id="dye-scroll"> <!-- 中文注释：开始当前布局容器 -->
+            <div class="dye-grid" id="dye-grid"></div> <!-- 中文注释：开始当前布局容器 -->
+          </div> <!-- 中文注释：结束当前布局容器 -->
+          <!-- 染色面板层级切换按钮：使用向下或向上图标 -->
+          <button class="dye-expand" id="dye-expand" type="button" aria-label="展开全部染色方案" hidden> <!-- 中文注释：创建当前交互按钮 -->
+            <img class="dye-expand-down" src="/src/appearance/assets/向下展开.svg" alt="" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+            <img class="dye-expand-up" src="/src/appearance/assets/向上展开.svg" alt="" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+          </button> <!-- 中文注释：结束当前交互按钮 -->
+        </section> <!-- 中文注释：结束当前功能区域 -->
+        <!-- 清空当前预览内容 -->
+        <button class="canvas-action clear-action" type="button" data-action="clear">清空</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 切换形象相关操作 -->
+        <button class="canvas-action avatar-action" type="button" data-action="avatar">形象</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 调整当前资源偏移 -->
+        <button class="canvas-action offset-action" type="button" data-action="offset">偏移</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 控制当前资源语音 -->
+        <button class="canvas-action voice-action" type="button" data-action="voice">语音</button> <!-- 中文注释：创建当前交互按钮 -->
+        <!-- 当前资源名称与收藏状态 -->
+        <div class="canvas-info"> <!-- 中文注释：开始当前布局容器 -->
+          <!-- 当前选中的资源名称 -->
+          <span id="selected-name">DongDong</span> <!-- 中文注释：显示当前状态或提示文字 -->
+          <!-- 收藏按钮外层容器 -->
+          <div class="heart-container" title="收藏"> <!-- 中文注释：开始当前布局容器 -->
+            <!-- 使用复选框保存收藏开关状态 -->
+            <input type="checkbox" class="checkbox" id="favorite-toggle" aria-label="收藏"> <!-- 中文注释：创建当前输入控件 -->
+            <!-- 收藏按钮的轮廓与填充图标容器 -->
+            <div class="svg-container"> <!-- 中文注释：开始当前布局容器 -->
+              <!-- 未收藏状态的心形轮廓 -->
+              <svg viewBox="0 0 24 24" class="svg-outline" aria-hidden="true"> <!-- 中文注释：绘制当前控件的矢量图标 -->
+                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path> <!-- 中文注释：定义矢量图标的绘制路径 -->
+              </svg> <!-- 中文注释：说明当前页面结构 -->
+              <!-- 已收藏状态的实心心形 -->
+              <svg viewBox="0 0 24 24" class="svg-filled" aria-hidden="true"> <!-- 中文注释：绘制当前控件的矢量图标 -->
+                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path> <!-- 中文注释：定义矢量图标的绘制路径 -->
+              </svg> <!-- 中文注释：说明当前页面结构 -->
+            </div> <!-- 中文注释：结束当前布局容器 -->
+          </div> <!-- 中文注释：结束当前布局容器 -->
+        </div> <!-- 中文注释：结束当前布局容器 -->
+        <!-- 画布底部工具栏：缩放、复位、旋转和截图 -->
+        <div class="stage-bottom"> <!-- 中文注释：开始当前布局容器 -->
+          <!-- 画布视角工具按钮组 -->
+          <div class="view-tools"> <!-- 中文注释：开始当前布局容器 -->
+            <!-- 为缩放滑杆提供无障碍名称 -->
+            <label class="sr-only" for="zoom">镜头距离</label> <!-- 中文注释：开始当前输入控件标签 -->
+            <!-- 镜头距离缩放滑杆 -->
+            <input id="zoom" type="range" min="-1.699" max="2.301" step="0.005" value="0.52"> <!-- 中文注释：创建当前输入控件 -->
+            <!-- 复位画布视角按钮 -->
+            <button id="fit" class="icon-btn" type="button" data-action="focus" title="复位视角" aria-label="复位视角"> <!-- 中文注释：创建当前交互按钮 -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+            </button> <!-- 中文注释：结束当前交互按钮 -->
+            <!-- 自动旋转开关按钮 -->
+            <button id="rotate" class="icon-btn" type="button" data-action="rotate" title="自动旋转" aria-label="自动旋转" aria-pressed="false"> <!-- 中文注释：创建当前交互按钮 -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+            </button> <!-- 中文注释：结束当前交互按钮 -->
+            <!-- 下载当前画布截图按钮 -->
+            <button id="screenshot" class="icon-btn" type="button" data-action="camera" title="下载截图" aria-label="下载截图"> <!-- 中文注释：创建当前交互按钮 -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+            </button> <!-- 中文注释：结束当前交互按钮 -->
+          </div> <!-- 中文注释：结束当前布局容器 -->
+          <!-- 当前缩放倍率文字 -->
+          <span id="zoom-label">1.0×</span> <!-- 中文注释：显示当前状态或提示文字 -->
+        </div> <!-- 中文注释：结束当前布局容器 -->
+      </main> <!-- 中文注释：结束中央画布区域 -->
+      <!-- 三级资源容器：显示筛选控件和资源卡片 -->
+      <section class="resource-surface" aria-label="资源容器"> <!-- 中文注释：开始当前功能区域 -->
+        <!-- 资源容器动态外框：圆角和左侧缺口保持固定尺寸 -->
+        <svg class="dynamic-container-shape" viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+        <!-- 资源筛选、排序和搜索控件 -->
+        <div class="resource-controls"> <!-- 中文注释：开始当前布局容器 -->
+          <!-- 品质筛选下拉控件 -->
+          <div class="dropdown-control" data-dropdown="filter"> <!-- 中文注释：开始当前布局容器 -->
+            <!-- 品质筛选下拉触发按钮 -->
+            <button class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"> <!-- 中文注释：创建当前交互按钮 -->
+              <svg class="ui-control-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16l-6.5 7.5V20l-3-2v-5.5Z"/></svg><span data-dropdown-label>筛选</span> <!-- 中文注释：显示当前状态或提示文字 -->
+               <!-- 中文注释：绘制当前控件的矢量图标 -->
+            </button> <!-- 中文注释：结束当前交互按钮 -->
+            <!-- 品质筛选选项列表 -->
+            <div class="dropdown-menu" role="listbox" aria-label="筛选品质" hidden> <!-- 中文注释：开始当前布局容器 -->
+              <button class="is-selected" type="button" role="option" data-value="all" data-label="筛选" aria-selected="true">全部品质</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="至臻" aria-selected="false">至臻</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="典藏" aria-selected="false">典藏</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="稀有" aria-selected="false">稀有</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="高级" aria-selected="false">高级</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="基础" aria-selected="false">基础</button> <!-- 中文注释：创建当前交互按钮 -->
+            </div> <!-- 中文注释：结束当前布局容器 -->
+          </div> <!-- 中文注释：结束当前布局容器 -->
+          <!-- 资源排序下拉控件 -->
+          <div class="dropdown-control" data-dropdown="sort"> <!-- 中文注释：开始当前布局容器 -->
+            <!-- 资源排序下拉触发按钮 -->
+            <button class="dropdown-trigger" type="button" aria-haspopup="listbox" aria-expanded="false"> <!-- 中文注释：创建当前交互按钮 -->
+              <svg class="ui-control-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 20V4m-4 4 4-4 4 4M16 4v16m-4-4 4 4 4-4"/></svg><span data-dropdown-label>品质</span> <!-- 中文注释：显示当前状态或提示文字 -->
+              <svg class="ui-dropdown-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+            </button> <!-- 中文注释：结束当前交互按钮 -->
+            <!-- 资源排序选项列表 -->
+            <div class="dropdown-menu" role="listbox" aria-label="排序方式" hidden> <!-- 中文注释：开始当前布局容器 -->
+              <button class="is-selected" type="button" role="option" data-value="quality" aria-selected="true">品质</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="usage" aria-selected="false">常用</button> <!-- 中文注释：创建当前交互按钮 -->
+              <button type="button" role="option" data-value="favorite" aria-selected="false">喜欢</button> <!-- 中文注释：创建当前交互按钮 -->
+            </div> <!-- 中文注释：结束当前布局容器 -->
+          </div> <!-- 中文注释：结束当前布局容器 -->
+          <!-- 资源搜索输入框：仅显示右侧搜索图标 -->
+          <label class="search-control"> <!-- 中文注释：开始当前输入控件标签 -->
+            <input id="resource-search" type="search" aria-label="搜索资源" /> <!-- 中文注释：创建当前输入控件 -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg> <!-- 中文注释：绘制当前控件的矢量图标 -->
+          </label> <!-- 中文注释：结束当前输入控件标签 -->
+        </div> <!-- 中文注释：结束当前布局容器 -->
+        <!-- 可滚动资源列表区域 -->
+        <div class="resource-scroll" id="resource-scroll"> <!-- 中文注释：开始当前布局容器 -->
+          <!-- 脚本动态生成资源卡片的网格 -->
+          <div class="resource-grid" id="resource-grid"></div> <!-- 中文注释：开始当前布局容器 -->
+          <!-- 搜索或筛选无结果时的提示 -->
+          <p class="empty-state" id="empty-state" hidden>没有找到资源</p> <!-- 中文注释：显示当前状态或提示文字 -->
+          <!-- 触发资源列表继续加载的观察节点 -->
+          <div id="scroll-sentinel"></div> <!-- 中文注释：开始当前布局容器 -->
+        </div> <!-- 中文注释：结束当前布局容器 -->
+      </section> <!-- 中文注释：结束当前功能区域 -->
+      <!-- 二级皮肤右菜单：切换资源分类 -->
+      <aside class="right-menu" data-menu="skin" aria-label="装备分类"> <!-- 中文注释：开始当前侧边菜单区域 -->
+        <!-- 角色分类按钮 -->
+        <button class="right-menu-button is-active" type="button" data-category="角色"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/char.svg" alt="角色" title="角色" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 头饰分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="头饰"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/headwear.svg" alt="头饰" title="头饰" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 面饰分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="面饰"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/facedec.svg" alt="面饰" title="面饰" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 腰饰分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="腰饰"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/belt.svg" alt="腰饰" title="腰饰" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 背包分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="背包"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/backpack.svg" alt="背包" title="背包" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 发型分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="发型"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/cap.svg" alt="发型" title="发型" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 上装分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="上装"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/shirt.svg" alt="上装" title="上装" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 下装分类按钮 -->
+        <button class="right-menu-button" type="button" data-category="下装"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/pants.svg" alt="下装" title="下装" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 搭配分类底部按钮 -->
+        <button class="right-menu-button outfit-button" type="button" data-category="搭配"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/setoff.svg" alt="搭配" title="搭配" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+      </aside> <!-- 中文注释：结束当前侧边菜单区域 -->
+      <!-- 社交分类右侧菜单 -->
+      <aside class="right-menu" data-menu="social" aria-label="社交分类" hidden> <!-- 中文注释：开始当前侧边菜单区域 -->
+        <!-- 动作分类按钮：使用 animation.svg 图标 -->
+        <button class="right-menu-button is-active" type="button" data-category="动作"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/animation.svg" alt="动作" title="动作" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 表情分类按钮：使用 meme.svg 图标 -->
+        <button class="right-menu-button" type="button" data-category="表情"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/meme.svg" alt="表情" title="表情" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 玩具分类按钮：使用 Toy.svg 图标 -->
+        <button class="right-menu-button" type="button" data-category="玩具"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/Toy.svg" alt="玩具" title="玩具" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 载具分类按钮：使用 transport.svg 图标 -->
+        <button class="right-menu-button" type="button" data-category="载具"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/transport.svg" alt="载具" title="载具" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+        <!-- 社交组合底部按钮：使用配置图标表示组合管理 -->
+        <button class="right-menu-button social-combination-button" type="button" data-category="社交组合"> <!-- 中文注释：创建当前交互按钮 -->
+          <img src="/src/appearance/assets/配置.svg" alt="社交组合" title="社交组合" /> <!-- 中文注释：显示当前功能图标或缩略图 -->
+        </button> <!-- 中文注释：结束当前交互按钮 -->
+      </aside> <!-- 中文注释：结束当前侧边菜单区域 -->
+    </div> <!-- 中文注释：结束当前布局容器 -->
+  </body> <!-- 中文注释：结束页面可见内容 -->
+</html> <!-- 中文注释：结束页面根节点 -->

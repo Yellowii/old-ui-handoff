@@ -1,0 +1,12 @@
+export async function configureRoses(m,p,macros,load,warnings,overrides={}){
+ const n=(k,d=0)=>Number.isFinite(Number(p[k]))?Number(p[k]):d,v=(k,d)=>{try{const a=JSON.parse(p[k]);if(Array.isArray(a)&&a.length>=3)return a;}catch{}return d},f=(k,d=0)=>n(k,d).toFixed(8),rgb=(k,d)=>`vec3(${v(k,d).slice(0,3).map(x=>Number(x).toFixed(8)).join(',')})`,low=Number(macros.RENDER_QUALITY??0)<2;
+ const t0=await load('Tex0',false,overrides.baseColor),t1=low?await load('Tex1',false,overrides.normal):null,t2=low?await load('Tex2'):null,t3=await load('Tex3',false);if(!t0||!t3)return null;
+ m.defines={...m.defines,USE_UV1:''};m.map=t0;m.normalMap=t1;m.color.set(0xffffff);m.roughness=1;m.metalness=0;m.emissive.set(0xffffff);m.emissiveIntensity=1;
+ const u={neoTime:{value:0},neoRoses0:{value:t0},neoRoses1:{value:t1},neoRoses2:{value:t2},neoRoses3:{value:t3},neoEmissionScale:{value:1}};
+ m.onBeforeCompile=s=>{Object.assign(s.uniforms,u);s.vertexShader='varying vec2 neoRosesUv1;\n'+s.vertexShader.replace('#include <uv_vertex>','#include <uv_vertex>\nneoRosesUv1=uv1;');s.fragmentShader=`varying vec2 neoRosesUv1;uniform sampler2D neoRoses1,neoRoses2,neoRoses3;uniform float neoTime,neoEmissionScale;\n${s.fragmentShader}`;
+  const normal=low&&t1?`vec3 n=texture2D(neoRoses1,vMapUv).xyz*2.0-1.0;normal=normalize(tbn*normalize(vec3(n.xy*${f('Intensity',1)},n.z)));`:'';
+  const orm=low&&t2?`vec4 orm=texture2D(neoRoses2,vMapUv);roughnessFactor=orm.g*${f('Intensity',1)};metalnessFactor=clamp(orm.b*${f('Intensity',1)},0.0,1.0);`:'';
+  s.fragmentShader=s.fragmentShader.replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>\n${normal}`).replace('float faceDirection = gl_FrontFacing',`${orm}\nfloat faceDirection = gl_FrontFacing`);
+  s.fragmentShader=s.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>\nvec4 mask=texture2D(neoRoses3,neoRosesUv1);float tm=mix(0.0,2.5,clamp(fract(neoTime*.1),0.0,1.0));float fire=ceil(1.0-neoRosesUv1.y-tm*pow(max(mask.r,0.0),.4));float fireA=clamp(ceil(1.0-neoRosesUv1.y-tm*pow(max(mask.r,0.0),.4)-.03),0.0,1.0);diffuseColor.rgb*=1.0-mask.b;diffuseColor.a*=fire;`).replace('#include <emissivemap_fragment>',`totalEmissiveRadiance=(mask.g*${rgb('EmColorA',[1,1,1,1])}*15.0*(1.0-fireA)+mask.b*${rgb('EmColorC',[1,1,1,1])}*3.0+${rgb('EmColorB',[1,1,1,1])}*mask.g)*neoEmissionScale;`);
+ };warnings.push('special_roses 已接入源溶解、Mask、低画质法线、ORM 和三段发光颜色；软体及点光源完整分支仍待验证');return u;
+}

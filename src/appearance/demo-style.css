@@ -1,0 +1,1158 @@
+﻿/* 全局盒模型：宽高包含内边距和边框 */
+* { /* 通配选择器，作用于所有元素 */
+  box-sizing: border-box; /* 宽高包含内边距和边框 */
+} /* 结束当前样式规则 */
+
+html, /* 继续组合下一个选择器 */
+body { /* 页面根元素，占满视口 */
+  width: 100%; /* 页面占满视口宽度 */
+  height: 100%; /* 页面占满视口高度 */
+  height: 100dvh; /* 使用动态视口高度适配浏览器地址栏变化 */
+  margin: 0; /* 清除浏览器默认外边距 */
+} /* 结束当前样式规则 */
+
+body { /* 页面主体样式 */
+  min-width: 490px; /* 页面最小宽度 */
+  min-height: 310px; /* 页面最小高度 */
+  overflow: hidden; /* 页面本身不显示滚动条 */
+  color: #222; /* 页面默认文字颜色 */
+  background: none; /* 使用 LanSheep 临时全局背景图 */
+  font-family: "PingFang SC", sans-serif; /* 中文界面字体 */
+  font-weight: 800; /* 参考图使用粗体字 */
+  -webkit-text-stroke: 0.7px rgba(10, 18, 45, 0.9); /* 参考图黑色描边 */
+  paint-order: stroke fill; /* 先绘制描边再绘制文字 */
+} /* 结束当前样式规则 */
+
+button, /* 继续组合下一个选择器 */
+input { /* 按钮和输入框共享字体 */
+  font: inherit; /* 控件继承页面字体 */
+} /* 结束当前样式规则 */
+
+button { /* 按钮基础样式 */
+  border: 0; /* 移除按钮默认边框 */
+  cursor: pointer; /* 鼠标显示可点击状态 */
+} /* 结束当前样式规则 */
+
+.status-bar { /* 顶部状态栏 */
+  display: flex; /* 顶栏使用弹性布局 */
+  align-items: center; /* 内容垂直居中 */
+  gap: 12px; /* 控件之间的间距 */
+  position: relative; /* 顶栏叠加在背景上 */
+  z-index: 2; /* 顶栏位于内容之上 */
+  height: 5vh; /* 顶栏占视口高度 6% */
+  min-height: 40px; /* 顶栏最小高度 */
+  padding: 6px 14px; /* 顶栏内边距 */
+  background: transparent; /* 顶栏去除背景 */
+  box-shadow: none; /* 顶栏去除阴影 */
+} /* 结束当前样式规则 */
+
+.status-button { /* 顶部状态栏按钮 */
+  position: relative; /* 为高光伪元素提供定位参考 */
+  display: inline-flex; /* 设置元素布局方式 */
+  align-items: center; /* 设置子元素交叉轴对齐 */
+  justify-content: center; /* 设置子元素主轴对齐 */
+  gap: 7px; /* 设置子元素间距 */
+  height: 30px; /* 顶栏按钮高度 */
+  padding: 0 5px; /* 顶栏按钮左右内边距 */
+  background: rgba(87, 186, 222, 0.25); /* 设置元素背景 */
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(6, 26, 40, 0.24); /* 设置元素阴影 */
+  backdrop-filter: blur(10px); /* 设置背景区域滤镜 */
+  color: #fff; /* 顶栏按钮文字颜色 */
+  font-family: "PingFang SC", sans-serif; /* 设置字体系列 */
+  font-size: 13px; /* 设置字体大小 */
+  font-weight: 700; /* 设置字体粗细 */
+  text-shadow: 0 1px 2px rgba(4, 31, 40, 0.62); /* 设置文字阴影 */
+  transition: transform 0.18s ease; /* 设置变换过渡效果 */
+} /* 结束当前样式规则 */
+
+.status-button svg { /* 定义顶部状态按钮图标的样式规则 */
+  width: 15px; /* 设置元素宽度 */
+  height: 15px; /* 设置元素高度 */
+  flex: 0 0 15px; /* 设置弹性项目尺寸 */
+  fill: none; /* 设置图形填充颜色 */
+  stroke: currentColor; /* 设置图形描边颜色 */
+  stroke-width: 1.8; /* 设置图形描边宽度 */
+  stroke-linecap: round; /* 设置 stroke-linecap 样式属性 */
+  stroke-linejoin: round; /* 设置 stroke-linejoin 样式属性 */
+} /* 结束当前样式规则 */
+
+.brand-logo { /* 定义左上角标题图标的样式规则 */
+  position: absolute; /* 设置元素定位方式 */
+  top: 5%; /* 设置顶部位置 */
+  left: 2%; /* 设置左侧位置 */
+  width: 75px; /* 设置元素宽度 */
+  height: 75px; /* 设置元素高度 */
+  object-fit: contain; /* 设置图片适配方式 */
+  filter: drop-shadow(0 2px 4px rgba(5, 24, 34, 0)); /* 设置元素滤镜效果 */
+} /* 结束当前样式规则 */
+
+.status-button:hover { /* 顶部状态栏按钮悬停态 */
+  border-color: rgba(225, 255, 255, 0.92); /* 设置边框颜色 */
+  background: rgba(27, 99, 116, 0.2); /* 设置元素背景 */
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.28), 0 5px 14px rgba(6, 26, 40, 0.3); /* 设置元素阴影 */
+  transform: translateY(-1px); /* 顶栏按钮轻微上浮 */
+} /* 结束当前样式规则 */
+
+.preview-toggle { /* 定义预览模式切换按钮的样式规则 */
+  width: 60px; /* 设置元素宽度 */
+  height: 28px; /* 设置元素高度 */
+  margin-left: 0; /* 设置左侧外边距 */
+  padding: 0 9px; /* 设置元素内边距 */
+  background: rgba(87, 186, 222, 0.25); /* 设置元素背景 */
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2), 0 4px 12px rgba(6, 26, 40, 0.24); /* 设置元素阴影 */
+  backdrop-filter: blur(10px); /* 设置背景区域滤镜 */
+  color: #fff; /* 顶栏按钮文字颜色 */
+  white-space: nowrap; /* 设置文字换行规则 */
+  border-radius: 12px; /* 设置圆角大小 */
+} /* 结束当前样式规则 */
+
+.preview-toggle svg { /* 定义预览模式切换图标的样式规则 */
+  width: 13px; /* 设置元素宽度 */
+  height: 13px; /* 设置元素高度 */
+  flex-basis: 13px; /* 设置弹性项目基础尺寸 */
+} /* 结束当前样式规则 */
+
+.resource-header-actions { /* 定义顶部资源操作按钮组的样式规则 */
+  position: absolute; /* 设置元素定位方式 */
+  top: 6px; /* 设置顶部位置 */
+  right: calc(max(252px, 24.3vw) + 50px + 30px); /* 设置右侧位置 */
+  display: flex; /* 设置元素布局方式 */
+  align-items: center; /* 设置子元素交叉轴对齐 */
+  justify-content: flex-end; /* 设置子元素主轴对齐 */
+  gap: 12px; /* 设置子元素间距 */
+} /* 结束当前样式规则 */
+
+.playback-header { /* 定义顶部播放控制区的样式规则 */
+  position: absolute; /* 设置元素定位方式 */
+  top: 3px; /* 设置顶部位置 */
+  right: 50px; /* 设置右侧位置 */
+  left: calc(100% - max(252px, 24.3vw) - 50px); /* 设置左侧位置 */
+  display: grid; /* 设置元素布局方式 */
+  grid-template-rows: 22px 8px; /* 设置网格行结构 */
+  gap: 2px; /* 设置子元素间距 */
+  color: #eefcfc; /* 设置文字颜色 */
+  font-family: "PingFang SC", "Noto Sans CJK SC", sans-serif; /* 设置字体系列 */
+  font-size: 11px; /* 设置字体大小 */
+  font-weight: 600; /* 设置字体粗细 */
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5); /* 设置 -webkit-text-stroke 样式属性 */
+} /* 结束当前样式规则 */
+
+.playback-row { /* 定义播放控制第一行的样式规则 */
+  display: flex; /* 设置元素布局方式 */
+  align-items: center; /* 设置子元素交叉轴对齐 */
+  justify-content: flex-end; /* 设置子元素主轴对齐 */
+  gap: 7px; /* 设置子元素间距 */
+  min-width: 0; /* 设置最小宽度 */
+} /* 结束当前样式规则 */
+
+#playback-time { /* 定义播放时间显示文字的样式规则 */
+  margin-right: auto; /* 设置右侧外边距 */
+  color: rgba(239, 255, 255, 0.9); /* 设置文字颜色 */
+  font-variant-numeric: tabular-nums; /* 设置 font-variant-numeric 样式属性 */
+  white-space: nowrap; /* 设置文字换行规则 */
+  text-shadow: 0 1px 2px rgba(5, 31, 39, 0.7); /* 设置文字阴影 */
+} /* 结束当前样式规则 */
+
+.playback-toggle { /* 定义播放暂停切换按钮的样式规则 */
+  display: grid; /* 设置元素布局方式 */
+  place-items: center; /* 设置网格内容对齐 */
+  width: 22px; /* 设置元素宽度 */
+  height: 22px; /* 设置元素高度 */
+  padding: 0; /* 设置元素内边距 */
+  border: 1px solid rgba(188, 235, 239, 0.62); /* 设置元素边框 */
+  border-radius: 50%; /* 设置圆角大小 */
+  background: rgba(15, 65, 83, 0.7); /* 设置元素背景 */
+  color: #ffffff; /* 设置文字颜色 */
+} /* 结束当前样式规则 */
+
+.playback-toggle:hover { /* 定义播放暂停按钮悬停状态的样式规则 */
+  background: rgba(38, 111, 121, 0.82); /* 设置元素背景 */
+} /* 结束当前样式规则 */
+
+.playback-toggle svg { /* 定义播放暂停按钮图标的样式规则 */
+  width: 12px; /* 设置元素宽度 */
+  height: 12px; /* 设置元素高度 */
+  fill: none; /* 设置图形填充颜色 */
+  stroke: currentColor; /* 设置图形描边颜色 */
+  stroke-width: 2; /* 设置图形描边宽度 */
+  stroke-linecap: round; /* 设置 stroke-linecap 样式属性 */
+  stroke-linejoin: round; /* 设置 stroke-linejoin 样式属性 */
+} /* 结束当前样式规则 */
+
+.playback-toggle .pause-icon, /* 继续组合下一个选择器 */
+.playback-toggle[aria-pressed="true"] .play-icon { /* 定义播放状态下播放图标的样式规则 */
+  display: none; /* 设置元素布局方式 */
+} /* 结束当前样式规则 */
+
+.playback-toggle[aria-pressed="true"] .pause-icon { /* 定义播放状态下暂停图标的样式规则 */
+  display: block; /* 设置元素布局方式 */
+} /* 结束当前样式规则 */
+
+.speed-toggle { /* 定义播放倍速切换按钮的样式规则 */
+  min-width: 38px; /* 设置最小宽度 */
+  height: 20px; /* 设置元素高度 */
+  padding: 0 7px; /* 设置元素内边距 */
+  border: 1px solid rgba(188, 235, 239, 0.58); /* 设置元素边框 */
+  border-radius: 10px; /* 设置圆角大小 */
+  background: rgba(15, 65, 83, 0.7); /* 设置元素背景 */
+  color: #ffffff; /* 设置文字颜色 */
+  font: inherit; /* 设置字体属性 */
+  cursor: pointer; /* 设置鼠标指针样式 */
+  transition: transform 0.18s ease; /* 设置变换过渡效果 */
+} /* 结束当前样式规则 */
+
+.speed-toggle:hover { /* 定义播放倍速按钮悬停状态的样式规则 */
+  transform: scale(1.06); /* 设置元素变换效果 */
+} /* 结束当前样式规则 */
+
+#playback-progress { /* 定义播放进度条的样式规则 */
+  width: 100%; /* 设置元素宽度 */
+  height: 5px; /* 设置元素高度 */
+  margin: 5px; /* 设置元素外边距 */
+  transform: translateY(-2
+  px); /* 将播放进度条向上移动 2 像素 */
+  accent-color: #fffbc1; /* 设置 accent-color 样式属性 */
+  cursor: pointer; /* 设置鼠标指针样式 */
+} /* 结束当前样式规则 */
+
+.status-button[data-action="resources"] { /* 资源信息图标按钮 */
+  position: relative; /* 设置元素定位方式 */
+  width: 28px; /* 设置元素宽度 */
+  height: 28px; /* 设置元素高度 */
+  padding: 0; /* 设置元素内边距 */
+  border-radius: 10px; /* 设置圆角大小 */
+  
+} /* 结束当前样式规则 */
+
+.status-button[data-action="resources"]:hover { /* 定义资源信息按钮悬停状态的样式规则 */
+  transform: translateY(-1px); /* 设置元素变换效果 */
+} /* 结束当前样式规则 */
+
+.status-button[data-action="resources"] svg { /* 定义资源信息按钮图标的样式规则 */
+  width: 20px; /* 设置元素宽度 */
+  height: 20px; /* 设置元素高度 */
+  flex-basis: 20px; /* 设置弹性项目基础尺寸 */
+} /* 结束当前样式规则 */
+
+
+.page-layout { /* 页面主体网格布局 */
+  display: grid; /* 主区域使用网格布局 */
+  grid-template-columns: minmax(0, 1fr) minmax(252px, 24.3vw) 50px; /* 资源区宽度缩小 10% */
+  height: calc(100vh - 6vh); /* 扣除顶栏后的剩余高度 */
+  height: calc(100dvh - 6vh); /* 使用动态视口高度避免浏览器高度变化 */
+  min-height: 0; /* 允许网格子项按可用高度收缩 */
+  margin-top: -6vh; /* 让主体与背景从页面顶部连续铺开 */
+  padding-top: 6vh; /* 为顶栏保留视觉空间 */
+} /* 结束当前样式规则 */
+
+.left-menu { /* 左侧悬浮菜单 */
+  position: absolute; /* 左菜单悬浮在预览画布上方 */
+  top: 100px; /* 左菜单位于顶栏下方 */
+  left: 14px; /* 左菜单贴近页面左侧 */
+  z-index: 4; /* 左菜单显示在画布和画布控件上方 */
+  display: flex; /* 左菜单使用弹性布局 */
+  flex-direction: column; /* 菜单按钮纵向排列 */
+  gap: 8px; /* 左菜单按钮紧凑排列 */
+  width: max-content; /* 设置元素宽度 */
+  min-width: 55px; /* 设置最小宽度 */
+  padding: 0; /* 悬浮菜单不增加额外内边距 */
+  background: transparent; /* 左菜单容器完全透明 */
+  pointer-events: none; /* 容器本身不拦截画布操作 */
+} /* 结束当前样式规则 */
+
+.left-menu-button { /* 左菜单按钮 */
+  pointer-events: auto; /* 菜单按钮保持可点击 */
+  width: auto; /* 设置元素宽度 */
+  min-width: 55px; /* 设置最小宽度 */
+  height: 44px; /* 左菜单按钮高度 */
+  padding: 0 8px; /* 设置元素内边距 */
+  background: transparent; /* 左菜单按钮完全透明 */
+  color: #fff; /* 未选中文字颜色 */
+  font-size: clamp(15px, 2vw, 25px); /* 左菜单大字号 */
+  font-weight: 800; /* 左菜单文字加粗 */
+  letter-spacing: 0.08em; /* 左菜单文字间距 */
+  white-space: nowrap; /* 设置文字换行规则 */
+  text-shadow: 1px 2px 2px rgba(8, 12, 36, 0.92), 0 0 5px rgba(5, 18, 55, 0.9); /* 悬浮菜单文字阴影 */
+} /* 结束当前样式规则 */
+
+.left-menu-button:hover { /* 左菜单按钮悬停态 */
+  background: transparent; /* 悬停和选中状态保持透明底色 */
+  color: #fff6c8; /* 悬停和选中文字使用黄色 */
+} /* 结束当前样式规则 */
+.left-menu-button.is-active { /* 左菜单按钮选中态 */
+  background: transparent; /* 悬停和选中状态保持透明底色 */
+  color: #ffe04b; /* 悬停和选中文字使用黄色 */
+  transform: scale(1.12); /* 设置元素变换效果 */
+  transition: transform 0.18s ease; /* 设置变换过渡效果 */
+} /* 结束当前样式规则 */
+
+.canvas-area { /* 预览画布区域 */
+  position: relative; /* 作为画布内部绝对定位参考 */
+  min-width: 0; /* 允许网格区域收缩 */
+  min-height: 0; /* 允许画布区域随页面高度自适应 */
+  background: transparent; /* 画布区域透出蓝紫渐变 */
+} /* 结束当前样式规则 */
+
+.canvas-action { /* 画布快捷操作按钮 */
+  position: absolute; /* 快捷按钮固定在画布边缘 */
+  width: 38px; /* 快捷按钮宽度 */
+  height: 38px; /* 快捷按钮高度 */
+  background: rgba(17, 65, 133, 0); /* 快捷按钮半透明蓝色 */
+  border: 1px solid rgba(166, 231, 255, 0.55); /* 快捷按钮描边 */
+  border-radius: 50%; /* 染色和工具按钮使用圆形 */
+  box-shadow: 0 3px 10px rgba(9, 21, 80, 0.32); /* 快捷按钮阴影 */
+  color: #fff; /* 快捷按钮文字颜色 */
+  font-size: 12px; /* 快捷按钮文字大小 */
+} /* 结束当前样式规则 */
+
+.dye-toggle { /* 染色入口按钮 */
+  position: absolute; /* 将按钮固定在资源面板左侧 */
+  top: 50px; /* 恢复到原先染色按钮位置 */
+  right: 10px; /* 贴近画布右边缘 */
+  z-index: 6; /* 保证按钮位于染色面板上方 */
+  width: 38px; /* 保持原始圆形按钮宽度 */
+  height: 38px; /* 保持原始圆形按钮高度 */
+  padding: 0; /* 清除按钮默认内边距 */
+  border: 1px solid rgba(166, 231, 255, 0.7); /* 使用浅蓝描边 */
+  border-radius: 50%; /* 保持圆形入口 */
+  background: rgba(17, 65, 133, 0.5); /* 使用半透明蓝色背景 */
+  box-shadow: 0 3px 10px rgba(9, 21, 80, 0.32); /* 增加悬浮阴影 */
+  color: #fff; /* 使用白色文字 */
+  font-size: 12px; /* 使用紧凑字号 */
+  transition: transform 0.2s ease; /* 只使用 transform 动画 */
+} /* 结束当前样式规则 */
+
+.dye-toggle img { /* 初始染色按钮中的资源缩略图 */
+  width: 28px; /* 缩略图宽度 */
+  height: 28px; /* 缩略图高度 */
+  border-radius: 50%; /* 缩略图保持圆形 */
+  object-fit: contain; /* 保持资源比例 */
+} /* 结束当前样式规则 */
+
+.dye-toggle-label { /* 染色文字仅在无缩略图时显示 */
+  display: none; /* 初始按钮优先显示缩略图 */
+} /* 结束当前样式规则 */
+
+.dye-toggle:hover:not(:disabled) { /* 染色入口悬停状态 */
+  transform: scale(1.08); /* 悬停时轻微放大 */
+} /* 结束当前样式规则 */
+
+.dye-toggle:disabled { /* 未选中可染色资源时的入口状态 */
+  opacity: 0.42; /* 降低不可用状态透明度 */
+  cursor: default; /* 取消不可用状态手型 */
+} /* 结束当前样式规则 */
+
+.dye-toggle[aria-expanded="true"] { /* 染色面板展开时的入口状态 */
+  transform: scale(0.94); /* 展开时轻微收缩，保持资源缩略图方向不变 */
+} /* 结束当前样式规则 */
+
+.dye-panel { /* 染色方案面板 */
+  position: absolute; /* 面板浮动在预览画布上方 */
+  top: 50px; /* 面板从初始染色按钮位置开始绘制 */
+  right: 10px; /* 靠近资源容器左侧 */
+  z-index: 5; /* 保证面板高于画布内容 */
+  display: grid; /* 使用网格排列返回、方案和展开按钮 */
+  grid-template-rows: minmax(0, 1fr); /* 返回和箭头绝对定位，主体只保留方案滚动区 */
+  width: 100px; /* 一级面板采用双列紧凑宽度 */
+  max-height: calc(100% - 170px); /* 防止面板超出视口 */
+  padding: 2px 2px 25px 2px; /* 为内容和卡片内部箭头预留内边距 */
+  border: 0; /* 使用本地 SVG 外框替代普通边框 */
+  border-radius: 0; /* 由 SVG 外框绘制曲线圆角 */
+  background: transparent; /* 由 SVG 外框提供容器底色 */
+  box-shadow: none; /* 移除矩形阴影层，仅保留异形 SVG 面板 */
+  transform-origin: top right; /* 从右上角展开面板 */
+  overflow: visible; /* 允许缩略图悬停放大时超出面板边界 */
+} /* 结束当前样式规则 */
+
+.dye-panel > * { /* 染色面板内容层 */
+  position: relative; /* 建立内容层定位上下文 */
+  z-index: 1; /* 保证内容显示在外框之上 */
+} /* 结束当前样式规则 */
+
+.dynamic-container-shape { /* 不进行非等比缩放的动态容器外框 */
+  position: absolute !important; /* 让外框脱离内容布局 */
+  top: 0 !important; /* SVG 顶边贴合容器顶边 */
+  right: 0 !important; /* SVG 右边贴合容器右边 */
+  bottom: 0 !important; /* SVG 底边贴合容器底边 */
+  left: -20px !important; /* 将 SVG 向左扩展指定的二十像素 */
+  z-index: 0 !important; /* 将外框放在交互内容下方 */
+  width: calc(100% + 20px) !important; /* SVG 宽度包含左侧二十像素突出区域 */
+  height: 100% !important; /* 高度由容器实时决定 */
+  overflow: visible !important; /* 显示向左伸出的固定缺口 */
+  pointer-events: none !important; /* 外框不拦截按钮操作 */
+} /* 结束当前样式规则 */
+
+.dynamic-container-shape path { /* 用户指定形状的实际路径 */
+  fill: rgba(38, 103, 150, 0.28); /* 使用路径本身填充背景，让左侧突出区域同步显示 */
+  stroke: rgba(191, 238, 255, 0.42); /* 使用用户指定描边颜色 */
+  stroke-width: 1; /* 描边保持一个像素 */
+  vector-effect: non-scaling-stroke; /* 防止描边随尺寸变化 */
+} /* 结束当前样式规则 */
+
+
+.dye-panel[hidden] { /* 染色面板关闭状态 */
+  display: none !important; /* 始终隐藏关闭的染色面板，防止三色布局规则覆盖 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] { /* 二级全部染色方案面板 */
+  top: 50px; /* 二级面板从染色按钮位置开始绘制 */
+  width: 140px; /* 二级面板增加为三列宽度 */
+  max-height: calc(100% - 110px); /* 二级面板允许占用更多高度 */
+} /* 结束当前样式规则 */
+
+.dye-return { /* 使用返回 SVG 的染色返回按钮 */
+  position: absolute; /* 将返回按钮挂接在染色卡片左侧 */
+  top: 0px; /* 与卡片顶部保留少量间距 */
+  left: -38px; /* 让按钮位于卡片左侧并与背景相连 */
+  display: inline-flex; /* 图标和文字横向排列 */
+  align-items: center; /* 内容垂直居中 */
+  justify-content: center; /* 内容水平居中 */
+  gap: 0; /* 返回按钮只显示图标 */
+  width: 40px; /* 胶囊背景延伸至卡片边缘 */
+  height: 40px; /* 使用竖向胶囊比例 */
+  margin: 0; /* 绝对定位无需外边距 */
+  padding: 0 6px 0 4px; /* 图标视觉中心略向左 */
+  border: 0; /* 使用本地 SVG 外框替代胶囊边框 */
+  border-radius: 0; /* 由 SVG 外框绘制曲线 */
+  background: transparent; /* 使用面板路径自带的左侧缺口背景 */
+  box-shadow: none; /* 避免在统一路径上重复绘制阴影 */
+  backdrop-filter: none; /* 返回按钮不再使用旧胶囊模糊 */
+  transition: transform 0.18s ease; /* 只使用 transform 动画 */
+} /* 结束当前样式规则 */
+
+.dye-return:hover img { /* 返回 SVG 悬停状态 */
+  transform: rotate(20deg) scale(1.05); /* 悬停时轻微旋转放大 */
+  transition: transform 0.18s ease 0.05s; /* 只使用 transform 动画 */
+} /* 结束当前样式规则 */
+
+.dye-return img { /* 返回 SVG 本地图标 */
+  width: 30px; /* 放大本地返回图标 */
+  height: 30px; /* 放大本地返回图标 */
+  filter: saturate(0.75) brightness(1.14); /* 调整本地 SVG 颜色以贴合面板 */
+  pointer-events: none; /* 图标不拦截按钮点击 */
+} /* 结束当前样式规则 */
+
+.dye-scroll { /* 染色缩略图滚动区域 */
+  min-height: 0; /* 允许滚动区域在网格中收缩 */
+  overflow: visible; /* 一级面板允许按钮完整显示 */
+  scrollbar-width: none; /* 隐藏 Firefox 滚动条 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] .dye-scroll { /* 二级染色缩略图滚动区域 */
+  overflow-y: auto; /* 二级面板允许向下滚动 */
+  overflow-x: visible; /* 保留缩略图横向悬停空间 */
+  overscroll-behavior: contain; /* 防止滚动传递到页面 */
+} /* 结束当前样式规则 */
+
+.dye-scroll::-webkit-scrollbar { /* WebKit 染色滚动条 */
+  display: none; /* 隐藏滚动条但保留滚动能力 */
+} /* 结束当前样式规则 */
+
+.dye-grid { /* 染色缩略图网格 */
+  display: grid; /* 使用网格排列缩略图 */
+  grid-template-columns: repeat(2, 35px); /* 次级染色区域显示两列36像素按钮 */
+  justify-content: center; /* 网格在面板内居中 */
+  gap: 3px; /* 缩略图之间保留间距 */
+  padding: 4px; /* 为悬停放大保留空间，防止被面板裁切 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] .dye-grid { /* 二级染色缩略图网格 */
+  grid-template-columns: repeat(3, 35px); /* 二级面板显示三列32像素按钮 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-count="3"] .dye-grid { /* 三种基础染色方案网格 */
+  grid-template-columns: 35px; /* 三种按钮纵向排列并统一为35像素 */
+  gap: 7px; /* 纵向按钮间距 */
+  /*横向按钮间距由面板内边距提供*/
+  padding: 4px; /* 为独立按钮悬停放大保留空间 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-count="3"] { /* 三种基础染色方案仅作为按钮容器 */
+  top: 90px; /* 从初始染色按钮正下方开始排列 */
+  right: 11.5px; /* 与初始染色按钮水平居中 */
+  display: block; /* 取消卡片的三段网格布局 */
+  width: 35px; /* 只容纳单列35像素染色按钮 */
+  max-height: none; /* 三枚按钮无需滚动限制 */
+  padding: 0; /* 去掉卡片式内边距 */
+  border: 0; /* 去掉卡片描边 */
+  border-radius: 0; /* 去掉卡片圆角 */
+  background: transparent; /* 不绘制染色卡片背景 */
+  box-shadow: none; /* 去掉卡片阴影 */
+  backdrop-filter: none; /* 独立按钮无需背景模糊 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-count="3"] > .dynamic-container-shape { /* 三种方案不显示容器外框 */
+  display: none; /* 保持三枚独立染色按钮的展示方式 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-count="3"] .dye-return, /* 继续组合下一个选择器 */
+.dye-panel[data-count="3"] .dye-expand { /* 三种方案无需返回和展开按钮 */
+  display: none; /* 仅保留新增的三枚染色按钮 */
+} /* 结束当前样式规则 */
+
+.dye-swatch { /* 单个染色方案按钮 */
+  position: relative; /* 为选中标记提供定位上下文 */
+  width: 35px; /* 次级染色按钮统一宽度 */
+  height: 35px; /* 次级染色按钮统一高度 */
+  padding: 0; /* 清除默认内边距 */
+  overflow: hidden; /* 裁切圆形外的图片 */
+  border: 2px solid rgba(225, 248, 255, 0.55); /* 使用浅色描边 */
+  border-radius: 50%; /* 使用圆形缩略图 */
+  background: rgba(17, 56, 92, 0.58); /* 图片加载前显示深蓝底色 */
+  box-shadow: 0 2px 6px rgba(8, 22, 63, 0.32); /* 增加缩略图阴影 */
+  transition: transform 0.18s ease; /* 只使用 transform 动画 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] .dye-swatch { /* 二级染色方案按钮 */
+  width: 35px; /* 二级染色按钮统一宽度 */
+  height: 35px; /* 二级染色按钮统一高度 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-count="3"] .dye-swatch { /* 三种基础染色方案按钮 */
+  width: 35px; /* 基础方案按钮使用次级按钮宽度 */
+  height: 35px; /* 基础方案按钮使用次级按钮高度 */
+} /* 结束当前样式规则 */
+
+.dye-swatch:hover { /* 染色方案悬停状态 */
+  z-index: 4; /* 将悬停按钮置于相邻按钮和卡片边缘上方 */
+  transform: scale(1.08); /* 悬停时放大缩略图 */
+} /* 结束当前样式规则 */
+
+.dye-swatch.is-selected { /* 染色方案选中状态 */
+  border-color: #ffe34e; /* 使用黄色选中描边 */
+  transform: scale(1.06); /* 选中方案轻微放大 */
+} /* 结束当前样式规则 */
+
+.dye-swatch.is-selected::after { /* 染色方案选中标记 */
+  content: "✓"; /* 使用勾号表示选中 */
+  position: absolute; /* 标记固定在缩略图左下角 */
+  left: 1px; /* 标记距左侧一像素 */
+  bottom: -1px; /* 标记贴近底部 */
+  color: #62ff97; /* 使用亮绿色勾号 */
+  font-size: 12px; /* 缩小勾号以适配染色按钮尺寸 */
+  font-weight: 900; /* 加粗勾号 */
+  text-shadow: -1px -1px 0 #163a48, 1px 1px 0 #163a48; /* 增加深色描边效果 */
+} /* 结束当前样式规则 */
+
+.dye-swatch img { /* 染色方案缩略图 */
+  width: 100%; /* 图片填满按钮宽度 */
+  height: 100%; /* 图片填满按钮高度 */
+  object-fit: contain; /* 保持模板完整比例 */
+  pointer-events: none; /* 图片不拦截按钮点击 */
+} /* 结束当前样式规则 */
+
+.dye-expand { /* 染色方案展开收起按钮 */
+  position: absolute; /* 将展开箭头固定在卡片内部底边 */
+  bottom: 3px; /* 与卡片底部保持内部间距 */
+  left: 50%; /* 将箭头定位到卡片水平中心 */
+  width: 90%; /* 使用参考图中的横向按钮比例 */
+  height: 18px; /* 设置按钮高度 */
+  margin: 0; /* 使用绝对定位后取消外边距 */
+  padding: 0; /* 清除默认内边距 */
+  border: 0; /* 去除默认边框 */
+  border-radius: 13px; /* 使用胶囊圆角 */
+  background: rgba(219, 245, 255, 0.254); /* 使用浅色玻璃背景 */
+  transform: translateX(-50%); /* 抵消自身宽度并保持水平居中 */
+  transition: transform 0.18s ease; /* 只使用 transform 动画 */
+} /* 结束当前样式规则 */
+
+.dye-expand:hover img { /* 展开按钮悬停状态 */
+  transform: translateY(10%) scale(1.06); /* 悬停时在原位轻微放大 */
+} /* 结束当前样式规则 */
+
+.dye-expand img { /* 展开按钮图片 */
+  position: absolute;
+  bottom: -2px; /* 图片贴合按钮底边 */
+  display: block; /* 让图片独占按钮区域 */
+  width: 100%; /* 图片填满按钮宽度 */
+  height: 100%; /* 图片填满按钮高度 */
+  pointer-events: none; /* 图片不拦截按钮点击 */
+} /* 结束当前样式规则 */
+
+
+.dye-expand-up { /* 向上收起图标默认状态 */
+  display: none !important; /* 一级面板隐藏向上图标 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] .dye-expand-down { /* 二级面板向下图标状态 */
+  display: none; /* 二级面板隐藏向下图标 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] .dye-expand-up { /* 二级面板向上图标状态 */
+  display: block !important; /* 二级面板显示向上图标 */
+} /* 结束当前样式规则 */
+
+.dye-panel[data-level="full"] .dye-expand:hover .dye-expand-up {
+  transform: translateY(-10%) scale(1.06); /* 悬停时在原位轻微放大 */
+} /* 结束当前样式规则 */
+
+.clear-action { /* 清空按钮 */
+  top: calc(100% - 154px); /* 清空系列底部向下对齐 */
+  width: 34px; /* 清空系列按钮宽度 */
+  height: 34px; /* 清空系列按钮高度 */
+  right: 10px; /* 清空按钮向左避开资源卡片 */
+} /* 结束当前样式规则 */
+
+.avatar-action { /* 形象按钮 */
+  top: calc(100% - 116px); /* 形象按钮缩小行距并向下对齐 */
+  width: 34px; /* 形象按钮宽度 */
+  height: 34px; /* 形象按钮高度 */
+  right: 10px; /* 形象按钮向左避开资源卡片 */
+} /* 结束当前样式规则 */
+
+.offset-action { /* 偏移按钮 */
+  top: calc(100% - 78px); /* 偏移按钮缩小行距并向下对齐 */
+  width: 34px; /* 偏移按钮宽度 */
+  height: 34px; /* 偏移按钮高度 */
+  right: 10px; /* 偏移按钮向左避开资源卡片 */
+} /* 结束当前样式规则 */
+
+.voice-action { /* 语音按钮 */
+  top: calc(100% - 40px); /* 语音按钮位于最底部 */
+  width: 34px; /* 语音按钮宽度 */
+  height: 34px; /* 语音按钮高度 */
+  right: 10px; /* 语音按钮向左避开资源卡片 */
+} /* 结束当前样式规则 */
+
+.canvas-info { /* 画布左下角信息 */
+  position: absolute; /* 信息固定在画布左下角 */
+  left: 4%; /* 信息距画布左侧距离 */
+  bottom: 5%; /* 信息距画布底部距离 */
+  display: flex; /* 名称与收藏按钮横向排列 */
+  align-items: center; /* 内容垂直居中 */
+  gap: 8px; /* 名称与收藏按钮间距 */
+  color: #fff; /* 信息文字颜色 */
+  font-size: clamp(16px, 1.6vw, 25px); /* 信息标题字号 */
+  font-weight: 700; /* 信息标题加粗 */
+} /* 结束当前样式规则 */
+
+/* 收藏爱心组件 */
+.heart-container { /* 收藏爱心容器 */
+  position: relative; /* 为心形图层提供定位参考 */
+  width: 34px; /* 心形组件宽度 */
+  height: 34px; /* 心形组件高度 */
+  cursor: pointer; /* 心形组件可点击 */
+} /* 结束当前样式规则 */
+.heart-container .checkbox { /* 爱心复选框 */
+  position: absolute; /* 复选框覆盖心形区域 */
+  inset: 0; /* 复选框占满组件 */
+  z-index: 3; /* 复选框位于图标上方 */
+  opacity: 0; /* 隐藏原生复选框外观 */
+  cursor: pointer; /* 保留点击指针 */
+} /* 结束当前样式规则 */
+.svg-container { /* 心形 SVG 图层容器 */
+  position: absolute; /* SVG 图层绝对定位 */
+  inset: 0; /* SVG 容器占满心形组件 */
+} /* 结束当前样式规则 */
+.svg-container svg { /* 心形 SVG 图标 */
+    display: block; /* SVG 作为块级图标显示 */
+    position: absolute; /* SVG 心形绝对定位 */
+    left: 10%; /* 心形左侧对齐 */
+    bottom: 28%; /* 心形底部对齐 */
+    width: calc(100% - 18px); /* 心形宽度 */
+    height: calc(100% - 18px); /* 心形高度 */
+    fill: #ffd8f6; /* 未收藏时的填充颜色 */
+} /* 结束当前样式规则 */
+.svg-container .svg-filled { /* 收藏后的实心心形 */
+  opacity: 0; /* 未收藏时隐藏实心心形 */
+  fill: #ff4f91; /* 收藏后的实心颜色 */
+  transform: scale(0.5); /* 收藏前缩小状态 */
+  transition: transform 0.24s cubic-bezier(0.2, 1.35, 0.45, 1); /* 收藏缩放动画 */
+} /* 结束当前样式规则 */
+.heart-container .checkbox:checked + .svg-container .svg-outline { /* 收藏后隐藏描边心形 */
+  opacity: 0; /* 收藏后隐藏基础描边 */
+} /* 结束当前样式规则 */
+.heart-container .checkbox:checked + .svg-container .svg-filled { /* 收藏后显示实心心形 */
+  opacity: 1; /* 收藏后显示实心心形 */
+  transform: scale(1); /* 收藏后恢复正常大小 */
+  filter: drop-shadow(0 0 2px rgba(255, 79, 145, 0.72)); /* 收藏心形光晕 */
+} /* 结束当前样式规则 */
+
+/* ====================
+底部控制栏外层容器
+- fixed 定位固定在视口底部，不会溢出顶部
+- flex 布局：工具面板 + 倍率文字横向排列
+- 固定像素 gap，倍率在面板右侧外部
+==================== */
+.stage-bottom { /* 底部控制栏外层容器 */
+  position: fixed; /* 固定在视口底部 */
+  left: 40%; /* 水平定位到画布中偏左 */
+  bottom: 5%; /* 距视口底部距离 */
+  display: flex; /* 工具面板与倍率文字横向排列 */
+  align-items: center; /* 内容垂直居中 */
+  gap: 14px; /* 面板与倍率文字间距 */
+  transform: translateX(-50%); /* 抵消自身宽度实现水平居中 */
+  z-index: 100; /* 保证浮在画布之上 */
+} /* 结束当前样式规则 */
+/* ====================
+玻璃拟态工具面板
+- 背景只包裹这里面的按钮和滑块
+- 倍率文字在此容器外部，不影响背景宽度
+==================== */
+.view-tools { /* 玻璃拟态工具面板 */
+  display: flex; /* 按钮与滑块横向排列 */
+  align-items: center; /* 内容垂直居中 */
+  gap: 4px; /* 按钮与按钮间距 */
+  height: 25px; /* 面板高度 */
+  padding: 4px 8px; /* 面板内边距 */
+  border: 1px solid rgba(255, 255, 255, 0.12); /* 面板浅色玻璃边框 */
+  border-radius: 10px; /* 面板圆角 */
+  background: rgba(27, 160, 255, 0.25); /* 面板半透明蓝底 */
+  box-shadow: 0 4px 16px rgba(8, 19, 75, 0.35); /* 面板阴影 */
+  backdrop-filter: blur(10px); /* 面板背景毛玻璃模糊 */
+} /* 结束当前样式规则 */
+/* ====================
+圆形图标按钮（所有按钮共用）
+==================== */
+.view-tools .icon-btn { /* 圆形图标按钮 */
+  flex-shrink: 0; /* 按钮不参与面板收缩 */
+  width: 20px; /* 图标按钮宽度 */
+  height: 20px; /* 图标按钮高度 */
+  padding: 0; /* 圆形按钮无内边距 */
+  border: none; /* 移除图标按钮边框 */
+  border-radius: 50%; /* 圆形图标按钮 */
+  background: transparent; /* 图标按钮透明背景 */
+  color: #c8e8ff; /* 图标按钮默认颜色 */
+  cursor: pointer; /* 图标按钮可点击 */
+  display:flex; /* 图标按钮使用弹性布局 */
+  align-items: center; /* 图标垂直居中 */
+  justify-content: center; /* 图标水平居中 */
+  transition: transform 0.18s ease; /* 设置变换过渡效果 */
+} /* 结束当前样式规则 */
+.view-tools .icon-btn svg { /* 图标按钮内部 SVG */
+  display: block; /* SVG 作为块级元素 */
+  width: 16px; /* SVG 图标宽度 */
+  height: 16px; /* SVG 图标高度 */
+  fill: none; /* 图标使用描边而非填充 */
+  stroke: currentColor; /* 描边继承文字颜色 */
+  stroke-width: 1.8; /* 图标描边粗细 */
+  stroke-linecap: round; /* 描边端点圆头 */
+  stroke-linejoin: round; /* 描边拐角圆头 */
+} /* 结束当前样式规则 */
+.view-tools .icon-btn:hover { /* 图标按钮悬停态 */
+  background: rgba(255, 255, 255, 0.15); /* 悬停白色半透明背景 */
+  color: #ffffff; /* 悬停图标变白 */
+  transform: scale(1.08); /* 设置元素变换效果 */
+} /* 结束当前样式规则 */
+/* ====================
+缩放滑块
+==================== */
+.view-tools input[type="range"] { /* 缩放滑块 */
+  flex-shrink: 0; /* 滑块不参与面板收缩 */
+  width: 72px; /* 滑块宽度 */
+  height: 4px; /* 滑块轨道高度 */
+  margin: 0 6px; /* 滑块左右间距 */
+  accent-color: #5bb8ff; /* 滑块填充颜色 */
+  cursor: pointer; /* 滑块可拖动 */
+} /* 结束当前样式规则 */
+/* 倍率文字（在面板右侧外部） */
+
+
+#zoom-label { /* 倍率文字区域 */
+  flex: 0 0 38px; /* 倍率区域固定宽度 */
+  width: 38px; /* 倍率文字区域宽度 */
+  padding-left: 0px; /* 倍率文字左内边距 */
+  white-space: nowrap; /* 倍率保持单行 */
+  border-left: 0; /* 设置 border-left 样式属性 */
+  color: #e8faff; /* 倍率文字颜色 */
+  font-size: 12px; /* 倍率文字大小 */
+  font-weight: 800; /* 倍率文字粗细 */
+  text-align: center; /* 倍率文字居中 */
+} /* 结束当前样式规则 */
+
+/* 无障碍隐藏文字 */
+.sr-only { /* 无障碍隐藏文字类 */
+  position: absolute; /* 无障碍文字脱离布局 */
+  width: 1px; /* 隐藏文字最小宽度 */
+  height: 1px; /* 隐藏文字最小高度 */
+  padding: 0; /* 移除隐藏文字内边距 */
+  margin: -1px; /* 将隐藏文字移出可视区域 */
+  overflow: hidden; /* 隐藏文字内容 */
+  clip: rect(0, 0, 0, 0); /* 兼容隐藏裁剪 */
+  white-space: nowrap; /* 防止隐藏文字换行 */
+  border: 0; /* 移除隐藏元素边框 */
+} /* 结束当前样式规则 */
+
+/* 资源面板玻璃容器 */
+.resource-surface { /* 资源容器布局外壳 */
+  min-width: 0; /* 允许资源面板收缩 */
+  min-height: 0; /* 允许资源容器随页面高度自适应 */
+  overflow: visible; /* 允许固定二十像素缺口伸出资源容器左侧 */
+  position: relative; /* 建立资源面板定位上下文 */
+  z-index: 1; /* 资源面板位于背景之上 */
+  padding: 8px 6px; /* 资源面板内边距 */
+  border: 0; /* 使用本地 SVG 外框替代普通边框 */
+  border-radius: 0; /* 由 SVG 外框绘制曲线圆角 */
+  background: transparent; /* 由 SVG 外框提供资源容器底色 */
+  box-shadow: none; /* 移除矩形阴影层，仅保留异形 SVG 容器 */
+  backdrop-filter: none; /* 资源容器不再使用旧卡片模糊 */
+} /* 结束当前样式规则 */
+
+.resource-surface > * { /* 资源容器内容层 */
+  position: relative; /* 建立内容层定位上下文 */
+  z-index: 1; /* 保证筛选和资源卡显示在外框之上 */
+} /* 结束当前样式规则 */
+
+
+.resource-controls { /* 资源筛选排序搜索栏 */
+  display: grid; /* 筛选排序搜索使用网格布局 */
+  grid-template-columns: repeat(3, 28%); /* 设置网格列结构 */
+  justify-content: space-between; /* 设置子元素主轴对齐 */
+  gap: 0; /* 设置子元素间距 */
+  width: 100%; /* 设置元素宽度 */
+  height: 20px; /* 设置元素高度 */
+  margin: 0 0 10px; /* 设置元素外边距 */
+  position: relative; /* 设置元素定位方式 */
+  z-index: 5; /* 设置元素层叠顺序 */
+  -webkit-text-stroke: 0; /* 设置 -webkit-text-stroke 样式属性 */
+} /* 结束当前样式规则 */
+
+.dropdown-control, /* 继续组合下一个选择器 */
+.search-control { /* 定义资源搜索控件的样式规则 */
+  position: relative; /* 设置元素定位方式 */
+  display: flex; /* 设置元素布局方式 */
+  align-items: center; /* 设置子元素交叉轴对齐 */
+  min-width: 0; /* 设置最小宽度 */
+  height: 20px; /* 设置元素高度 */
+  border: 1px solid rgba(229, 247, 255, 0.62); /* 设置元素边框 */
+  border-radius: 999px; /* 设置圆角大小 */
+  background: linear-gradient(180deg, #ffffff, #eef4ff); /* 设置元素背景 */
+  box-shadow: none; /* 设置元素阴影 */
+  color: #1b3a6b; /* 设置文字颜色 */
+  transition: transform 0.18s ease; /* 设置变换过渡效果 */
+} /* 结束当前样式规则 */
+
+.dropdown-control:hover, /* 继续组合下一个选择器 */
+.search-control:hover, /* 继续组合下一个选择器 */
+.dropdown-control:focus-within, /* 继续组合下一个选择器 */
+.search-control:focus-within { /* 定义资源搜索控件聚焦状态的样式规则 */
+  border-color: rgba(51, 102, 102, 0.72); /* 设置边框颜色 */
+  background: linear-gradient(180deg, #ffffff, #eef4ff); /* 设置元素背景 */
+  box-shadow: 0 0 0 2px rgba(51, 102, 102, 0.12); /* 设置元素阴影 */
+  transform: translateY(-1px); /* 设置元素变换效果 */
+} /* 结束当前样式规则 */
+
+.dropdown-trigger, /* 继续组合下一个选择器 */
+.resource-controls input { /* 定义资源控制区输入框的样式规则 */
+  width: 100%; /* 设置元素宽度 */
+  min-width: 0; /* 设置最小宽度 */
+  height: 100%; /* 设置元素高度 */
+  border: 0; /* 设置元素边框 */
+  outline: 0; /* 设置 outline 样式属性 */
+  background: transparent; /* 设置元素背景 */
+  color: #1b3a6b; /* 设置文字颜色 */
+  font-family: "PingFang SC", "Noto Sans CJK SC", sans-serif; /* 设置字体系列 */
+  font-size: 12px; /* 设置字体大小 */
+  font-weight: 700; /* 设置字体粗细 */
+  letter-spacing: 0; /* 设置 letter-spacing 样式属性 */
+} /* 结束当前样式规则 */
+
+.dropdown-trigger { /* 定义筛选排序下拉按钮的样式规则 */
+  position: relative; /* 设置元素定位方式 */
+  display: flex; /* 设置元素布局方式 */
+  align-items: center; /* 设置子元素交叉轴对齐 */
+  justify-content: center; /* 设置子元素主轴对齐 */
+  padding: 0 20px; /* 设置元素内边距 */
+  cursor: pointer; /* 设置鼠标指针样式 */
+  text-align: center; /* 设置文字对齐方式 */
+} /* 结束当前样式规则 */
+
+.dropdown-trigger [data-dropdown-label] { /* 定义筛选排序下拉按钮文字的样式规则 */
+  width: 100%; /* 设置元素宽度 */
+  text-align: center; /* 设置文字对齐方式 */
+} /* 结束当前样式规则 */
+
+.dropdown-trigger svg, /* 继续组合下一个选择器 */
+.search-control svg { /* 定义资源搜索图标的样式规则 */
+  width: 13px; /* 设置元素宽度 */
+  height: 13px; /* 设置元素高度 */
+  flex: 0 0 13px; /* 设置弹性项目尺寸 */
+  fill: none; /* 设置图形填充颜色 */
+  stroke: #336666; /* 设置图形描边颜色 */
+  stroke-width: 2; /* 设置图形描边宽度 */
+  stroke-linecap: round; /* 设置 stroke-linecap 样式属性 */
+  stroke-linejoin: round; /* 设置 stroke-linejoin 样式属性 */
+  pointer-events: none; /* 设置指针事件响应 */
+} /* 结束当前样式规则 */
+
+.dropdown-trigger svg { /* 定义筛选排序下拉箭头的样式规则 */
+  position: absolute; /* 设置元素定位方式 */
+  right: 7px; /* 设置右侧位置 */
+  transition: transform 0.18s ease; /* 设置变换过渡效果 */
+} /* 结束当前样式规则 */
+
+.dropdown-control.is-open .dropdown-trigger svg { /* 定义下拉菜单展开时箭头的样式规则 */
+  transform: rotate(180deg); /* 设置元素变换效果 */
+} /* 结束当前样式规则 */
+
+.search-control svg { /* 定义资源搜索图标位置的样式规则 */
+  position: absolute; /* 设置元素定位方式 */
+  right: 7px; /* 设置右侧位置 */
+} /* 结束当前样式规则 */
+
+.dropdown-menu { /* 定义筛选排序下拉菜单的样式规则 */
+  position: absolute; /* 设置元素定位方式 */
+  top: calc(100% + 5px); /* 设置顶部位置 */
+  left: 0; /* 设置左侧位置 */
+  display: grid; /* 设置元素布局方式 */
+  width: max-content; /* 设置元素宽度 */
+  min-width: 100%; /* 设置最小宽度 */
+  padding: 4px; /* 设置元素内边距 */
+  border: 1px solid rgba(164, 215, 216, 0.9); /* 设置元素边框 */
+  border-radius: 8px; /* 设置圆角大小 */
+  background: rgba(246, 253, 253, 0.98); /* 设置元素背景 */
+  box-shadow: 0 8px 20px rgba(8, 42, 52, 0.28), inset 0 1px rgba(255, 255, 255, 0.9); /* 设置元素阴影 */
+  backdrop-filter: blur(12px); /* 设置背景区域滤镜 */
+} /* 结束当前样式规则 */
+
+.dropdown-menu[hidden] { /* 定义隐藏状态下拉菜单的样式规则 */
+  display: none; /* 设置元素布局方式 */
+} /* 结束当前样式规则 */
+
+.dropdown-menu button { /* 定义下拉菜单选项按钮的样式规则 */
+  height: 26px; /* 设置元素高度 */
+  padding: 0 10px; /* 设置元素内边距 */
+  border-radius: 5px; /* 设置圆角大小 */
+  background: transparent; /* 设置元素背景 */
+  color: #64a1aa; /* 设置文字颜色 */
+  font-family: "PingFang SC", "Noto Sans CJK SC", sans-serif; /* 设置字体系列 */
+  font-size: 12px; /* 设置字体大小 */
+  font-weight: 600; /* 设置字体粗细 */
+  text-align: left; /* 设置文字对齐方式 */
+  white-space: nowrap; /* 设置文字换行规则 */
+  -webkit-text-stroke: 0; /* 设置 -webkit-text-stroke 样式属性 */
+} /* 结束当前样式规则 */
+
+.dropdown-menu button:hover, /* 继续组合下一个选择器 */
+.dropdown-menu button:focus-visible { /* 定义下拉选项键盘聚焦状态的样式规则 */
+  outline: none; /* 设置 outline 样式属性 */
+  background: rgba(51, 102, 102, 0.12); /* 设置元素背景 */
+  color: #214a50; /* 设置文字颜色 */
+} /* 结束当前样式规则 */
+
+.dropdown-menu button.is-selected { /* 定义已选中下拉选项的样式规则 */
+  background: #336666; /* 设置元素背景 */
+  color: #ffffff; /* 设置文字颜色 */
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.18); /* 设置元素阴影 */
+} /* 结束当前样式规则 */
+
+.search-control input { /* 定义资源搜索输入框的样式规则 */
+  padding: 0 25px 0 9px; /* 设置元素内边距 */
+} /* 结束当前样式规则 */
+
+.search-control input::-webkit-search-cancel-button { /* 定义资源搜索框清除按钮的样式规则 */
+  display: none; /* 设置元素布局方式 */
+} /* 结束当前样式规则 */
+
+
+.resource-scroll { /* 资源列表滚动容器 */
+  min-height: 0; /* 允许滚动区域填满剩余高度 */
+  height: calc(100% - 30px); /* 扣除缩小后的控制栏高度 */
+  overflow: auto; /* 资源列表独立滚动 */
+  scrollbar-width: none; /* Firefox 隐藏滚动条 */
+  -ms-overflow-style: none; /* IE 隐藏滚动条 */
+} /* 结束当前样式规则 */
+
+.resource-scroll::-webkit-scrollbar { /* WebKit 浏览器隐藏滚动条 */
+  display: none; /* Chromium 和 Safari 隐藏滚动条 */
+} /* 结束当前样式规则 */
+
+.resource-grid { /* 资源卡片网格 */
+  display: grid; /* 资源卡使用网格排列 */
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 每行三张资源卡 */
+  gap: 6px; /* 缩小后的资源卡间距 */
+  padding: 2px; /* 为卡片内部高亮边框留出空间 */
+} /* 结束当前样式规则 */
+
+.resource-card { /* 单个资源卡片 */
+  position: relative; /* 为卡片内文字叠层提供定位参考 */
+  width: 100%; /* 资源卡宽度跟随网格列宽 */
+  height: auto; /* 资源卡高度由宽高比等比计算 */
+  aspect-ratio: 3/4; /* 资源卡缩放时保持固定宽高比 */
+  min-width: 0; /* 允许资源卡适应网格宽度 */
+  padding: 0; /* 移除资源卡默认内边距，图片贴边 */
+  border: 2px solid transparent; /* 预留悬停和选中边框空间 */
+  background: linear-gradient(145deg, rgba(224, 249, 255, 0.048), rgba(43, 109, 185, 0.008)); /* 资源卡片透明玻璃底色 */
+  color: #fff; /* 资源卡文字颜色 */
+  font-size: 11px; /* 资源卡文字字号 */
+  font-weight: 700; /* 资源卡文字加粗 */
+  -webkit-text-stroke: 2px #000; /* 资源卡文字描边，增强可读性 */
+  text-align: center; /* 资源卡文字水平居中 */
+  border-radius: 10px; /* 资源卡圆角 */
+  overflow: hidden; /* 裁切圆角外的缩略图 */
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.36), 0 4px 12px rgba(31, 36, 106, 0.18); /* 资源卡片内高光和阴影 */
+  backdrop-filter: blur(9px) saturate(1.16); /* 资源卡片玻璃模糊 */
+} /* 结束当前样式规则 */
+
+.resource-name { /* 资源名称标题 */
+  line-height: 0.8; /* 资源名称行高 */
+} /* 结束当前样式规则 */
+
+.resource-card:hover, /* 继续组合下一个选择器 */
+.resource-card.is-selected { /* 资源卡悬停或选中态 */
+  border-color: #ffd239; /* 悬停或选中高亮边框，使用内部边框避免裁切 */
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 0 12px rgba(255, 210, 57, 0.5); /* 高亮边框光晕 */
+} /* 结束当前样式规则 */
+
+.resource-card img { /* 资源卡缩略图 */
+  display: block; /* DiceBear 图片作为块级内容 */
+  position: absolute; /* 图片绝对定位在卡片内部 */
+  top: auto; /* 取消顶部定位，改用文字层上边缘对齐 */
+  bottom: 10%; /* 图片底部紧贴文字层顶部 */
+  left: 50%; /* 图片水平定位到卡片中心 */
+  width: 90%; /* 缩小图片宽度，为文字留出视觉空间 */
+  height: auto; /* 缩略图高度跟随宽度等比计算 */
+  aspect-ratio: 1 / 1; /* 资源缩略图始终保持正方形比例 */
+  max-height: 90%; /* 限制缩略图不超过卡片可用高度 */
+  object-fit: contain; /* 保持 DiceBear 图片完整比例 */
+  transform: translateX(-50%); /* 抵消自身宽度实现居中 */
+} /* 结束当前样式规则 */
+
+.resource-card .resource-name { /* 卡片底部标题条 */
+  position: absolute; /* 标题叠加在卡片内部 */
+  display: flex; /* 标题层使用弹性布局 */
+  align-items: center; /* 标题文字垂直居中 */
+  justify-content: center; /* 标题文字水平居中 */
+  right: 0px; /* 标题层贴合卡片右侧 */
+  bottom: 0; /* 标题层贴合卡片底部 */
+  left: 0; /* 标题层贴合卡片左侧 */
+  overflow: hidden; /* 标题超长时隐藏 */
+  margin: 0; /* 取消卡片外部文本框间距 */
+  min-height: 15%; /* 文字层固定占卡片底部空间 */
+  padding: 4px 5px; /* 文字层内边距 */
+  background: #97c8d2; /* 第一种文字背景色 */
+  font-size: 10px; /* 资源标题字号 */
+  font-weight: 800; /* 资源标题加粗 */
+  text-overflow: ellipsis; /* 超长标题显示省略号 */
+  white-space: nowrap; /* 标题保持单行 */
+  text-align: center; /* 标题文字水平居中 */
+} /* 结束当前样式规则 */
+
+.resource-card:nth-child(4n + 2) .resource-name { /* 第二张资源卡文字背景色 */
+  background: linear-gradient(135deg, #6a99ff, #57b1ff); /* 第二种文字背景色 */
+} /* 结束当前样式规则 */
+
+.resource-card:nth-child(4n + 3) .resource-name { /* 第三张资源卡文字背景色 */
+  background: linear-gradient(135deg, #e37eff,#c596ff ); /* 第三种文字背景色 */
+} /* 结束当前样式规则 */
+
+.resource-card:nth-child(4n + 4) .resource-name { /* 第四张资源卡文字背景色 */
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.601) 0%, transparent 70%), linear-gradient(135deg, #ff70e0, #FFF7BC, #3fdcff, #C7CEEA, #ffb570); /* 第四种文字背景色 */
+} /* 结束当前样式规则 */
+
+.resource-card p { /* 资源类型段落 */
+  display: none; /* 去除资源类型行 */
+} /* 结束当前样式规则 */
+
+.empty-state { /* 资源空状态提示 */
+  color: #fff; /* 空状态文字颜色 */
+  text-align: center; /* 空状态文字居中 */
+} /* 结束当前样式规则 */
+
+.right-menu { /* 右侧分类菜单 */
+  display: flex; /* 右菜单使用弹性布局 */
+  flex-direction: column; /* 右菜单纵向排列 */
+  gap: 0; /* 右菜单按钮紧密排列 */
+  padding-top: 0; /* 右菜单顶部无额外留白 */
+  position: relative; /* 右菜单建立层叠上下文 */
+  z-index: 1; /* 右菜单位于背景之上 */
+  border: 1px solid #ffffff5e; /* 右侧边栏白色描边 */
+  background: #305f8353; /* 设置元素背景 */
+  border-radius: 10px; /* 右菜单圆角 */
+} /* 结束当前样式规则 */
+
+.right-menu[hidden] { /* 隐藏当前主分类不使用的右侧菜单 */
+  display: none; /* 覆盖右菜单默认的弹性布局 */
+} /* 结束当前样式规则 */
+
+.right-menu[data-menu="skin"], /* 继续组合下一个选择器 */
+.right-menu[data-menu="social"] { /* 两套右菜单共享同一网格位置 */
+  grid-column: 3; /* 固定在页面最右侧栏 */
+  grid-row: 1; /* 与资源容器保持同一行 */
+} /* 结束当前样式规则 */
+
+.right-menu-button { /* 右菜单分类按钮 */
+  flex: 0 0 50px; /* 每个右菜单按钮固定高度 */
+  width: 100%; /* 按钮占满右菜单宽度 */
+  display: flex; /* 图标使用弹性布局居中 */
+  align-items: center; /* 图标垂直居中 */
+  justify-content: center; /* 图标水平居中 */
+  border: 0; /* 截图中的分类按钮无明显边框 */
+  border-radius: 10px; /* 分类按钮保持垂直图标栏形态 */
+  background: rgba(24, 128, 160, 0); /* 右菜单半透明青蓝底色 */
+  color: #fff; /* 右菜单文字颜色 */
+  font-size: 12px; /* 右菜单文字大小 */
+} /* 结束当前样式规则 */
+
+.right-menu-button img { /* 右菜单分类图标 */
+  display: none; /* 设置元素布局方式 */
+} /* 结束当前样式规则 */
+
+.right-menu-button::before { /* 定义右菜单按钮装饰层的样式规则 */
+  content: ""; /* 设置伪元素内容 */
+  display: block; /* 设置元素布局方式 */
+  width: 30px; /* 设置元素宽度 */
+  height: 30px; /* 设置元素高度 */
+  flex: 0 0 30px; /* 设置弹性项目尺寸 */
+  background: #2df6f6; /* 设置元素背景 */
+  -webkit-mask: var(--menu-icon) center / contain no-repeat; /* 设置 -webkit-mask 样式属性 */
+  mask: var(--menu-icon) center / contain no-repeat; /* 设置 mask 样式属性 */
+  pointer-events: none; /* 设置指针事件响应 */
+} /* 结束当前样式规则 */
+
+.right-menu-button[data-category="角色"] { --menu-icon: url("./assets/char.svg"); } /* 角色分类图标 */
+.right-menu-button[data-category="头饰"] { --menu-icon: url("./assets/headwear.svg"); } /* 头饰分类图标 */
+.right-menu-button[data-category="面饰"] { --menu-icon: url("./assets/facedec.svg"); } /* 面饰分类图标 */
+.right-menu-button[data-category="腰饰"] { --menu-icon: url("./assets/belt.svg"); } /* 腰饰分类图标 */
+.right-menu-button[data-category="背包"] { --menu-icon: url("./assets/backpack.svg"); } /* 背包分类图标 */
+.right-menu-button[data-category="发型"] { --menu-icon: url("./assets/cap.svg"); } /* 发型分类图标 */
+.right-menu-button[data-category="上装"] { --menu-icon: url("./assets/shirt.svg"); } /* 上装分类图标 */
+.right-menu-button[data-category="下装"] { --menu-icon: url("./assets/pants.svg"); } /* 下装分类图标 */
+.right-menu-button[data-category="搭配"] { --menu-icon: url("./assets/setoff.svg"); } /* 搭配分类图标 */
+.right-menu-button[data-category="动作"] { --menu-icon: url("./assets/animation.svg"); } /* 动作分类图标 */
+.right-menu-button[data-category="表情"] { --menu-icon: url("./assets/meme.svg"); } /* 表情分类图标 */
+.right-menu-button[data-category="玩具"] { --menu-icon: url("./assets/Toy.svg"); } /* 玩具分类图标 */
+.right-menu-button[data-category="载具"] { --menu-icon: url("./assets/transport.svg"); } /* 载具分类图标 */
+.right-menu-button[data-category="社交组合"] { --menu-icon: url("./assets/配置.svg"); } /* 社交组合图标 */
+
+.right-menu-button:hover { /* 右菜单按钮悬停态 */
+  background: rgba(28, 148, 185, 0.4); /* 右菜单悬停颜色 */
+} /* 结束当前样式规则 */
+
+.right-menu-button.is-active { /* 右菜单按钮选中态 */
+  background: rgba(0, 25, 32, 0.75); /* 设置元素背景 */
+  box-shadow: inset 0 0 0 1px rgba(45, 246, 246, 0.35); /* 设置元素阴影 */
+  /*background:rgba(45, 246, 246, 0.72);#c824ff75; 右菜单悬停或选中颜色 
+  box-shadow: inset 0 0 0 1px rgba(45, 246, 246, 0.35);*/
+} /* 结束当前样式规则 */
+
+.outfit-button { /* 搭配按钮 */
+  margin-top: auto; /* 搭配按钮推到右菜单底部 */
+  margin-bottom: 0; /* 搭配按钮底部无额外间距 */
+} /* 结束当前样式规则 */
+
+.social-combination-button { /* 社交菜单底部组合按钮 */
+  margin-top: auto; /* 将组合按钮推到右菜单底部 */
+  margin-bottom: 0; /* 保持底部紧贴菜单容器 */
+} /* 结束当前样式规则 */
+
+@media (max-width: 1100px) { /* 屏幕宽度 1100px 以内的窄屏适配 */
+  .preview-toggle { /* 窄屏预览切换 */
+    margin-left: 0; /* 设置左侧外边距 */
+  } /* 结束当前样式规则 */
+
+  .page-layout { /* 窄屏页面布局 */
+    grid-template-columns: minmax(0, 1fr) 252px 50px; /* 窄屏资源区同步缩小 10% */
+  } /* 结束当前样式规则 */
+
+  .resource-grid { /* 窄屏资源卡网格 */
+    gap: 5px; /* 窄屏缩小资源卡间距 */
+  } /* 结束当前样式规则 */
+
+  .resource-card img { /* 窄屏资源卡缩略图 */
+    bottom: 18%; /* 窄屏图片也紧贴文字层顶部 */
+    width: 82%; /* 窄屏同时缩小图片宽高以保持等比 */
+    height: auto; /* 窄屏缩略图高度继续按宽度计算 */
+    max-height: 82%; /* 限制窄屏缩略图的最大高度 */
+  } /* 结束当前样式规则 */
+} /* 结束当前样式规则 */

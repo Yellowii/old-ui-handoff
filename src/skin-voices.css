@@ -1,0 +1,14 @@
+#skin-voice-dialog{width:440px;max-width:calc(100vw - 24px);height:min(760px,calc(100dvh - 36px));max-height:calc(100dvh - 36px);padding:18px;border:1px solid #9ab4c7;border-radius:8px;background-color:#d9e8f4;background-size:100% 100%;color:#203c49;overflow:hidden}
+#skin-voice-dialog[open]{display:flex;flex-direction:column;gap:12px}
+.voice-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex:none;min-height:46px}
+.voice-heading h2{font-size:20px;line-height:1.4;margin:0}.voice-heading p{font-size:13px;margin:5px 0 0;overflow-wrap:anywhere}.voice-heading .icon-btn{flex:none}
+.voice-heading,.voice-heading .icon-btn{color:#fff}.voice-heading h2,.voice-heading p{color:inherit}
+.voice-language{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:0 8px;flex:none}.voice-language span{overflow-wrap:anywhere}
+#skin-voice-audio{width:100%;height:44px;flex:none}
+#skin-voice-list{min-height:0;overflow:auto;display:flex;flex-direction:column;gap:8px;padding:2px}
+.voice-row{display:grid;grid-template-columns:46px minmax(0,1fr) auto;align-items:center;gap:10px;flex:none;min-height:68px;width:100%;padding:8px 12px;background-image:var(--voice-row-image);background-size:100% 100%;border:1px solid #b2ccdc;border-radius:5px;text-align:left}
+.voice-row[aria-pressed=true]{outline:2px solid #e0c61c;outline-offset:-2px}.voice-row:disabled{opacity:.6;cursor:not-allowed}
+.voice-row,.voice-row:hover:not(:disabled),.voice-row[aria-pressed=true]{color:#101e32;background-image:var(--voice-row-image);background-size:100% 100%}
+.voice-play{width:42px;height:42px;display:grid;place-items:center}.voice-play img{width:42px;height:42px;object-fit:contain}.voice-play svg{width:24px;height:24px}
+.voice-label{font-size:15px;line-height:1.4;overflow-wrap:anywhere}.voice-row small{font-size:11px;max-width:75px;overflow-wrap:anywhere}.voice-empty{padding:16px;font-size:14px;line-height:1.6}
+@media(max-width:480px){#skin-voice-dialog{padding:12px}.voice-row{grid-template-columns:40px minmax(0,1fr) auto;gap:6px;padding:8px}.voice-label{font-size:14px}}
